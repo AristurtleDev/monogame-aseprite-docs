@@ -72,7 +72,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'monogame-aseprite/introduction',
+            docId: 'introduction',
             position: 'left',
             label: 'Docs',
           },

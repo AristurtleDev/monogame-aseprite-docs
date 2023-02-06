@@ -18,8 +18,8 @@ const sidebars = {
       type: 'category',
       label: "MonoGame.Aseprite",
       items: [
-        'monogame-aseprite/introduction',
-        'monogame-aseprite/mgcb-editor'
+        'introduction',
+        'mgcb-editor'
       ]
     },
     {
@@ -34,10 +34,12 @@ const sidebars = {
       type: 'category',
       label: 'Guides',
       items: [
+        'guides/loading-aseprite-file',
         'guides/using-the-mgcb-editor',
-        'guides/aseprite-file',
+        'guides/texture-region',
         'guides/sprite',
-        'guides/texture-atlas'
+        'guides/texture-atlas',
+        'guides/sprite-sheet'
       ]
     },
     {
