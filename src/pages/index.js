@@ -19,6 +19,7 @@ function HomepageHeader() {
         />
         <h1 className="hero__title">Mono<span className={clsx(styles.gameOrange)}>Game</span>.Aseprite</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>⚠️ Documentation is currently a work in progress</p>
         <div className={styles.buttons}>
           <Link
             className={clsx(
