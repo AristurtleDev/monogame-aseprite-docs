@@ -9,12 +9,12 @@ import ThemedImage from '@theme/ThemedImage';
 
 :::caution
 
-Thank you for checking out the site.  Even though I haven't announced it publicly yet, you still found it.  The documentation is currently a work in progress and not ready just yet.  When it is, I'll make an announcement on both [Twitter](https://www.twitter.com/aristurtledev) and [Mastodon](https://mastodon.gamedev.place/@aristurtle) so be sure to follow me on one of those.
+Thank you for checking out the site.  The documentation is currently a work in progress and not ready just yet.  When it is, I'll make an announcement on both [Twitter](https://www.twitter.com/aristurtledev) and [Mastodon](https://mastodon.gamedev.place/@aristurtle) so be sure to follow me on one of those.
 
 :::
 
 
-![MonoGame.Aseprite Banner](/img/mga-banner.png)
+![MonoGame.Aseprite Banner](/img/banner.png)
 MonoGame.Aseprite is an free and open source library for the [MonoGame Framework](https://www.monogame.net) that assists in importing [Aseprite](https://www.aseprite.org)  \*.ase/\*.aseprite files into your game project.  No need to export a spritesheet from Aseprite and have to deal with a PNG + JSON file.  With MonoGame.Aseprite, you use the Aseprite file directly.
 
 MonoGame.Aseprite supports importing the file contents **both with and without the MGCB Editor (also known as the Content Pipeline Tool).**  Along with importing the file content, several **processors** have been designed to transform file content into a more meaningful state to use within MonoGame.
