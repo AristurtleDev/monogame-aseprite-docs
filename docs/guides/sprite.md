@@ -214,10 +214,10 @@ In this document was went over how to create an instance of the `Sprite` class, 
 
 The following classes are referenced in this document and the links to their guides are provided below.
 
-- [AsepriteFile](loading-aseprite-file)
-- [TextureAtlas](texture-atlas)
-- [SpriteSheet](spritesheet)
-- [TextureRegion](texture-region)
+- [AsepriteFile]
+- [TextureAtlas]
+- [SpriteSheet]
+- [TextureRegion]
 
 ## References
 

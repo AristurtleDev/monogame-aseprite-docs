@@ -205,9 +205,9 @@ In this document was went over how to create an instance of the `TextureAtlas` c
 
 The following classes are referenced in this document and the links to their guides are provided below.
 
-- [AsepriteFile](loading-aseprite-file)
-- [TextureRegion](texture-region)
-- [Sprite](sprite)
+- [AsepriteFile]
+- [TextureRegion]
+- [Sprite]
 
 ## References
 

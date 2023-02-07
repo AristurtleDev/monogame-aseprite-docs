@@ -27,7 +27,9 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'getting-started/installation',
-        'getting-started/mgcb-editor-setup'
+        'getting-started/mgcb-editor-setup',
+        'getting-started/the-aseprite-file',
+        'getting-started/processors'
       ]
     },
     {

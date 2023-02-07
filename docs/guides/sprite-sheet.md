@@ -8,7 +8,7 @@ The purpose of this document is to provide a guide for creating an instance of t
 
 ## Overview
 
-The `SpriteSheet` class is a wrapper around the `TextureAtlas` class that provides additional functionality for defining animations and created `AnimatedSprite` instances. Each `TextureRegion` element from the `TextureAtlas` it wraps represents the frames of animation that can be used to define `AnimationTag` elements. In turn, these defined `AnimationTag` elements can be used to create `AnimatedSprite` instances from the `SpriteSheet`.
+The `SpriteSheet` class is a wrapper around the `TextureAtlas` class that provides additional functionality for defining animations and creating `AnimatedSprite` instances. Each `TextureRegion` element from the `TextureAtlas` it wraps represents the frames of animation that can be used to define `AnimationTag` elements. In turn, these defined `AnimationTag` elements can be used to create `AnimatedSprite` instances from the `SpriteSheet`.
 
 ## Creating a `SpriteSheet`
 
@@ -89,13 +89,12 @@ If you have an existing `TextureAtlas` instance, you can create a new `SpriteShe
 **Add using statement**
 
 ```cs
+
+//  Add the following using statements.
 using MonoGame.Aseprite.Sprites;
 using MonoGame.Aseprite.Content.Processors;
-```
 
-**Create the Sprite**
-
-```cs
+//  Creating a spritesheet from an existing TextureAtlas instance.
 protected override LoadContent()
 {
     //  Load the Aseprite file
@@ -124,7 +123,7 @@ protected override LoadContent()
 
 :::caution
 
-As mentioned previously, creating a `SpriteSheet` from an existing `AsepriteFile` is the recommended way of doing this since it will use all of the `AsepriteTag` elements in the `AsepriteFile` to automatically create all of the animation definitions for you in the `SpriteSheet`. When creating it manually from a `TextureAtlas`, you will have to define all of the animations manually as well. If you created the `TextureAtlas` manually, like in the shown in the commented out section in the example above, you will also have to specify the `TextureRegion` elements for the atlas manually as well.
+As mentioned previously, creating a `SpriteSheet` from an existing `AsepriteFile` is the recommended way of doing this since it will use all of the `AsepriteTag` elements in the `AsepriteFile` to automatically create all of the animation definitions for you in the `SpriteSheet`. When creating it manually from a `TextureAtlas`, you will have to define all of the animations manually as well. If you created the `TextureAtlas` manually, like shown in the commented out section in the example above, you will also have to specify the `TextureRegion` elements for the atlas manually as well.
 
 :::
 
@@ -167,6 +166,37 @@ AnimationTag tag = spriteSheet.CreateAnimationTag(name: "idle", builder =>
 :::note
 The `TextureRegion` names follow the format of `fileName_frameNum` if you created the `TextureAtlas` from an `AsepriteFile` using the `TextureAtlasProcessor`.
 :::
+
+:::caution
+
+When creating the `AnimationTag` for the `SpriteSheet`, you give the index or the name of the `TextureRegion` to use when adding a frame to the builder. These `TextureRegions` indexes and names are from the `TextureAtlas` that the `SpriteSheet` is wrapping. This means that index or name must exist within that `TextureAtlas` or an exception will be thrown when trying to add the frame to the builder.
+
+:::
+
+## Creating an `AnimatedSprite`
+
+Once you have a `SpriteSheet` created, with `AnimationTag` elements defined in it, you can use the `SpriteSheet` to create instances of the `AnimatedSprite` class using the `SpriteSheet.CreateAnimatedSprite` method. All you need to do is supply the name of the `AnimationTag` to use for the `AnimatedSprite` being created. The following code example demonstrates this:
+
+```cs
+//  Create an animated sprite using a previously added animation tag.
+AnimatedSprite animatedSprite = spriteSheet.CreateAnimatedSprite("idle");
+```
+
+For more information on the `AnimatedSprite` class and how to use it, see the [AnimatedSprite guide].
+
+## Create a `Sprite`
+
+You can also create a `Sprite` using the `SpriteSheet.CreateSprite` methods. Just pass it the index or name of the `TextureRegion` in the source `TextureAtlas` of the `SpriteSheet` to create the `Sprite` with. The following code example demonstrates this
+
+```cs
+//  Create a Sprite from a region by index
+Sprite sprite = spriteSheet.CreateSprite(0);
+```
+
+```cs
+//  Create a Sprite from a region by name
+Sprite sprite = spriteSheet.CreateSprite("region 0");
+```
 
 # add information on creating the animated sprite next
 
@@ -291,10 +321,10 @@ In this document was went over how to create an instance of the `Sprite` class, 
 
 The following classes are referenced in this document and the links to their guides are provided below.
 
-- [AsepriteFile](loading-aseprite-file)
-- [TextureAtlas](texture-atlas)
-- [SpriteSheet](spritesheet)
-- [TextureRegion](texture-region)
+- [AsepriteFile]
+- [TextureAtlas]
+- [SpriteSheet]
+- [TextureRegion]
 
 ## References
 

@@ -8,12 +8,12 @@ This document provided information on using the MGCB Editor to import and proces
 
 :::info
 
-Note that unlike previous versions of `MonoGame.Aseprite`, the MGCB Editor is no longer a requirement and importing and/or processing can be done through code if preferred. Please see the [Note About the MGCB Editor](../monogame-aseprite/mgcb-editor) document for an explanation.
+Note that unlike previous versions of `MonoGame.Aseprite`, the MGCB Editor is no longer a requirement and importing and/or processing can be done through code if preferred. Please see the [Note About the MGCB Editor] document for an explanation.
 
 :::
 
 ## Prerequisites
-Before using the MGCB Editor, ensure you have performed the [MGCB Editor Setup](../getting-started/optional-mgcb-editor-setup) outlined in the document linked.
+Before using the MGCB Editor, ensure you have performed the [MGCB Editor Setup] outlined in the document linked.
 
 You should also have a basic understanding of how to use the MGCB Editor.  More information can be found at [https://docs.monogame.net/articles/content/using_mgcb_editor.html](https://docs.monogame.net/articles/content/using_mgcb_editor.html)
 

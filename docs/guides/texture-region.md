@@ -215,8 +215,8 @@ In this document we went over what a `TextureRegion` is, how to create an instan
 
 The following classes are referenced in this document and the links to their guides are provided below.
 
-- [TextureAtlas](texture-atlas)
-- [SpriteSheet](spritesheet)
+- [TextureAtlas]
+- [SpriteSheet]
 
 ## References
 

@@ -70,4 +70,4 @@ Alternatively, you can edit the `Content.mgcb` file in a text editor directly to
 :::
 
 ## Conclusion
-You've have the `MonoGame.Aseprite.Content.Pipeline.dll` added as a reference for the MGCB Editor.  This allows you to use the MGCB Editor as the importer and processor of your Aseprite file.  Next, head to the [Import an Aseprite File](./import-asepritefile) to get started importing.
+You've have the `MonoGame.Aseprite.Content.Pipeline.dll` added as a reference for the MGCB Editor.  This allows you to use the MGCB Editor as the importer and processor of your Aseprite file.  Next, head to the [Import an Aseprite File] to get started importing.
