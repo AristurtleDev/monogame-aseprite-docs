@@ -20,8 +20,6 @@ In the following sections, we'll go over each of the processors and how to use t
 
 The first one we'll discuss is the most basic one; the `SpriteProcessor`. This processor will create a new `Sprite` instance from a specified `AsepriteFrame` in an `AsepriteFile` instance.
 
-
-
 The following example shows how to do this:
 
 ```cs
@@ -191,15 +189,11 @@ For more detailed information on the `SpriteSheet` class, see the [SpriteSheet g
 
 ## The `TilesetProcessor`
 
-The `TilesetProcessor` will processes the `AsepriteFile` to create a new `Tileset` instance.
+The `TilesetProcessor` will processes and `AsepriteTileset` element in  the `AsepriteFile` to create a new `Tileset` instance.
 
-A `Tileset` is similar to a `TextureAtlas` in that it is a wrapper around a source `Texture2D` image.  However, unlike a `TextureAtlas`, the `TextureRegion` elements for a `Tileset` are auto-generated based on the width and height of each tile in the `Tileset`.  
+A `Tileset` is similar to a `TextureAtlas` in that it is a wrapper around a source `Texture2D` image. However, unlike a `TextureAtlas`, the `TextureRegion` elements for a `Tileset` are auto-generated based on the width and height of each tile in the `Tileset`.
 
-When using this processor, the `AsepriteTileset` 
-
-A `Tileset` is a wrapper around a `TextureAtlas` that provides additional functionality for defining animations and creating `AnimatedSprites`.
-
-When using this processor, all `AsepriteFrame` elements will be packed into a single source `Texture2D` that is used to create a `TextureAtlas`. That `TextureAtlas` is then used to create the `SpriteSheet`. Additionally, all `AsepriteTag` elements will be processed and added to the `SpriteSheet` as `AnimationTag` elements.
+When using this processor, you must specify either the index or the name of the `AsepriteTileset` element in the `AsepriteFile` to processes. 
 
 The following example demonstrates using this processor:
 
@@ -209,44 +203,19 @@ protected override void LoadContent()
     //  Load the Aseprite file as an AsepriteFile instance
     AsepriteFile aseFile = AsepriteFile.Load("file.aseprite");
 
-    //  Use the SpriteSheetProcessor to create a SpriteSheet
-    SpriteSheet atlas = SpriteSheetProcessor.Process(GraphicsDevice, aseFile);
+    //  Use the SpriteSheetProcessor to create a Tileset
+    //  In this example, we'll use the AsepriteTileset at index 0 in the AsepriteFile
+    Tileset tileset = TilesetProcessor.Process(GraphicsDevice, aseFile, tilesetIndex: 0);
+
+    //  Alternatively you can use the name of the tileset that you assigned in Aseprite
+    Tileset tilesetByName = TilesetProcessor.Process(GraphicsDevice, aseFile, tilesetName: "MyTileset");
 }
 ```
 
-Additionally, the `SpriteSheetProcessor.Process` method has a several optional parameters that can be included when creating the `SpriteSheet`. The table below provides a summary of these parameters.
-
-| Optional Parameter       | Default Value | Summary                                                                                                                         |
-| ------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `onlyVisibleLayers`      | `true`        | Indicates whether only cels on visible layers should be included.                                                               |
-| `includeBackgroundLayer` | `false`       | Indicates whether cels on a layer set as the background layer should be included.                                               |
-| `includeTilemapLayers`   | `true`        | Indicates whether cels on a tilemap layer should be included.                                                                   |
-| `mergeDuplicates`        | `true`        | Indicates whether duplicate `AsepriteFrame` elements should be merged into a single region in the generated source `Texture2D`. |
-| `borderPadding`          | `0`           | The amount of transparent pixels to add to the edges of the generated source `Texture2D`.                                       |
-| `spacing`                | `0`           | The amount of transparent pixels to add between each `TextureRegion` in the generated source `Texture2D`.                       |
-| `innerPadding`           | `0`           | The amount of transparent pixels to add around each `TextureRegion` in the generated source `Texture2D`.                        |
-
-The following example demonstrates using the `SpriteSheetProcessor` with these optional parameters:
-
-```cs
-protected override void LoadContent()
-{
-    //  Load the Aseprite file as an AsepriteFile instance
-    AsepriteFile aseFile = AsepriteFile.Load("file.aseprite");
-
-    //  Use the TextureAtlasProcessor to create a TextureAtlas
-    SpriteSheet atlas = SpriteSheetProcessor.Process(GraphicsDevice, aseFile, onlyVisibleLayers: true,
-                                                                              includeBackgroundLayers: false,
-                                                                              includeTilemapLayers: true,
-                                                                              mergeDuplicates: true,
-                                                                              borderPadding: 0,
-                                                                              spacing: 0,
-                                                                              innerPadding: 0;
-}
-```
+The processor will then generate a `Texture2D` source image of the tileset and use that to create the `Tileset` instance.  Each tile in the `Tileset` instance created is auto-generated and is represented by a `TextureRegion` element.  Additionally, each tile `TextureRegion` will be given a name based on the following pattern: `tilesetName_tilesetTileID`.  For instance, if the name assigned the tileset in Aseprite is "myTileset", the the tile at index 0 will be named `myTileset_0`.
 
 :::info
 
-For more detailed information on the `SpriteSheet` class, see the [SpriteSheet guide](../guides/sprite-sheet.md) document.
+For more detailed information on the `Tileset` class, see the [Tileset guide] document.
 
 :::

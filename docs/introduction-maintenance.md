@@ -1,11 +1,17 @@
 ---
-id: introduction
+id: introduction-maintenance
 title: MonoGame.Aseprite
 sidebar_label: Introduction
-slug: /dev
+slug: /
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from '@theme/ThemedImage';
+
+:::caution
+
+Thank you for checking out the site.  Even though I haven't announced it publicly yet, you still found it.  The documentation is currently a work in progress and not ready just yet.  When it is, I'll make an announcement on both [Twitter](https://www.twitter.com/aristurtledev) and [Mastodon](https://mastodon.gamedev.place/@aristurtle) so be sure to follow me on one of those.
+
+:::
 
 
 ![MonoGame.Aseprite Banner](/img/mga-banner.png)
