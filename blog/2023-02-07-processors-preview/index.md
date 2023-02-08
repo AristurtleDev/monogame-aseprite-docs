@@ -29,6 +29,8 @@ Aseprite is also now in version 1.3-beta21, which includes Tileset and Tilemaps.
 
 So how did I solve these problems?
 
+<!--truncate-->
+
 ## Separation of Concerns
 
 The first step was to take a good hard look at the `AsepriteDocument` class. It was the bases of everything. Importing, processing, everything, started there. It was a monopoly that needed to be split. So that's exactly what I did.
