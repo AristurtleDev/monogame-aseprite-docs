@@ -131,6 +131,13 @@ const config = {
         additionalLanguages: ['csharp']
       },
     }),
+  
+  scripts: [
+    {
+      src: '/js/matomo.js',
+      async: false
+    }
+  ]
 };
 
 module.exports = config;
