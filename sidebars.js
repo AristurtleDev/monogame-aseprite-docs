@@ -24,10 +24,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Quick Start',
+      items: [
+        'quick-start/installation',
+        'quick-start/setup-mgcb-editor'
+      ]
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       items: [
-        'getting-started/installation',
-        'getting-started/mgcb-editor-setup',
         'getting-started/the-aseprite-file',
         'getting-started/processors'
       ]
