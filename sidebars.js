@@ -27,7 +27,11 @@ const sidebars = {
       label: 'Quick Start',
       items: [
         'quick-start/installation',
-        'quick-start/setup-mgcb-editor'
+        'quick-start/setup-mgcb-editor',
+        'quick-start/load-aseprite-file',
+        'quick-start/create-sprite-from-frame',
+        'quick-start/create-texture-atlas',
+        'quick-start/create-spritesheet'
       ]
     },
     {

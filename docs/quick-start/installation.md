@@ -17,7 +17,7 @@ This documents provides the instructions for installing the `MonoGame.Aseprite` 
 
 `Monogame.Aseprite` is distributed via a NuGet package. You can download it by adding the NuGet package to your project from within your IDE (e.g. the NuGet Package Manager in Visual Studio). Just search for the `MonoGame.Aseprite` package.
 
-You can also add it using the one of the below command line/terminal commands from within the project directory:
+You can also add it using the one of the following methods:
 
 <Tabs>
  <TabItem value="net-cli" label="NET CLI">
@@ -31,6 +31,14 @@ dotnet add package MonoGame.Aseprite --version 4.0.0
 
 ```
 Install-Package MonoGame.Aseprite -Version 4.0.0
+```
+
+</TabItem>
+
+<TabItem value="package-reference" label="Package Reference">
+
+```
+<PackageReference Include="MonoGame.Aseprite" Version="4.0.0" />
 ```
 
 </TabItem>

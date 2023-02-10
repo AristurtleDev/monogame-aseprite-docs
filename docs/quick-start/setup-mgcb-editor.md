@@ -9,75 +9,94 @@ import TabItem from '@theme/TabItem';
 
 :::caution
 
-This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file.  Using the MGCB Editor to import only performs minimal pre-processing of the file to create the `AsepriteFile`
+This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the `AsepriteFile`
 
 :::
 
-## Downloading
+## Add Reference in MGCB Editor
 
-If you want to use the MonoGame [MGCB Editor (aka Content Pipeline Tool)](https://docs.monogame.net/articles/content/using_mgcb_editor.html) to import/process the Aseprite file for your game, you'll need to add the `MonoGame.Aseprite.Content.Pipeline` NuGet package to your project.  You can add it within your IDE (e.g. the NuGet Package Manager in Visual Studio).  Just search for `MonoGame.Aseprite.Content.Pipeline`.
+In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the `MonoGame.Aseprite.Content.Pipeline.dll` assembly. This assembly was downloaded as part of the `MonoGame.Aseprite` NuGet package, but it does not get added automatically for you. To add it, complete the following steps:
 
-Alternatively, you can use the following CLI commands
+1. Open your `Content.mgcb` file in the MGCB Editor.
+
+:::tip
+
+When using Visual Studio, double clicking the `Content.mgcb` file in your project should open it for you using the MGCB Editor. Sometimes though, it will instead open the file as a text file. If this is happening to you, you can right-click the file, and choose `Open With` to change the default application to open it with.
+
+Alternatively, you can open it by using the following `dotnet` command in a command-line or terminal window from within the project directory
 
 <Tabs>
-<TabItem value="net-cli" label="NET CLI">
+<TabItem value="dotnet" label="dotnet Commnad">
 
 ```
-dotnet add package MonoGame.Aseprite.Content.Pipeline --version 4.0.0
-```
-
-</TabItem>
-<TabItem value="package-manager" label="Package Manger">
-
-```
-Install-Package MonoGame.Aseprite.Content.Pipeline -Version 4.0.0
+dotnet mgcb-editor ./Content/Content.mgcb
 ```
 
 </TabItem>
 </Tabs>
 
-Adding this NuGet package will *not** add any references or output any build items.  Instead, the NuGet package that is downloaded contains the `MonoGame.Aseprite.Content.Pipeline.dll` that needs to be added as a reference in the MGCB Editor.
+:::
 
-## Add Reference in MGCB Editor
-Next, you'll need to add the reference in the MGCB Editor.  To do this, complete the following steps
-
-1. Open your `Content.mgcb` file in the MGCB Editor.
-    * This can be opened by double clicking the `Content.mgcb` file if you are using the Visual Studio.
-    * Alternatively, you can use the following CLI command from your project's root directory
-
-    ```
-    dotnet mgcb-editor ./Content/Content.mgcb
-    ```
 2. Click the **Content** node located in the **Project** panel on the left
-3. In the **Properties** panel below it, scroll down to the **References** field.  Click this field to open the **Reference Editor** dialog window.
-4. Click the **Add** button
+3. In the **Properties** panel below it, scroll down to the **References** field. Click this field to open the **Reference Editor** dialog window.
+4. Click the **Add** button in the **Reference Editor** dialog window.
 5. Find and add the `MonoGame.Aseprite.Content.Pipeline.dll` file that was downloaded from the NuGet Package
-    * By default, NuGet will download packages to the global packages directory.
-        * On Windows: 
-        
-        ```
-        %userprofile%\.nuget\packages\monogame-aseprite-content-pipeline\4.0.0\MonoGame.Aseprite.Content.Pipeline.dll
-        ```
-        * On Mac/Linux: 
-        
-        ```
-        ~/.nuget/packages/monogame-aseprite-content-pipeline/4.0.0/MonoGame.Aseprite.Content.Pipeline.dll
-        ```
 
 :::tip
 
-The reference you just added to the MGCB editor is stored as a relative path in the Content.mgcb file, relative to the Content.mgcb file. If you use multiple workstations for development, or have multiple team members working on the project from a shared git repo, I strongly recommend setting up a **nuget.config** file.  By doing this, you can specify to have the NuGet package download to a local directory within the project directory.
+By default, NuGet will download packages to the global packages directory. The following shows where the location of the `MonoGame.Aseprite.Content.Pipeline.dll` will with default NuGet configs depending on your operating system:
+<Tabs>
+<TabItem value="windows" label="Windows">
 
-Otherwise, the reference in the MGCB Editor will break when doing a git pull on a different workstation and have to be updated every time.  This is not a limitation of the `Monogame.Aseprite` library and is completely out of my control. 
+```
+%userprofile%\.nuget\packages\monogame-aseprite\4.0.0\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+```
+
+</TabItem>
+<TabItem value="mac" label="Mac">
+
+```
+~/.nuget/packages/monogame-aseprite/4.0.0/content/pipeline/MonoGame.Aseprite.Content.Pipeline.dll
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+```
+~/.nuget/packages/monogame-aseprite/4.0.0/content/pipeline/MonoGame.Aseprite.Content.Pipeline.dll
+```
+
+</TabItem>
+</Tabs>
+
+:::
+
+6. Click **Ok** to close the **Reference Editor** dialog window.
+
+You should now see that `MonoGame.Aseprite.Content.Pipeline.dll` in the **References** field of the property window.  When adding an Aseprite (.ase | .aseprite) file as a content item in the MGCB Editor, it should automatically select the **Aseprite File Importer** and **Aseprite File Processor** for you as the importer and processor.
+
+:::caution
+
+The reference we just added to the MGCB Editor is stored as a relative path in the Content.mgcb file.  You can see this for yourself by opening the Content.mgcb file in a text editor and locating the references section. It wil look something like this
+
+```
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\4.0.0\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+```
+
+Since it is stored as a relative path, this reference can break if
+* You move the project directory somewhere else on your computer
+* You use multiple workstations for development
+* You have multiple team members working on the project from a shared git repo.
+
+These is a limitation with the MGCB Editor, not with `MonoGame.Aseprite`, because it stores it as a relative path.  Due to this, I strongly recommend setting up a **nuget.config** file for your project.  By doing this, you can specify that the NuGet packages should be downloaded to a local directory within the project itself. By doing this, the relative path will not break since it's local to the project.
 
 For more information on creating a **nuget.config** file to do this, see the [nuget.config File Reference on Microsoft Learn](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file).
 
 :::
 
-After performing those steps, you should be able to add an Aseprite (.aseprite | .ase) file in your Content and see the `Aseprite File Importer` and `Aseprite File Processor` listed as the importer and processor for that file.
-
 ## Next Steps
 
 - [Import an Aseprite File](./import-aseprite-file)
   - Goes over how to import your Aseprite file so you can get started using it in the game.
-
