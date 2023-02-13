@@ -22,7 +22,7 @@ const config = {
   projectName: 'monogame-aseprite-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'ignore',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -39,17 +39,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/aristurtledev/monogame-aseprite-docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/aristurtledev/monogame-aseprite/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,7 +54,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/banner.png',
       navbar: {
         title: 'MonoGame.Aseprite',
         logo: {
@@ -78,7 +70,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/AristurtleDev/monogame-aseprite',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,7 +83,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/docs/',
               },
             ],
@@ -101,7 +93,7 @@ const config = {
             items: [
               {
                 label: 'Mastodon',
-                href: 'https://mastodon.gamedev.place/@aristurlte',
+                href: 'https://mastodon.gamedev.place/@aristurtle',
               },
               {
                 label: 'Twitter',
@@ -123,6 +115,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "MonoGame Aseprite Logo",
+          src: "img/banner.png",
+          href: "/"
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Christopher Whitley.`,
       },
       prism: {

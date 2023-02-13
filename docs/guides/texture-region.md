@@ -11,9 +11,10 @@ The purpose of this document is to provide an overview of the `TextureRegion` cl
 
 ## Overview
 
-The `TextureRegion` class is a small wrapper that wraps an existing `Texture2D` instance and provides the source `Rectangle` that represents the region within the `Texture2D` to be rendered. To illustrate this, take the following image
+The `TextureRegion` class is a small wrapper that wraps an existing `Texture2D` instance and provides the source `Rectangle` that represents the region within the `Texture2D` to be rendered. To illustrate this, take the following image.  This image contains 6 separate images packed into the one source image.
 
-<img src={TilemapImage} style={{imageRendering: '-moz-crisp-edges', width: 100 + '%'}}/>
+<img src={TilemapImage} style={{imageRendering: '-moz-crisp-edges'}}/>
+
 
 <small>
 
@@ -21,11 +22,11 @@ Tilemap is from the [Tiny Town Tilemap by Kenney](https://www.kenney.nl/assets/t
 
 </small>
 
-When you import this as a `Texture2D`, you don't want to render the entire image. Instead, you'll want to use this image but only render one part of it. For instance, let's take the yellow bush as marked below.
+When you import this as a `Texture2D`, you don't want to render the entire image. Instead, you'll want to use this image but only render one part of it. For instance, let's take the yellow bush in the lower-left corner as shown below.
 
 <img src={TilemapImageRegionMarked} style={{imageRendering: '-moz-crisp-edges', width: 100 + '%'}}/>
 
-This red square that outlines this yellow bush is at position x:48 y:32 with a width and height of 16 pixels.
+Let's say this yellow bush is at position x:48 y:32 with a width and height of 16 pixels.
 
 Normally if we wanted to render just this yellow bush in MonoGame with the `SpriteBatch`, we would need to give the `SpriteBatch` a `sourceRectangle` value that specifies where that yellow bush is to render it. This is done like the following
 

@@ -8,6 +8,7 @@ This document provides a quick start example to create a `Sprite` from an `Asepr
 
 ## Prerequisites
 * [Install `MonoGame.Aseprite`](./installation)
+* An Aseprite file with at minimum one frame.
 
 ## Example
 
@@ -51,8 +52,8 @@ public class MyGame : Game
 
         /////////////////////////////////////////////////////////////
         ///
-        /// Use the SpriteProcessor to create the sprite.  You just
-        /// tell it the index of the AsepriteFrame element.
+        ///  Use the SpriteProcessor to create the sprite.  You just
+        ///  tell it the index of the AsepriteFrame element to process.
         ///
         /////////////////////////////////////////////////////////////
         _sprite = SpriteProcessor.Process(GraphicsDevice, aseFile, frameIndex: 0);
@@ -101,7 +102,7 @@ public class MyGame : Game
         ///  Use the sprite's draw method.
         ///
         /////////////////////////////////////////////////////////////
-        _sprite.Draw(position: new Vector2(10, 20));
+        _sprite.Draw(_spriteBatch, position: new Vector2(10, 20));
 
         /////////////////////////////////////////////////////////////
         ///
@@ -134,6 +135,14 @@ public class MyGame : Game
     }
 }
 ```
+
+:::caution
+
+While this provides a quick an easy method of creating a `Sprite` from any single frame in the `AsepriteFile`, using this method will generate a new source `Texture2D` for each sprite created.  
+
+If you plan to create multiple `Sprite` instances from multiple frames in the `AsepriteFile`, it is recommended instead to create a `TextureAtlas`.  Doing this, only one source `Texture2D` is created and each `Sprite` references the source, reducing the amount of texture swapping done when rendering with the `SpriteBatch`.
+
+:::
 
 :::tip
 

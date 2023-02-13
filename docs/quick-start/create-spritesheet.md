@@ -4,18 +4,19 @@ title: Create a SpriteSheet
 sidebar_label: Create a SpriteSheet
 ---
 
-This document provides a quick start example to create a `SpriteSheet` from an `AsepriteFile`.  It also provides an example for using the `SpriteSheet` to create `AnimatedSprite` instances.
+This document provides a quick start example to create a `SpriteSheet` from an `AsepriteFile`. It also provides an example for using the `SpriteSheet` to create `AnimatedSprite` instances.
 
 :::info
 
-The `SpriteSheet` class is a wrapper around the `TextureAtlas` class.  It provides additional details for animations and creating `AnimatedSprite` instances 
+The `SpriteSheet` class is a wrapper around the `TextureAtlas` class. It provides additional details for animations and creating `AnimatedSprite` instances
 
 The animation details are called `AnimationTag` and are automatically created from the Tags you defined in your Aseprite file.
 
 :::
 
 ## Prerequisites
-* [Install `MonoGame.Aseprite`](./installation)
+
+- [Install `MonoGame.Aseprite`](./installation)
 
 ## Example
 
@@ -40,8 +41,8 @@ public class MyGame : Game
     bool _isWalking = false;
 
     private SpriteBatch _spriteBatch;
-    
-    // other code removed for brevity 
+
+    // other code removed for brevity
 
     protected override void LoadContent()
     {
@@ -61,26 +62,26 @@ public class MyGame : Game
         ///  below.
         ///
         /////////////////////////////////////////////////////////////
-        // AsepriteFile aseFile = Content.Load<AsepriteFile>("file");        
+        // AsepriteFile aseFile = Content.Load<AsepriteFile>("file");
 
         /////////////////////////////////////////////////////////////
         ///
-        /// Use the SpriteSheetProcessor to create the SpriteSheet.  
+        /// Use the SpriteSheetProcessor to create the SpriteSheet.
         ///
         /////////////////////////////////////////////////////////////
         _spriteSheet = SpriteSheetProcessor.Process(GraphicsDevice, aseFile);
 
         /////////////////////////////////////////////////////////////
         ///
-        ///  You can also supply additional optional parameters to 
+        ///  You can also supply additional optional parameters to
         ///  control how the processor generates the source Texture2D
         ///  image for the SpriteSheet
         ///
-        ///  - onlyVisibleLayers: 
+        ///  - onlyVisibleLayers:
         ///         Indicates if only cels on visible layers should be included.
-        ///  - includeBackgroundLayer: 
+        ///  - includeBackgroundLayer:
         ///         Indicates if cels on a layer marked as the background layer should be included.
-        ///  - includeTilemapLayers: 
+        ///  - includeTilemapLayers:
         ///         Indicates if tilemap cels on tilemap layers should be included.
         ///  - mergeDuplicates:
         ///         Indicates if duplicate frames should be merged into one for the source image.
@@ -117,7 +118,7 @@ public class MyGame : Game
     {
         /////////////////////////////////////////////////////////////
         ///
-        ///  In order for the AnimatedSprite to actually animate, 
+        ///  In order for the AnimatedSprite to actually animate,
         ///  it needs to be updated every frame
         ///
         /////////////////////////////////////////////////////////////
@@ -132,15 +133,17 @@ public class MyGame : Game
 
         /////////////////////////////////////////////////////////////
         ///
-        ///  You can use branch logic with if statements above to control 
-        ///  when you update the animation, or you can use animation 
+        ///  You can use branch logic with if statements above to control
+        ///  when you update the animation, or you can use animation
         ///  controls for the object itself like shown below.
+        ///
         /////////////////////////////////////////////////////////////
-        
-        //  _walkingAnimation.Pause();
-        //  _walkingAnimation.UnPause();
-        //  _walkingAnimation.Stop();
-        //  _walkingAnimation.Reset();
+        /*
+         _walkingAnimation.Pause(resetFrameDuration: false);
+         _walkingAnimation.Unpause(advanceToNextFrame: false);
+         _walkingAnimation.Stop();
+         _walkingAnimation.Reset(paused: false);
+         */
     }
 
     protected override void Draw(GameTime gameTime)
@@ -151,9 +154,9 @@ public class MyGame : Game
         {
             /////////////////////////////////////////////////////////////
             ///
-            ///  An AnimatedSprite inherits from the Sprite class, so it 
-            ///  has all of the same properties that can be adjusted for 
-            ///  how it's rendered that get automatically passed into the 
+            ///  An AnimatedSprite inherits from the Sprite class, so it
+            ///  has all of the same properties that can be adjusted for
+            ///  how it's rendered that get automatically passed into the
             ///  spritebatch, so you only have to call the Draw method
             ///  like so
             /////////////////////////////////////////////////////////////
@@ -163,12 +166,12 @@ public class MyGame : Game
         {
             /////////////////////////////////////////////////////////////
             ///
-            ///  Additionally, just like with the Sprite, you can override 
+            ///  Additionally, just like with the Sprite, you can override
             ///  the properties that are passed to the SpriteBatch by using
-            ///  the AnimatedSpriteTextureRegion property and supplying the 
+            ///  the AnimatedSpriteTextureRegion property and supplying the
             ///  parameters yourself.
             ///
-            ///  For an AnimatedSprite, the AnimatedSprite.TextureRegion 
+            ///  For an AnimatedSprite, the AnimatedSprite.TextureRegion
             ///  property will always be the TextureRegion of the current
             ///  frame of animation.
             /////////////////////////////////////////////////////////////
@@ -183,12 +186,11 @@ public class MyGame : Game
 
         _spriteBatch.End();
     }
-
 }
 ```
 
 :::tip
 
-For more information on the `SpriteSheet` class, see the [SpriteSheet Guide]
+For more information on the `SpriteSheet` class, including creating one manually without an `AsepriteFile`, see the [SpriteSheet Guide]
 
 :::

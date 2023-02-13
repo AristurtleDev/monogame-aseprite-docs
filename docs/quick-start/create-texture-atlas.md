@@ -8,7 +8,7 @@ This document provides a quick start example to create a `TextureAtlas` an `Asep
 
 :::tip
 
-The advantage to using a `TextureAtlas` to create the `Sprite` instances is because all `AsepriteFrame` elements in the `AsepriteFile` are processed an a single source `Texture2D` is generated for the `TextureAtlas`.
+The advantage to using a `TextureAtlas` to create the `Sprite` instances is because all `AsepriteFrame` elements in the `AsepriteFile` are processed and a single source `Texture2D` is generated for the `TextureAtlas`.
 
 Each `Sprite` that is created from the `TextureAtlas` share a reference to the same source `Texture2D` so it reduces texture swapping on the `SpriteBatch` when rendering different `Sprite` instances.
 
