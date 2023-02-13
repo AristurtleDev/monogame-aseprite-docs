@@ -1,11 +1,11 @@
 ---
 id: texture-region
-title: TextureRegion
+title: TextureRegion Class
 sidebar_label: TextureRegion
 ---
 
-import TilemapImage from '/img/docs/guides/texture-region/tilemap.png';
-import TilemapImageRegionMarked from '/img/docs/guides/texture-region/tilemap-region-marked.png';
+import TilemapImage from './tilemap.png';
+import TilemapImageRegionMarked from './tilemap-region-marked.png';
 
 The purpose of this document is to provide an overview of the `TextureRegion` class, and how it is used within the `MonoGame.Aseprite` library.
 

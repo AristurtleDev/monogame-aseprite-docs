@@ -1,6 +1,6 @@
 ---
 id: texture-atlas
-title: TextureAtlas
+title: TextureAtlas Class
 sidebar_label: TextureAtlas
 ---
 

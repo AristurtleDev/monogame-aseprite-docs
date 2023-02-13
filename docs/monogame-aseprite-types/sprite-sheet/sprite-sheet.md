@@ -1,6 +1,6 @@
 ---
 id: sprite-sheet
-title: SpriteSheet
+title: SpriteSheet Class
 sidebar_label: SpriteSheet
 ---
 
