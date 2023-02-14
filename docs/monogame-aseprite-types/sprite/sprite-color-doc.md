@@ -1,8 +1,10 @@
 ---
 id: sprite-color-doc-()[]
-title: Sprite.Color Property
+title: Sprite.Color<T>
 sidebar_label: Color
 ---
+
+
 
 Gets or Sets the color mask to apply when rendering this [Sprite](Sprite.md 'MonoGame.Aseprite.Sprites.Sprite').
 
