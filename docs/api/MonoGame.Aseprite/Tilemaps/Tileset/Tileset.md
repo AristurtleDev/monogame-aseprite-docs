@@ -1,8 +1,9 @@
 ---
-
 title: Tileset Class
 sidebar_label: Tileset
+
 ---
+
 **Namespace:** [MonoGame.Aseprite.Tilemaps](../)  
 **Assembly:** MonoGame.Aseprite
 
@@ -22,39 +23,41 @@ A Tileset is similar in function to a [RawTextureAtlas](../../RawTypes/RawTextur
 
 | Name                                                          | Description                                      |
 | ------------------------------------------------------------- | ------------------------------------------------ |
-| [Tileset(string, Texture2D, int, int)](constructors/) | Initializes a new instance of the Tileset class. |
+| [Tileset(string, Texture2D, int, int)](Constructors/) | Initializes a new instance of the Tileset class. |
 
 ## Properties
 
 | Name                                     | Description                                                                                                                    |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [ColumnCount](Properties/ColumnCount) | Gets the total number of columns in this Tileset.                                                                              |
-| [Name](Properties/Name)               | Gets the name assigned to this Tileset.                                                                                        |
-| [RowCount](Properties/RowCount)       | Gets the total number of rows in this Tileset.                                                                                 |
-| [Texture](Properties/Texture)         | Gets the source texture image used by this Tileset.                                                                            |
-| [TileCount](Properties/TileCount)     | G   ets the total number of tiles in this Tileset.                                                                             |
-| [TileHeight](Properties/TileHeight)   | Gets the height, in pixels of each tile in this Tileset.                                                                       |
-| [TileWidth](Properties/TileWidth)     | Gets the width, in pixels, of each tile in this Tileset.                                                                       |
-| [Tiles](Properties/Tiles)             | Gets a read\-only span of the [TextureRegion](../../TextureRegion/) elements that represent the tiles in this Tileset. |
+| [ColumnCount](Properties/ColumnCount.md) | Gets the total number of columns in this Tileset.                                                                              |
+| [Name](Properties/Name.md)               | Gets the name assigned to this Tileset.                                                                                        |
+| [RowCount](Properties/RowCount.md)       | Gets the total number of rows in this Tileset.                                                                                 |
+| [Texture](Properties/Texture.md)         | Gets the source texture image used by this Tileset.                                                                            |
+| [TileCount](Properties/TileCount.md)     | G   ets the total number of tiles in this Tileset.                                                                             |
+| [TileHeight](Properties/TileHeight.md)   | Gets the height, in pixels of each tile in this Tileset.                                                                       |
+| [TileWidth](Properties/TileWidth.md)     | Gets the width, in pixels, of each tile in this Tileset.                                                                       |
+| [Tiles](Properties/Tiles.md)             | Gets a read\-only span of the [TextureRegion](../../TextureRegion/) elements that represent the tiles in this Tileset. |
 
 ## Indexers
 
 | Name                                             | Description                                                                                                                   |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| [Item\[Point\]](Indexers/Item#itempoint)      | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row location in this Tileset. |
-| [Item\[int, int\]](Indexers/Item#itemint-int) | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset.          |
-| [Item\[int\]](Indexers/Item#itemint)          | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.                    |
+| [Item\[Point\]](Indexers/Item.md#itempoint)      | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row location in this Tileset. |
+| [Item\[int, int\]](Indexers/Item.md#itemint-int) | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset.          |
+| [Item\[int\]](Indexers/Item.md#itemint)          | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.                    |
 
 ## Methods
 
 | Name                                                                                         | Description                                                                                                          |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [FromRaw(GraphicsDevice, RawTileset)](Methods/FromRaw)                                    | Creates a new instance of the Tileset class from the given [RawTileset](../../RawTypes/RawTileset/).         |
-| [GetTile(Point)](Methods/GetTile#gettilepoint)                                            | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
-| [GetTile(int)](Methods/GetTile#gettileint)                                                | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.           |
-| [GetTile(int, int)](Methods/GetTile#gettileint-int)                                       | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
-| [TryGetTile(Point, TextureRegion)](Methods/TryGetTile#trygettilepoint-textureregion)      | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
-| [TryGetTile(int, TextureRegion)](Methods/TryGetTile#trygettileint-textureregion)          | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.           |
-| [TryGetTile(int, int, TextureRegion)](Methods/TryGetTile#trygettileint-int-textureregion) | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
+| [FromRaw(GraphicsDevice, RawTileset)](Methods/FromRaw.md)                                    | Creates a new instance of the Tileset class from the given [RawTileset](../../RawTypes/RawTileset/).         |
+| [GetTile(Point)](Methods/GetTile.md#gettilepoint)                                            | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
+| [GetTile(int)](Methods/GetTile.md#gettileint)                                                | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.           |
+| [GetTile(int, int)](Methods/GetTile.md#gettileint-int)                                       | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
+| [TryGetTile(Point, TextureRegion)](Methods/TryGetTile.md#trygettilepoint-textureregion)      | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
+| [TryGetTile(int, TextureRegion)](Methods/TryGetTile.md#trygettileint-textureregion)          | Gets the [TextureRegion](../../TextureRegion/) of the tile at the specified index in this Tileset.           |
+| [TryGetTile(int, int, TextureRegion)](Methods/TryGetTile.md#trygettileint-int-textureregion) | Gets the [TextureRegion](../../TextureRegion/) for the tile at the specified column and row in this Tileset. |
 
+___
 
+*Documentation generated by [MdDocs](https://github.com/ap0llo/mddocs)*

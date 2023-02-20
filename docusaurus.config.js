@@ -9,24 +9,12 @@ const config = {
   title: 'MonoGame.Aseprite',
   tagline: 'Import Aseprite files directly into MonoGame.',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://monogameaseprite.net/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aristurtledev', // Usually your GitHub org/user name.
   projectName: 'monogame-aseprite-docs', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'ignore',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -54,7 +42,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/banner.png',
       navbar: {
         title: 'MonoGame.Aseprite',
@@ -65,9 +52,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction-maintenance',
+            docId: 'introduction',
             position: 'left',
-            label: 'Docs',
+            label: 'Guides',
+          },
+          {
+            type: 'doc',
+            docId: 'api/MonoGame.Aseprite/MonoGame.Aseprite',
+            position: 'left',
+            label: 'API'
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

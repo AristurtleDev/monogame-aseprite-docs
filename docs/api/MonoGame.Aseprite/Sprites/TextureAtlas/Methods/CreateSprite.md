@@ -1,8 +1,9 @@
 ---
-
 title: TextureAtlas.CreateSprite Method
 sidebar_label: CreateSprite
+
 ---
+
 **Declaring Type:** [TextureAtlas](../)  
 **Namespace:** [MonoGame.Aseprite.Sprites](../../)  
 **Assembly:** MonoGame.Aseprite
@@ -11,14 +12,14 @@ sidebar_label: CreateSprite
 
 | Signature                                                  | Description                                                                                                                                                          |
 | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CreateSprite(int)](#createspriteint)                      | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this[TextureAtlas](../).   |
-| [CreateSprite(string)](#createspritestring)                | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) with the specified name in this[TextureAtlas](../).  |
-| [CreateSprite(string, int)](#createspritestring-int)       | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this[TextureAtlas](../).   |
-| [CreateSprite(string, string)](#createspritestring-string) | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/)  with the specified name in this[TextureAtlas](../). |
+| [CreateSprite(int)](#createspriteint)                      | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this [TextureAtlas](../).   |
+| [CreateSprite(string)](#createspritestring)                | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) with the specified name in this [TextureAtlas](../).  |
+| [CreateSprite(string, int)](#createspritestring-int)       | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this [TextureAtlas](../).   |
+| [CreateSprite(string, string)](#createspritestring-string) | Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/)  with the specified name in this [TextureAtlas](../). |
 
 ## CreateSprite(int)
 
-Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this[TextureAtlas](../).
+Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this [TextureAtlas](../).
 
 ```csharp
 public Sprite CreateSprite(int regionIndex);
@@ -40,11 +41,11 @@ The [Sprite](../../Sprite/) that is created by this method.
 
 ArgumentOutOfRangeException
 
-Thrown if the specified index is less than zero or is greater than or equal to the total number of[TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
+Thrown if the specified index is less than zero or is greater than or equal to the total number of [TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
 
 ## CreateSprite(string)
 
-Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) with the specified name in this[TextureAtlas](../).
+Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) with the specified name in this [TextureAtlas](../).
 
 ```csharp
 public Sprite CreateSprite(string regionName);
@@ -70,7 +71,7 @@ Thrown if this [TextureAtlas](../) does not contain a [TextureRegion](../../../T
 
 ## CreateSprite(string, int)
 
-Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this[TextureAtlas](../).
+Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/) at the specified index in this [TextureAtlas](../).
 
 ```csharp
 public Sprite CreateSprite(string spriteName, int regionIndex);
@@ -96,11 +97,11 @@ The [Sprite](../../Sprite/) that is created by this method.
 
 ArgumentOutOfRangeException
 
-Thrown if the specified index is less than zero or is greater than or equal to the total number of[TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
+Thrown if the specified index is less than zero or is greater than or equal to the total number of [TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
 
 ## CreateSprite(string, string)
 
-Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/)  with the specified name in this[TextureAtlas](../).
+Creates a new [Sprite](../../Sprite/) from the [TextureRegion](../../../TextureRegion/)  with the specified name in this [TextureAtlas](../).
 
 ```csharp
 public Sprite CreateSprite(string spriteName, string regionName);
@@ -128,4 +129,6 @@ KeyNotFoundException
 
 Thrown if this [TextureAtlas](../) does not contain a [TextureRegion](../../../TextureRegion/) with the name  specified.
 
+___
 
+*Documentation generated by [MdDocs](https://github.com/ap0llo/mddocs)*

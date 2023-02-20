@@ -1,8 +1,9 @@
 ---
-
 title: AnimatedSprite Class
 sidebar_label: AnimatedSprite
+
 ---
+
 **Namespace:** [MonoGame.Aseprite.Sprites](../)  
 **Assembly:** MonoGame.Aseprite
 
@@ -18,26 +19,28 @@ public sealed class AnimatedSprite : Sprite
 
 | Name                                                                 | Description                                                                                                             |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [AnimationTag](Properties/AnimationTag)                           | Gets the source [AnimationTag](Properties/AnimationTag) that defines the animation.                                  |
-| [CurrentFrame](Properties/CurrentFrame)                           | Gets the source [AnimationFrame](../AnimationFrame/) of the current frame of animation for this AnimatedSprite. |
-| [CurrentFrameTimeRemaining](Properties/CurrentFrameTimeRemaining) | Gets the amount of time remaining for the [CurrentFrame](Properties/CurrentFrame) before moving to the next frame.   |
-| [IsAnimating](Properties/IsAnimating)                             | Gets a value that indicates if this AnimatedSprite has completed its animation.                                         |
-| [IsPaused](Properties/IsPaused)                                   | Gets a value that indicates if this AnimatedSprite is currently paused.                                                 |
-| [OnAnimationBegin](Properties/OnAnimationBegin)                   | Gets or Sets an Action method to invoke at the start of the animation.                                                  |
-| [OnAnimationEnd](Properties/OnAnimationEnd)                       | Gets or Sets an Action method to invoke when the animation ends.                                                        |
-| [OnAnimationLoop](Properties/OnAnimationLoop)                     | Gets or Sets an Action to invoke each time the animation loops.                                                         |
-| [OnFrameBegin](Properties/OnFrameBegin)                           | Gets or Sets an Action method to invoke at the start of each frame of animation.                                        |
-| [OnFrameEnd](Properties/OnFrameEnd)                               | Gets or Sets an Action method to invoke at the end of each frame of animation.                                          |
+| [AnimationTag](Properties/AnimationTag.md)                           | Gets the source [AnimationTag](Properties/AnimationTag.md) that defines the animation.                                  |
+| [CurrentFrame](Properties/CurrentFrame.md)                           | Gets the source [AnimationFrame](../AnimationFrame/) of the current frame of animation for this AnimatedSprite. |
+| [CurrentFrameTimeRemaining](Properties/CurrentFrameTimeRemaining.md) | Gets the amount of time remaining for the [CurrentFrame](Properties/CurrentFrame.md) before moving to the next frame.   |
+| [IsAnimating](Properties/IsAnimating.md)                             | Gets a value that indicates if this AnimatedSprite has completed its animation.                                         |
+| [IsPaused](Properties/IsPaused.md)                                   | Gets a value that indicates if this AnimatedSprite is currently paused.                                                 |
+| [OnAnimationBegin](Properties/OnAnimationBegin.md)                   | Gets or Sets an Action method to invoke at the start of the animation.                                                  |
+| [OnAnimationEnd](Properties/OnAnimationEnd.md)                       | Gets or Sets an Action method to invoke when the animation ends.                                                        |
+| [OnAnimationLoop](Properties/OnAnimationLoop.md)                     | Gets or Sets an Action to invoke each time the animation loops.                                                         |
+| [OnFrameBegin](Properties/OnFrameBegin.md)                           | Gets or Sets an Action method to invoke at the start of each frame of animation.                                        |
+| [OnFrameEnd](Properties/OnFrameEnd.md)                               | Gets or Sets an Action method to invoke at the end of each frame of animation.                                          |
 
 ## Methods
 
 | Name                                                 | Description                                                                         |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Pause(bool)](Methods/Pause)                      | Paused this AnimatedSprite and prevents it from being updated until it is unpaused. |
-| [Reset(bool)](Methods/Reset)                      | Resets this AnimatedSprite back to its first frame of animation.                    |
-| [Stop()](Methods/Stop)                            | Stops this AnimatedSprite on the current frame.                                     |
-| [Unpause(bool)](Methods/Unpause)                  | Unpaused this AnimatedSprite.                                                       |
-| [Update(GameTime)](Methods/Update#updategametime) | Updates this AnimatedSprite.                                                        |
-| [Update(float)](Methods/Update#updatefloat)       | Updates this AnimatedSprite.                                                        |
+| [Pause(bool)](Methods/Pause.md)                      | Paused this AnimatedSprite and prevents it from being updated until it is unpaused. |
+| [Reset(bool)](Methods/Reset.md)                      | Resets this AnimatedSprite back to its first frame of animation.                    |
+| [Stop()](Methods/Stop.md)                            | Stops this AnimatedSprite on the current frame.                                     |
+| [Unpause(bool)](Methods/Unpause.md)                  | Unpaused this AnimatedSprite.                                                       |
+| [Update(GameTime)](Methods/Update.md#updategametime) | Updates this AnimatedSprite.                                                        |
+| [Update(float)](Methods/Update.md#updatefloat)       | Updates this AnimatedSprite.                                                        |
 
+___
 
+*Documentation generated by [MdDocs](https://github.com/ap0llo/mddocs)*
