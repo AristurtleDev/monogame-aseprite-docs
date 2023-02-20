@@ -1,0 +1,34 @@
+---
+
+title: RawTilemapTile Class
+sidebar_label: RawTilemapTile
+---
+**Namespace:** [MonoGame.Aseprite.RawTypes](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines a class that represents the raw values of a tilemap tile.
+
+```csharp
+public sealed class RawTilemapTile : IEquatable<RawTilemapTile>
+```
+
+**Inheritance:** object → RawTilemapTile
+
+**Implements:** IEquatable\<RawTilemapTile\>
+
+## Properties
+
+| Name                                               | Description                                                                                                |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [FlipHorizontally](Properties/FlipHorizontally) | Gets a value that indicates if the tilemap tile should be flipped horizontally.                            |
+| [FlipVertically](Properties/FlipVertically)     | Gets a value that indicates if the tilemap tile should be flipped vertically.                              |
+| [Rotation](Properties/Rotation)                 | Gets the rotation, in radians, of the tilemap tile.                                                        |
+| [TilesetTileID](Properties/TilesetTileID)       | Gets the ID of the source tile in the tileset that represents the texture region used by the tilemap tile. |
+
+## Methods
+
+| Name                                        | Description                                                                                |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Equals(RawTilemapTile)](Methods/Equals) | Returns a value that indicates if the given RawTilemapTile is equal to thisRawTilemapTile. |
+
+

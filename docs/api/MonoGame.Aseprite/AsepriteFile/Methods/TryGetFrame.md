@@ -1,0 +1,32 @@
+---
+
+title: AsepriteFile.TryGetFrame Method
+sidebar_label: TryGetFrame
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) at the specified index from this [AsepriteFile](../).
+
+```csharp
+public bool TryGetFrame(int frameIndex, [NotNullWhen(true)]out AsepriteFrame located);
+```
+
+## Parameters
+
+`frameIndex`  int
+
+The index of the [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) to locate
+
+`located`  AsepriteFrame
+
+When this method returns , contains the frame located; otherwise, .
+
+## Returns
+
+bool
+
+ if the [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) was located; otherwise, .                   This method returns  if this frame index specified is less than zero or is greater                  than or equal to the total number of [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) elements in this [AsepriteFile](../).
+
+

@@ -1,0 +1,20 @@
+---
+
+title: Tileset.RowCount Property
+sidebar_label: RowCount
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of rows in this [Tileset](../).
+
+```csharp
+public int RowCount { get; }
+```
+
+## Property Value
+
+int
+
+

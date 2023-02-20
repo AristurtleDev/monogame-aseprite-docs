@@ -1,0 +1,32 @@
+---
+
+title: Sprite.FromRaw Method
+sidebar_label: FromRaw
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Creates a new instance of the [Sprite](../) class from the given [RawSprite](../../../RawTypes/RawSprite/).
+
+```csharp
+public static Sprite FromRaw(GraphicsDevice device, RawSprite rawSprite);
+```
+
+## Parameters
+
+`device`  GraphicsDevice
+
+The GraphicsDevice used to create graphical resources.
+
+`rawSprite`  [RawSprite](../../../RawTypes/RawSprite/)
+
+The [RawSprite](../../../RawTypes/RawSprite/) to create the [Sprite](../) from.
+
+## Returns
+
+[Sprite](../)
+
+The [Sprite](../) created by this method.
+
+

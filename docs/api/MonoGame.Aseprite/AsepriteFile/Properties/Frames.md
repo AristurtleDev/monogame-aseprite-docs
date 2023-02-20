@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.Frames Property
+sidebar_label: Frames
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of all [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) elements in this [AsepriteFile](../).
+
+```csharp
+public ReadOnlySpan<AsepriteFrame> Frames { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[AsepriteFrame](../../AsepriteTypes/AsepriteFrame/)\>
+
+

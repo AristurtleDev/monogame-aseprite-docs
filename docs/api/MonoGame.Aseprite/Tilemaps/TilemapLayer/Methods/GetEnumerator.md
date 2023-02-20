@@ -1,0 +1,23 @@
+---
+
+title: TilemapLayer.GetEnumerator Method
+sidebar_label: Geterator
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns an enumerator that iterates through all [Tile](../../Tile/) elements in this [TilemapLayer](../).  The order tiles in the enumeration is from top\-to\-bottom, read left\-to\-right.
+
+```csharp
+[IteratorStateMachine(MonoGame.Aseprite.Tilemaps.TilemapLayer/<GetEnumerator>d__63)]
+public IEnumerator<Tile> GetEnumerator();
+```
+
+## Returns
+
+IEnumerator\<[Tile](../../Tile/)\>
+
+An enumerator that iterates through all [Tile](../../Tile/) elements in this [TilemapLayer](../).
+
+

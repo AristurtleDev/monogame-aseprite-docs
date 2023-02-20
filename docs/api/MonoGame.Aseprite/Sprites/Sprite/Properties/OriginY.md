@@ -1,0 +1,20 @@
+---
+
+title: Sprite.OriginY Property
+sidebar_label: OriginY
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets the y\-coordinate point of origin to apply when rendering this [Sprite](../).
+
+```csharp
+public float OriginY { get; set; }
+```
+
+## Property Value
+
+float
+
+

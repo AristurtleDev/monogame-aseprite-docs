@@ -1,0 +1,100 @@
+---
+
+title: TilemapLayer.Draw Method
+sidebar_label: Draw
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                                                         | Description                                                         |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Draw(SpriteBatch, Vector2, Color)](#drawspritebatch-vector2-color)                               | Draws this [TilemapLayer](../) layer using the SpriteBatch. |
+| [Draw(SpriteBatch, Vector2, Color, Vector2, float)](#drawspritebatch-vector2-color-vector2-float) | Draws this [TilemapLayer](../) layer using the SpriteBatch. |
+| [Draw(SpriteBatch, Vector2, Color, float, float)](#drawspritebatch-vector2-color-float-float)     | Draws this [TilemapLayer](../) layer using the SpriteBatch. |
+
+## Draw(SpriteBatch, Vector2, Color)
+
+Draws this [TilemapLayer](../) layer using the SpriteBatch.
+
+```csharp
+public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color);
+```
+
+### Parameters
+
+`spriteBatch`  SpriteBatch
+
+The SpriteBatch to use for rendering this [TilemapLayer](../).
+
+`position`  Vector2
+
+The x\- and y\-coordinate location to draw this [TilemapLayer](../) at.  Drawing this [TilemapLayer](../) using this method ignores the [Offset](../properties/Offset).
+
+`color`  Color
+
+The color mask to apply when rendering this [TilemapLayer](../).
+
+## Draw(SpriteBatch, Vector2, Color, Vector2, float)
+
+Draws this [TilemapLayer](../) layer using the SpriteBatch.
+
+```csharp
+public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color, Vector2 scale, float layerDepth);
+```
+
+### Parameters
+
+`spriteBatch`  SpriteBatch
+
+The SpriteBatch to use for rendering this [TilemapLayer](../).
+
+`position`  Vector2
+
+The x\- and y\-coordinate location to draw this [TilemapLayer](../) at.  Drawing this [TilemapLayer](../) using this method ignores the [Offset](../properties/Offset).
+
+`color`  Color
+
+The color mask to apply when rendering this [TilemapLayer](../).
+
+`scale`  Vector2
+
+The amount of scaling to apply when rendering this [TilemapLayer](../).
+
+`layerDepth`  float
+
+The layer depth to apply when rendering this [TilemapLayer](../).
+
+## Draw(SpriteBatch, Vector2, Color, float, float)
+
+Draws this [TilemapLayer](../) layer using the SpriteBatch.
+
+```csharp
+public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color, float scale, float layerDepth);
+```
+
+### Parameters
+
+`spriteBatch`  SpriteBatch
+
+The SpriteBatch to use for rendering this [TilemapLayer](../).
+
+`position`  Vector2
+
+The x\- and y\-coordinate location to draw this [TilemapLayer](../) at.  Drawing this [TilemapLayer](../) using this method ignores the [Offset](../properties/Offset).
+
+`color`  Color
+
+The color mask to apply when rendering this [TilemapLayer](../).
+
+`scale`  float
+
+The amount of scaling to apply when rendering this [TilemapLayer](../).
+
+`layerDepth`  float
+
+The layer depth to apply when rendering this [TilemapLayer](../).
+
+

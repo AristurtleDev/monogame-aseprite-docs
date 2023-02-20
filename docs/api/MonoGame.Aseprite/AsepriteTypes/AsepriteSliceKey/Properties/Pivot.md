@@ -1,0 +1,20 @@
+---
+
+title: AsepriteSliceKey.Pivot Property
+sidebar_label: Pivot
+---
+**Declaring Type:** [AsepriteSliceKey](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the x\- and y\-coordinate location of the pivot point of the [AsepriteSlice](../../AsepriteSlice/), relative to the[Bounds](Bounds), during this [AsepriteSliceKey](../), if the [AsepriteSlice](../../AsepriteSlice/) contains  pivot values; otherwise, .
+
+```csharp
+public Point? Pivot { get; }
+```
+
+## Property Value
+
+Nullable\<Point\>
+
+

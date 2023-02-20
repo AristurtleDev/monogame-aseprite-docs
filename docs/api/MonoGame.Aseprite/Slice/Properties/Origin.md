@@ -1,0 +1,20 @@
+---
+
+title: Slice.Origin Property
+sidebar_label: Origin
+---
+**Declaring Type:** [Slice](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the x\- and y\-coordinate origin point for this [Slice](../) relative to the upper\-left corner of the bonds of the [TextureRegion](../../TextureRegion/) it is in.
+
+```csharp
+public Vector2 Origin { get; }
+```
+
+## Property Value
+
+Vector2
+
+

@@ -1,0 +1,20 @@
+---
+
+title: RawAnimationTag.RawAnimationFrames Property
+sidebar_label: RawAnimationFrames
+---
+**Declaring Type:** [RawAnimationTag](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [RawAnimationFrame](../../RawAnimationFrame/) elements that represent the frames of animation for the animation tag.
+
+```csharp
+public ReadOnlySpan<RawAnimationFrame> RawAnimationFrames { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[RawAnimationFrame](../../RawAnimationFrame/)\>
+
+

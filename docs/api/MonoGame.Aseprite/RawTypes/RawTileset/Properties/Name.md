@@ -1,0 +1,20 @@
+---
+
+title: RawTileset.Name Property
+sidebar_label: Name
+---
+**Declaring Type:** [RawTileset](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the name assigned to the tileset.
+
+```csharp
+public string Name { get; }
+```
+
+## Property Value
+
+string
+
+

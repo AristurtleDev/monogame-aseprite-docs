@@ -1,0 +1,65 @@
+---
+
+title: AsepriteFile.TryGetSlice Method
+sidebar_label: TryGetSlice
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                              | Description                                                                                                                                 |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [TryGetSlice(int, AsepriteSlice)](#trygetsliceint-asepriteslice)       | Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element at the specified index from this [AsepriteFile](../).  |
+| [TryGetSlice(string, AsepriteSlice)](#trygetslicestring-asepriteslice) | Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element with the specified name from this [AsepriteFile](../). |
+
+## TryGetSlice(int, AsepriteSlice)
+
+Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element at the specified index from this [AsepriteFile](../).
+
+```csharp
+public bool TryGetSlice(int sliceIndex, [NotNullWhen(true)]out AsepriteSlice located);
+```
+
+### Parameters
+
+`sliceIndex`  int
+
+The index of the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element to locate.
+
+`located`  AsepriteSlice
+
+When this method returns , contains the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element located;  otherwise, .
+
+### Returns
+
+bool
+
+ if the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element was located; otherwise, .  This method returns  if this index specified is less than                  zero or is greater than or equal to the total number of [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) elements in this [AsepriteFile](../).
+
+## TryGetSlice(string, AsepriteSlice)
+
+Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element with the specified name from this [AsepriteFile](../).
+
+```csharp
+public bool TryGetSlice(string sliceName, [NotNullWhen(true)]out AsepriteSlice located);
+```
+
+### Parameters
+
+`sliceName`  string
+
+The name of the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element to locate.
+
+`located`  AsepriteSlice
+
+When this method returns , contains the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element located;  otherwise, .
+
+### Returns
+
+bool
+
+ if the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element  was located; otherwise, .  This method returns  if this [AsepriteFile](../)                does not contain an [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element with the specified name.
+
+

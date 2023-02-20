@@ -1,0 +1,20 @@
+---
+
+title: RawAnimationTag.IsReversed Property
+sidebar_label: IsReversed
+---
+**Declaring Type:** [RawAnimationTag](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+ets a value that indicates whether the animation defined by the animation tag should play in reverse.
+
+```csharp
+public bool IsReversed { get; }
+```
+
+## Property Value
+
+bool
+
+

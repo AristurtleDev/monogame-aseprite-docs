@@ -1,0 +1,20 @@
+---
+
+title: AnimationTag.IsLooping Property
+sidebar_label: IsLooping
+---
+**Declaring Type:** [AnimationTag](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets a value that indicates whether the animation should loop.
+
+```csharp
+public bool IsLooping { get; set; }
+```
+
+## Property Value
+
+bool
+
+

@@ -1,0 +1,34 @@
+---
+
+title: SpriteSheet.GetAnimationTag Method
+sidebar_label: GetAnimationTag
+---
+**Declaring Type:** [SpriteSheet](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AnimationTag](../../AnimationTag/) element with the specified name in this [SpriteSheet](../).
+
+```csharp
+public AnimationTag GetAnimationTag(string name);
+```
+
+## Parameters
+
+`name`  string
+
+The name of the [AnimationTag](../../AnimationTag/) to locate.
+
+## Returns
+
+[AnimationTag](../../AnimationTag/)
+
+The [AnimationTag](../../AnimationTag/) that was located.
+
+## Exceptions
+
+KeyNotFoundException
+
+Thrown if this [SpriteSheet](../) does not contain an [AnimationTag](../../AnimationTag/) element with the specified name.
+
+

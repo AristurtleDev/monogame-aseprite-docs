@@ -1,0 +1,20 @@
+---
+
+title: RawAnimatedTilemap.RawTilesets Property
+sidebar_label: RawTilesets
+---
+**Declaring Type:** [RawAnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [RawTileset](../../RawTileset/) data for the tilesets used by the layers of the  animated tilemap.
+
+```csharp
+public ReadOnlySpan<RawTileset> RawTilesets { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[RawTileset](../../RawTileset/)\>
+
+

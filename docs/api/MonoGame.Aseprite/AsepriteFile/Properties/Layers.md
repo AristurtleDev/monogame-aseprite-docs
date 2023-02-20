@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.Layers Property
+sidebar_label: Layers
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of all [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) elements in this [AsepriteFile](../).   Order of elements if from bottom\-to\-top.
+
+```csharp
+public ReadOnlySpan<AsepriteLayer> Layers { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[AsepriteLayer](../../AsepriteTypes/AsepriteLayer/)\>
+
+

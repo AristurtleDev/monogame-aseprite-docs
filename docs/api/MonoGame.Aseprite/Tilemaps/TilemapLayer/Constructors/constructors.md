@@ -1,0 +1,38 @@
+---
+
+title: TilemapLayer Constructors
+sidebar_label: TilemapLayer Constructors
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Initializes a new instance of the [TilemapLayer](../) class.
+
+```csharp
+public TilemapLayer(string name, Tileset tileset, int columns, int rows, Vector2 offset);
+```
+
+## Parameters
+
+`name`  string
+
+The name assign the [TilemapLayer](../).
+
+`tileset`  [Tileset](../../Tileset/)
+
+The source tileset used by the tiles in this [TilemapLayer](../).
+
+`columns`  int
+
+The total number of columns to assign the [TilemapLayer](../).
+
+`rows`  int
+
+The total number of rows to assign the [TilemapLayer](../).
+
+`offset`  Vector2
+
+The x\- and y\-coordinate position offset, relative to the position of the [Tilemap](../../Tilemap/) to assign the[TilemapLayer](../).
+
+

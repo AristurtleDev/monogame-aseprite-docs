@@ -1,0 +1,20 @@
+---
+
+title: RawSlice.Bounds Property
+sidebar_label: Bounds
+---
+**Declaring Type:** [RawSlice](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the rectangular bounds of the slice.
+
+```csharp
+public Rectangle Bounds { get; }
+```
+
+## Property Value
+
+Rectangle
+
+

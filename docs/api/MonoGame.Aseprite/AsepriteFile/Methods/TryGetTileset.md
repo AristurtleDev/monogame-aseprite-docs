@@ -1,0 +1,65 @@
+---
+
+title: AsepriteFile.TryGetTileset Method
+sidebar_label: TryGetTileset
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                                      | Description                                                                                                                                      |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [TryGetTileset(int, AsepriteTileset)](#trygettilesetint-asepritetileset)       | Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element at the specified index from this [AsepriteFile](../).   |
+| [TryGetTileset(string, AsepriteTileset)](#trygettilesetstring-asepritetileset) | Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element  with the specified name from this [AsepriteFile](../). |
+
+## TryGetTileset(int, AsepriteTileset)
+
+Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element at the specified index from this [AsepriteFile](../).
+
+```csharp
+public bool TryGetTileset(int tilesetIndex, [NotNullWhen(true)]out AsepriteTileset located);
+```
+
+### Parameters
+
+`tilesetIndex`  int
+
+The index of the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element to locate.
+
+`located`  AsepriteTileset
+
+When this method returns , contains the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element located; otherwise, .
+
+### Returns
+
+bool
+
+ if the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element was located; otherwise, .  This method returns  if this index specified is less than                  zero or is greater than or equal to the total number of [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) elements in this [AsepriteFile](../).
+
+## TryGetTileset(string, AsepriteTileset)
+
+Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element  with the specified name from this [AsepriteFile](../).
+
+```csharp
+public bool TryGetTileset(string tilesetName, [NotNullWhen(true)]out AsepriteTileset located);
+```
+
+### Parameters
+
+`tilesetName`  string
+
+The name of the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element to locate.
+
+`located`  AsepriteTileset
+
+When this method returns , contains the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element located; otherwise, .
+
+### Returns
+
+bool
+
+ if the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element was located; otherwise, .  This method returns  if this [AsepriteFile](../)                does not contain a [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element with the specified name.
+
+

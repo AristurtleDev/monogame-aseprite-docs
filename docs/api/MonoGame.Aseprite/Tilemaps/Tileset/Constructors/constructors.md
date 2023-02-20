@@ -1,0 +1,48 @@
+---
+
+title: Tileset Constructors
+sidebar_label: Tileset Constructors
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Initializes a new instance of the [Tileset](../) class.
+
+```csharp
+public Tileset(string name, Texture2D texture, int tileWidth, int tileHeight);
+```
+
+## Parameters
+
+`name`  string
+
+The name to assign the [Tileset](../).
+
+`texture`  Texture2D
+
+The source texture used by this [Tileset](../).
+
+`tileWidth`  int
+
+The width, in pixels, of each tile in this [Tileset](../).
+
+`tileHeight`  int
+
+The height, in pixels, of each tile in this [Tileset](../).
+
+## Remarks
+
+The [TextureRegion](../../../TextureRegion/) elements for each tile in this [Tileset](../) are auto\-generated  based on the `tileWidth` and `tileHeight` specified.  Both of these values must be greater than zero and the width of the `texture` must divide evenly by the `tileWidth` and the height of the `texture` must divide evenly by the`tileHeight`
+
+## Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the `tileWidth` or `tileHeight` values are less than one.
+
+ArgumentException
+
+Thrown if the width of the `texture` does not divide evenly by the `tileWidth` specified or if the height of the `texture` does not divide  evenly by the `tileHeight` specified.
+
+

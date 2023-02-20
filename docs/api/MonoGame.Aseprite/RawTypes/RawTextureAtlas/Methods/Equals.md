@@ -1,0 +1,28 @@
+---
+
+title: RawTextureAtlas.Equals Method
+sidebar_label: Equals
+---
+**Declaring Type:** [RawTextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates if the given [RawTextureAtlas](../) is equal to this[RawTextureAtlas](../).
+
+```csharp
+public bool Equals(RawTextureAtlas other);
+```
+
+## Parameters
+
+`other`  [RawTextureAtlas](../)
+
+The other [RawTextureAtlas](../) to check for equality with this [RawTextureAtlas](../).
+
+## Returns
+
+bool
+
+ if the given [RawTextureAtlas](../) is equal to this [RawTextureAtlas](../); otherwise, .
+
+

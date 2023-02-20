@@ -1,0 +1,20 @@
+---
+
+title: AnimationTag.IsPingPong Property
+sidebar_label: IsPingPong
+---
+**Declaring Type:** [AnimationTag](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets a value that indicates whether the animation should ping\-pong once reaching the last frame of animation.
+
+```csharp
+public bool IsPingPong { get; set; }
+```
+
+## Property Value
+
+bool
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.Tags Property
+sidebar_label: Tags
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of all [AsepriteTag](../../AsepriteTypes/AsepriteTag/) elements in this [AsepriteFile](../).
+
+```csharp
+public ReadOnlySpan<AsepriteTag> Tags { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[AsepriteTag](../../AsepriteTypes/AsepriteTag/)\>
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AsepriteTilemapCel.Tileset Property
+sidebar_label: Tileset
+---
+**Declaring Type:** [AsepriteTilemapCel](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a reference to the [AsepriteTileset](../../AsepriteTileset/) used by this tiles in this [AsepriteTilemapCel](../).
+
+```csharp
+public AsepriteTileset Tileset { get; }
+```
+
+## Property Value
+
+[AsepriteTileset](../../AsepriteTileset/)
+
+

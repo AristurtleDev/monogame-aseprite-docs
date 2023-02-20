@@ -1,0 +1,28 @@
+---
+
+title: AnimatedTilemap.Unpause Method
+sidebar_label: Unpause
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Unpauses this [AnimatedTilemap](../).
+
+```csharp
+public bool Unpause(bool advanceToNextFrame = false);
+```
+
+## Parameters
+
+`advanceToNextFrame`  bool
+
+A value that indicates whether this [AnimatedTilemap](../) should immediately be advanced to the next frame after unpausing.  When this method returns , this [AnimatedTilemap](../)will \-not\- be advanced to the next frame, even if this was specified as .
+
+## Returns
+
+bool
+
+ if this [AnimatedTilemap](../) was successfully unpaused; otherwise, .  This method return  this [AnimatedTilemap](../) is                  not currently animating or if it has not already been paused.
+
+

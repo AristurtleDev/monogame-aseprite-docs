@@ -1,0 +1,20 @@
+---
+
+title: RawTilemapTile.Rotation Property
+sidebar_label: Rotation
+---
+**Declaring Type:** [RawTilemapTile](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the rotation, in radians, of the tilemap tile.
+
+```csharp
+public float Rotation { get; }
+```
+
+## Property Value
+
+float
+
+

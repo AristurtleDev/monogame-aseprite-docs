@@ -1,0 +1,69 @@
+---
+
+title: AsepriteFile.GetSlice Method
+sidebar_label: GetSlice
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                           | Description                                                                                                                              |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetSlice(int)](#getsliceint)       | Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element at the specified index in this [AsepriteFile](../). |
+| [GetSlice(string)](#getslicestring) | Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) with the specified name from this [AsepriteFile](../).      |
+
+## GetSlice(int)
+
+Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element at the specified index in this [AsepriteFile](../).
+
+```csharp
+public AsepriteSlice GetSlice(int sliceIndex);
+```
+
+### Parameters
+
+`sliceIndex`  int
+
+The index of the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element to locate.
+
+### Returns
+
+[AsepriteSlice](../../AsepriteTypes/AsepriteSlice/)
+
+The [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element located.
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the index specified is less than zero or is greater than or equal to the total number of [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) elements in this [AsepriteFile](../).
+
+## GetSlice(string)
+
+Gets the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) with the specified name from this [AsepriteFile](../).
+
+```csharp
+public AsepriteSlice GetSlice(string sliceName);
+```
+
+### Parameters
+
+`sliceName`  string
+
+The name of the [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element to locate.
+
+### Returns
+
+[AsepriteSlice](../../AsepriteTypes/AsepriteSlice/)
+
+The [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element located.
+
+### Exceptions
+
+InvalidOperationException
+
+Thrown if this [AsepriteFile](../) does not contain a [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) element with the  specified name.
+
+

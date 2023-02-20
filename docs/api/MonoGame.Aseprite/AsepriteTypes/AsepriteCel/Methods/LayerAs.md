@@ -1,0 +1,34 @@
+---
+
+title: AsepriteCel.LayerAs Method
+sidebar_label: LayerAs
+---
+**Declaring Type:** [AsepriteCel](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns the [AsepriteLayer](../../AsepriteLayer/) this [AsepriteCel](../) is on as the specified type.
+
+```csharp
+public T LayerAs<T>();
+```
+
+## Type Parameters
+
+`T`
+
+The type to return as.
+
+## Returns
+
+T
+
+The [AsepriteLayer](../../AsepriteLayer/) this [AsepriteCel](../) is on as the specified type.
+
+## Exceptions
+
+InvalidOperationException
+
+Thrown if the [AsepriteLayer](../../AsepriteLayer/) this [AsepriteCel](../) is on is not of the type specified.
+
+

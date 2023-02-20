@@ -1,0 +1,20 @@
+---
+
+title: AsepriteLayer.Name Property
+sidebar_label: Name
+---
+**Declaring Type:** [AsepriteLayer](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the name assigned to this  [AsepriteLayer](../).
+
+```csharp
+public string Name { get; }
+```
+
+## Property Value
+
+string
+
+

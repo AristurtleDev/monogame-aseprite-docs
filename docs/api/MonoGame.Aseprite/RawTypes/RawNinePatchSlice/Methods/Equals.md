@@ -1,0 +1,28 @@
+---
+
+title: RawNinePatchSlice.Equals Method
+sidebar_label: Equals
+---
+**Declaring Type:** [RawNinePatchSlice](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates if the given [RawNinePatchSlice](../) is equal to this[RawNinePatchSlice](../).
+
+```csharp
+public bool Equals(RawNinePatchSlice other);
+```
+
+## Parameters
+
+`other`  [RawNinePatchSlice](../)
+
+The other [RawNinePatchSlice](../) to check for equality with this [RawNinePatchSlice](../).
+
+## Returns
+
+bool
+
+ if the given [RawNinePatchSlice](../) is equal to this [RawNinePatchSlice](../); otherwise, .
+
+

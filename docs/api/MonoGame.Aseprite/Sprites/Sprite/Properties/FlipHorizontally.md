@@ -1,0 +1,20 @@
+---
+
+title: Sprite.FlipHorizontally Property
+sidebar_label: FlipHorizontally
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets a value that indicates whether to flip this [Sprite](../) horizontally when rendering.
+
+```csharp
+public bool FlipHorizontally { get; set; }
+```
+
+## Property Value
+
+bool
+
+

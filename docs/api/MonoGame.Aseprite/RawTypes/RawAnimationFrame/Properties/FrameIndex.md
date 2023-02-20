@@ -1,0 +1,20 @@
+---
+
+title: RawAnimationFrame.FrameIndex Property
+sidebar_label: FrameIndex
+---
+**Declaring Type:** [RawAnimationFrame](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the index of the source frame for the animation frame.
+
+```csharp
+public int FrameIndex { get; }
+```
+
+## Property Value
+
+int
+
+

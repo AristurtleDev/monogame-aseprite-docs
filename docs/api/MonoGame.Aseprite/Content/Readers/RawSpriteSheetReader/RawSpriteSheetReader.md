@@ -1,0 +1,23 @@
+---
+
+title: RawSpriteSheetReader Class
+sidebar_label: RawSpriteSheetReader
+---
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines a reader that reads a [RawSpriteSheet](../../../RawTypes/RawSpriteSheet/) from a file.
+
+```csharp
+public static class RawSpriteSheetReader
+```
+
+**Inheritance:** object → RawSpriteSheetReader
+
+## Methods
+
+| Name                            | Description                                                                                                |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [Read(string)](Methods/Read) | Reads the [RawSpriteSheet](../../../RawTypes/RawSpriteSheet/) from the file at the specified path. |
+
+

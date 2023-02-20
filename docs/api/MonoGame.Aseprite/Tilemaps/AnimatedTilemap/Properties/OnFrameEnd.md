@@ -1,0 +1,20 @@
+---
+
+title: AnimatedTilemap.OnFrameEnd Property
+sidebar_label: OnFrameEnd
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets an Action method to invoke at the end of each animation frame.
+
+```csharp
+public Action<AnimatedTilemap> OnFrameEnd { get; set; }
+```
+
+## Property Value
+
+Action\<[AnimatedTilemap](../)\>
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.CanvasWidth Property
+sidebar_label: CanvasWidth
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the width, in pixels, of the canvas.
+
+```csharp
+public int CanvasWidth { get; }
+```
+
+## Property Value
+
+int
+
+

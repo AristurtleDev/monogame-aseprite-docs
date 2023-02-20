@@ -1,0 +1,69 @@
+---
+
+title: TextureRegion.GetSlice Method
+sidebar_label: GetSlice
+---
+**Declaring Type:** [TextureRegion](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                 | Description                                                                                                                             |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetSlice(string)](#getslicestring)       | Returns the [Slice](../../Slice/) element with the specified name from this [TextureRegion](../).                       |
+| [GetSlice\<T\>(string)](#getslicetstring) | Returns the [Slice](../../Slice/) element with the specified name from this [TextureRegion](../) as the type specified. |
+
+## GetSlice(string)
+
+Returns the [Slice](../../Slice/) element with the specified name from this [TextureRegion](../).
+
+```csharp
+public Slice GetSlice(string name);
+```
+
+### Parameters
+
+`name`  string
+
+The name of the [Slice](../../Slice/) element to locate.
+
+### Returns
+
+[Slice](../../Slice/)
+
+The [Slice](../../Slice/) element located.
+
+### Exceptions
+
+KeyNotFoundException
+
+Thrown if this [TextureRegion](../) does not contain a [Slice](../../Slice/) element with the specified name.
+
+## GetSlice\<T\>(string)
+
+Returns the [Slice](../../Slice/) element with the specified name from this [TextureRegion](../) as the type specified.
+
+```csharp
+public T GetSlice<T>(string name);
+```
+
+### Type Parameters
+
+`T`
+
+The type to return the located [Slice](../../Slice/) element as.  Must derived from the base type [Slice](../../Slice/).
+
+### Parameters
+
+`name`  string
+
+The name of the [Slice](../../Slice/) element to locate.
+
+### Returns
+
+T
+
+The [Slice](../../Slice/) element located as the type specified.
+
+

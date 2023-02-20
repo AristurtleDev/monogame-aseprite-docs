@@ -1,0 +1,20 @@
+---
+
+title: MonoGame.Aseprite.Content.Readers Namespace
+sidebar_label: Readers
+---
+**Namespace:** [MonoGame.Aseprite.Content](../)  
+
+## Classes
+
+| Name                                                          | Description                                                                                                 |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [AsepriteFileReader](AsepriteFileReader/)             | Defines a reader that reads an [AsepriteFile](../../AsepriteFile/).                                 |
+| [RawAnimatedTilemapReader](RawAnimatedTilemapReader/) | Defines a reader that reads a [RawAnimatedTilemap](../../RawTypes/RawAnimatedTilemap/) from a file. |
+| [RawSpriteReader](RawSpriteReader/)                   | Defines a reader that reads a [RawSprite](../../RawTypes/RawSprite/) from a file.                   |
+| [RawSpriteSheetReader](RawSpriteSheetReader/)         | Defines a reader that reads a [RawSpriteSheet](../../RawTypes/RawSpriteSheet/) from a file.         |
+| [RawTextureAtlasReader](RawTextureAtlasReader/)       | Defines a reader that reads a [RawTextureAtlas](../../RawTypes/RawTextureAtlas/) from a file.       |
+| [RawTilemapReader](RawTilemapReader/)                 | Defines a reader that reads a [RawTilemap](../../RawTypes/RawTilemap/) from a file.                 |
+| [RawTilesetReader](RawTilesetReader/)                 | Defines a reader that reads a [RawTileset](../../RawTypes/RawTileset/) from a file.                 |
+
+

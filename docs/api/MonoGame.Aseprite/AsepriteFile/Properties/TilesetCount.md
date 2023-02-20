@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.TilesetCount Property
+sidebar_label: TilesetCount
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) elements in this [AsepriteFile](../).
+
+```csharp
+public int TilesetCount { get; }
+```
+
+## Property Value
+
+int
+
+

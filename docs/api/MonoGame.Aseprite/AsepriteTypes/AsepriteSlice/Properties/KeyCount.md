@@ -1,0 +1,20 @@
+---
+
+title: AsepriteSlice.KeyCount Property
+sidebar_label: KeyCount
+---
+**Declaring Type:** [AsepriteSlice](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [AsepriteSliceKey](../../AsepriteSliceKey/) elements in this [AsepriteSlice](../).
+
+```csharp
+public int KeyCount { get; }
+```
+
+## Property Value
+
+int
+
+

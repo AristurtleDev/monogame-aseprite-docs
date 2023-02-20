@@ -1,0 +1,27 @@
+---
+
+title: AnimationTagBuilder Class
+sidebar_label: AnimationTagBuilder
+---
+**Namespace:** [MonoGame.Aseprite.Sprites](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines a builder building an [AnimationTag](../AnimationTag/) for a [SpriteSheet](../SpriteSheet/).
+
+```csharp
+public sealed class AnimationTagBuilder
+```
+
+**Inheritance:** object → AnimationTagBuilder
+
+## Methods
+
+| Name                                                                      | Description                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [AddFrame(int, TimeSpan)](Methods/AddFrame#addframeint-timespan)       | Adds a new frame of animation to the [AnimationTag](../AnimationTag/) using the [TextureRegion](../../TextureRegion/)located at the specified index in the [TextureAtlas](../TextureAtlas/) of the [SpriteSheet](../SpriteSheet/) and with  the specified duration. |
+| [AddFrame(string, TimeSpan)](Methods/AddFrame#addframestring-timespan) | Adds a new frame of animation to the [AnimationTag](../AnimationTag/) using the [TextureRegion](../../TextureRegion/) with the specified name in the [TextureAtlas](../TextureAtlas/) of the [SpriteSheet](../SpriteSheet/) and with the specified duration.        |
+| [IsLooping(bool)](Methods/IsLooping)                                   | Sets whether the animation should loop.                                                                                                                                                                                                                                                             |
+| [IsPingPong(bool)](Methods/IsPingPong)                                 | Sets whether the animation should ping\-pong once reaching the last frame of animation.                                                                                                                                                                                                             |
+| [IsReversed(bool)](Methods/IsReversed)                                 | Sets whether the animation should play in reverse.                                                                                                                                                                                                                                                  |
+
+

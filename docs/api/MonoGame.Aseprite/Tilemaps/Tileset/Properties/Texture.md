@@ -1,0 +1,20 @@
+---
+
+title: Tileset.Texture Property
+sidebar_label: Texture
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the source texture image used by this [Tileset](../).
+
+```csharp
+public Texture2D Texture { get; }
+```
+
+## Property Value
+
+Texture2D
+
+

@@ -1,0 +1,32 @@
+---
+
+title: SpriteSheet.TryGetAnimationTag Method
+sidebar_label: TryGetAnimationTag
+---
+**Declaring Type:** [SpriteSheet](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AnimationTag](../../AnimationTag/) element with the specified name in this [SpriteSheet](../).
+
+```csharp
+public bool TryGetAnimationTag(string name, [NotNullWhen(true)]out AnimationTag tag);
+```
+
+## Parameters
+
+`name`  string
+
+The name of the [AnimationTag](../../AnimationTag/) to locate.
+
+`tag`  AnimationTag
+
+When this method returns , contains the [AnimationTag](../../AnimationTag/) located; otherwise, 
+
+## Returns
+
+bool
+
+ if the [AnimationTag](../../AnimationTag/) was located; otherwise, .                   This method returns  if this [SpriteSheet](../) does not contain an [AnimationTag](../../AnimationTag/) element with the specified name.
+
+

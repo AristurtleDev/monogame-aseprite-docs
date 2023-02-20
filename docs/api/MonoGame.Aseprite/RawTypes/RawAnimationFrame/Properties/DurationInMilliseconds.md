@@ -1,0 +1,20 @@
+---
+
+title: RawAnimationFrame.DurationInMilliseconds Property
+sidebar_label: DurationInMilliseconds
+---
+**Declaring Type:** [RawAnimationFrame](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the duration, in milliseconds, of the animation frame.
+
+```csharp
+public int DurationInMilliseconds { get; }
+```
+
+## Property Value
+
+int
+
+

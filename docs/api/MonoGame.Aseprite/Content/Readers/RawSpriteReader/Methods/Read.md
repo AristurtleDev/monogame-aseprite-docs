@@ -1,0 +1,28 @@
+---
+
+title: RawSpriteReader.Read Method
+sidebar_label: Read
+---
+**Declaring Type:** [RawSpriteReader](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Reads the [RawSprite](../../../../RawTypes/RawSprite/) from the file at the specified path.
+
+```csharp
+public static RawSprite Read(string path);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the file that contains the [RawSprite](../../../../RawTypes/RawSprite/) to read.
+
+## Returns
+
+[RawSprite](../../../../RawTypes/RawSprite/)
+
+The [RawSprite](../../../../RawTypes/RawSprite/) that was read.
+
+

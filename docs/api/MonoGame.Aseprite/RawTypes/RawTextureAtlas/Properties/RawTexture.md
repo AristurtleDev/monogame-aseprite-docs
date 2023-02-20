@@ -1,0 +1,20 @@
+---
+
+title: RawTextureAtlas.RawTexture Property
+sidebar_label: RawTexture
+---
+**Declaring Type:** [RawTextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the raw texture that represents the source texture of the texture atlas.
+
+```csharp
+public RawTexture RawTexture { get; }
+```
+
+## Property Value
+
+[RawTexture](../../RawTexture/)
+
+

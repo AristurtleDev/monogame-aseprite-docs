@@ -1,0 +1,53 @@
+---
+
+title: Sprite Constructors
+sidebar_label: Sprite Constructors
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                    | Description                                                    |
+| ------------------------------------------------------------ | -------------------------------------------------------------- |
+| [Sprite(string, Texture2D)](#spritestring-texture2d)         | Initializes a new instance of the [Sprite](../) class. |
+| [Sprite(string, TextureRegion)](#spritestring-textureregion) | Initializes a new instance of the [Sprite](../) class. |
+
+## Sprite(string, Texture2D)
+
+Initializes a new instance of the [Sprite](../) class.
+
+```csharp
+public Sprite(string name, Texture2D texture);
+```
+
+### Parameters
+
+`name`  string
+
+The name to assign the [Sprite](../).
+
+`texture`  Texture2D
+
+The source image for the [Sprite](../).
+
+## Sprite(string, TextureRegion)
+
+Initializes a new instance of the [Sprite](../) class.
+
+```csharp
+public Sprite(string name, TextureRegion textureRegion);
+```
+
+### Parameters
+
+`name`  string
+
+The name to assign the [Sprite](../).
+
+`textureRegion`  [TextureRegion](../../../TextureRegion/)
+
+The source [TextureRegion](../properties/TextureRegion) to assign the [Sprite](../).
+
+

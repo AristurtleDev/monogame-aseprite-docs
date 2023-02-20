@@ -1,0 +1,65 @@
+---
+
+title: AnimatedTilemapFrame.TryGetLayer Method
+sidebar_label: TryGetLayer
+---
+**Declaring Type:** [AnimatedTilemapFrame](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                            | Description                                                                                                                       |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [TryGetLayer(int, TilemapLayer)](#trygetlayerint-tilemaplayer)       | Get the [TilemapLayer](../../TilemapLayer/) element at the specified index in this [AnimatedTilemapFrame](../).   |
+| [TryGetLayer(string, TilemapLayer)](#trygetlayerstring-tilemaplayer) | Gets the [TilemapLayer](../../TilemapLayer/) element with the specified name in this [AnimatedTilemapFrame](../). |
+
+## TryGetLayer(int, TilemapLayer)
+
+Get the [TilemapLayer](../../TilemapLayer/) element at the specified index in this [AnimatedTilemapFrame](../).
+
+```csharp
+public bool TryGetLayer(int index, [NotNullWhen(true)]out TilemapLayer layer);
+```
+
+### Parameters
+
+`index`  int
+
+The index of the [TilemapLayer](../../TilemapLayer/) element to locate.
+
+`layer`  TilemapLayer
+
+When this method returns , contains the [TilemapLayer](../../TilemapLayer/) element located;  otherwise, .
+
+### Returns
+
+bool
+
+ if a [TilemapLayer](../../TilemapLayer/) element was located at the specified index in this [AnimatedTilemapFrame](../); otherwise, .  This method return  when the specified index is less than zero or is greater than or equal to the total                 number of [TilemapLayer](../../TilemapLayer/) elements in this [AnimatedTilemapFrame](../).
+
+## TryGetLayer(string, TilemapLayer)
+
+Gets the [TilemapLayer](../../TilemapLayer/) element with the specified name in this [AnimatedTilemapFrame](../).
+
+```csharp
+public bool TryGetLayer(string name, [NotNullWhen(true)]out TilemapLayer layer);
+```
+
+### Parameters
+
+`name`  string
+
+The name of the [TilemapLayer](../../TilemapLayer/) element to locate.
+
+`layer`  TilemapLayer
+
+When this method returns , contains the [TilemapLayer](../../TilemapLayer/) element located;  otherwise, .
+
+### Returns
+
+bool
+
+ if a [TilemapLayer](../../TilemapLayer/) element was located in this [AnimatedTilemapFrame](../) with the specified name; otherwise .  This method                  returns  if this [AnimatedTilemapFrame](../) does not contain a [TilemapLayer](../../TilemapLayer/) element with the specified name.
+
+

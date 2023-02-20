@@ -1,0 +1,20 @@
+---
+
+title: TextureAtlas.Texture Property
+sidebar_label: Texture
+---
+**Declaring Type:** [TextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the source image of this [TextureAtlas](../).
+
+```csharp
+public Texture2D Texture { get; }
+```
+
+## Property Value
+
+Texture2D
+
+

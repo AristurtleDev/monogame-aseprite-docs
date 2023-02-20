@@ -1,0 +1,23 @@
+---
+
+title: RawTilesetReader Class
+sidebar_label: RawTilesetReader
+---
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines a reader that reads a [RawTileset](../../../RawTypes/RawTileset/) from a file.
+
+```csharp
+public static class RawTilesetReader
+```
+
+**Inheritance:** object → RawTilesetReader
+
+## Methods
+
+| Name                            | Description                                                                                        |
+| ------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Read(string)](Methods/Read) | Reads the [RawTileset](../../../RawTypes/RawTileset/) from the file at the specified path. |
+
+

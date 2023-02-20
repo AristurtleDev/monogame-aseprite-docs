@@ -1,0 +1,27 @@
+---
+
+title: MonoGame.Aseprite Namespace
+sidebar_label: Namespace
+sidebar_position: 0
+---
+**Namespace:** [MonoGame](../)  
+
+## Namespaces
+
+- [MonoGame.Aseprite.AsepriteTypes](AsepriteTypes/)
+- [MonoGame.Aseprite.Content](Content/)
+- [MonoGame.Aseprite.RawTypes](RawTypes/)
+- [MonoGame.Aseprite.Sprites](Sprites/)
+- [MonoGame.Aseprite.Tilemaps](Tilemaps/)
+
+## Classes
+
+| Name                                                    | Description                                                                                                      |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [AsepriteFile](AsepriteFile/)                   | Defines the contents of an imported aseprite file.                                                               |
+| [NinePatchSlice](NinePatchSlice/)               | Defines a [Slice](Slice/) with center bounds.                                                            |
+| [Slice](Slice/)                                 | Defines a named slice for a [TextureRegion](TextureRegion/) with a bounds, origin, and color.            |
+| [SpriteBatchExtensions](SpriteBatchExtensions/) | Defines extension methods for the SpriteBatch to render graphical resource types in this library.                |
+| [TextureRegion](TextureRegion/)                 | Defines a named rectangular region that represents the location and extents of a region within a source texture. |
+
+

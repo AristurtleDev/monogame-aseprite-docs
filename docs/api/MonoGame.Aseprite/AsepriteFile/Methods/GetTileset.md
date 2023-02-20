@@ -1,0 +1,69 @@
+---
+
+title: AsepriteFile.GetTileset Method
+sidebar_label: GetTileset
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                               | Description                                                                                                                                     |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetTileset(int)](#gettilesetint)       | Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element at the specified index in this [AsepriteFile](../).    |
+| [GetTileset(string)](#gettilesetstring) | Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element with the specified name from this [AsepriteFile](../). |
+
+## GetTileset(int)
+
+Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element at the specified index in this [AsepriteFile](../).
+
+```csharp
+public AsepriteTileset GetTileset(int tilesetIndex);
+```
+
+### Parameters
+
+`tilesetIndex`  int
+
+The index of the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element to locate.
+
+### Returns
+
+[AsepriteTileset](../../AsepriteTypes/AsepriteTileset/)
+
+The [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element located.
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the index specified is less than zero or is greater than or equal to the total number of[AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) elements in this [AsepriteFile](../).
+
+## GetTileset(string)
+
+Gets the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element with the specified name from this [AsepriteFile](../).
+
+```csharp
+public AsepriteTileset GetTileset(string tilesetName);
+```
+
+### Parameters
+
+`tilesetName`  string
+
+The name of the [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element to locate.
+
+### Returns
+
+[AsepriteTileset](../../AsepriteTypes/AsepriteTileset/)
+
+The [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element located.
+
+### Exceptions
+
+InvalidOperationException
+
+Thrown if this [AsepriteFile](../) does not contain a [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) element with the specified name.
+
+

@@ -1,0 +1,22 @@
+---
+
+title: AnimatedTilemap.GetEnumerator Method
+sidebar_label: Geterator
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns an enumerator used to iterate through all of the [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) elements in this [AnimatedTilemap](../).  The order of elements in the enumeration is from first frame to last frame.
+
+```csharp
+public IEnumerator<AnimatedTilemapFrame> GetEnumerator();
+```
+
+## Returns
+
+IEnumerator\<[AnimatedTilemapFrame](../../AnimatedTilemapFrame/)\>
+
+An enumerator used to iterate through all of the [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) elements in this [AnimatedTilemap](../).
+
+

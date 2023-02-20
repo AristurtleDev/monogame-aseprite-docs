@@ -1,0 +1,38 @@
+---
+
+title: AsepriteFileReader.ReadFile Method
+sidebar_label: ReadFile
+---
+**Declaring Type:** [AsepriteFileReader](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Reads the [AsepriteFile](../../../../AsepriteFile/) at the given path.
+
+```csharp
+public static AsepriteFile ReadFile(string path);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the aseprite file to read.
+
+## Returns
+
+[AsepriteFile](../../../../AsepriteFile/)
+
+The [AsepriteFile](../../../../AsepriteFile/) created by this method.
+
+## Exceptions
+
+FileNotFoundException
+
+Thrown if no file is located at the specified path.
+
+InvalidOperationException
+
+Thrown if an error occurs during the reading of the aseprite file.  The exception message will contain the cause of the exception.
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AnimatedTilemap.OnFrameBegin Property
+sidebar_label: OnFrameBegin
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets an Action method to invoke at the start of each animation frame.
+
+```csharp
+public Action<AnimatedTilemap> OnFrameBegin { get; set; }
+```
+
+## Property Value
+
+Action\<[AnimatedTilemap](../)\>
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AnimationFrame.Duration Property
+sidebar_label: Duration
+---
+**Declaring Type:** [AnimationFrame](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the duration of this [AnimationFrame](../).
+
+```csharp
+public TimeSpan Duration { get; }
+```
+
+## Property Value
+
+TimeSpan
+
+

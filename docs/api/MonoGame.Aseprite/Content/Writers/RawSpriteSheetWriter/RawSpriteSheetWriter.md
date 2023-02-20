@@ -1,0 +1,23 @@
+---
+
+title: RawSpriteSheetWriter Class
+sidebar_label: RawSpriteSheetWriter
+---
+**Namespace:** [MonoGame.Aseprite.Content.Writers](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines a writer that writes the contents of a [RawSpriteSheet](../../../RawTypes/RawSpriteSheet/) to a file.
+
+```csharp
+public static class RawSpriteSheetWriter
+```
+
+**Inheritance:** object → RawSpriteSheetWriter
+
+## Methods
+
+| Name                                              | Description                                                                                                                     |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Write(string, RawSpriteSheet)](Methods/Write) | Writes the contents of the [RawSpriteSheet](../../../RawTypes/RawSpriteSheet/) given to the file at the path specified. |
+
+

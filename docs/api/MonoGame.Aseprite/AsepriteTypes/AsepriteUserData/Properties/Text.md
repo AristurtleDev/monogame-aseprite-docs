@@ -1,0 +1,20 @@
+---
+
+title: AsepriteUserData.Text Property
+sidebar_label: Text
+---
+**Declaring Type:** [AsepriteUserData](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the custom text that was set for this [AsepriteUserData](../), if any was set in aseprite;  otherwise, .
+
+```csharp
+public string Text { get; }
+```
+
+## Property Value
+
+string
+
+

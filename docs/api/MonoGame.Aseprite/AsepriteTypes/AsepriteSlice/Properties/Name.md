@@ -1,0 +1,20 @@
+---
+
+title: AsepriteSlice.Name Property
+sidebar_label: Name
+---
+**Declaring Type:** [AsepriteSlice](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the name assigned to this [AsepriteSlice](../).
+
+```csharp
+public string Name { get; }
+```
+
+## Property Value
+
+string
+
+

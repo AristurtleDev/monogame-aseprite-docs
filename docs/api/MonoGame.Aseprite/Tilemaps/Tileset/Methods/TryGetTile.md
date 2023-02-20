@@ -1,0 +1,94 @@
+---
+
+title: Tileset.TryGetTile Method
+sidebar_label: TryGetTile
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                                               | Description                                                                                                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [TryGetTile(Point, TextureRegion)](#trygettilepoint-textureregion)      | Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../). |
+| [TryGetTile(int, TextureRegion)](#trygettileint-textureregion)          | Gets the [TextureRegion](../../../TextureRegion/) of the tile at the specified index in this [Tileset](../).           |
+| [TryGetTile(int, int, TextureRegion)](#trygettileint-int-textureregion) | Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../). |
+
+## TryGetTile(Point, TextureRegion)
+
+Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../).
+
+```csharp
+public bool TryGetTile(Point location, [NotNullWhen(true)]out TextureRegion tile);
+```
+
+### Parameters
+
+`location`  Point
+
+The column and row location of the tile to locate in this [Tileset](../).
+
+`tile`  TextureRegion
+
+When this method returns , contains the [TextureRegion](../../../TextureRegion/) of the tile  located; otherwise, .
+
+### Returns
+
+bool
+
+ if a tile was located at the specified column and row location; otherwise .  This method return  if the column or row in the location                  specified is less than zero or if either are greater than or equal to the total number of columns or rows                 in this [Tileset](../).
+
+## TryGetTile(int, TextureRegion)
+
+Gets the [TextureRegion](../../../TextureRegion/) of the tile at the specified index in this [Tileset](../).
+
+```csharp
+public bool TryGetTile(int index, [NotNullWhen(true)]out TextureRegion tile);
+```
+
+### Parameters
+
+`index`  int
+
+The index of the tile to locate.
+
+`tile`  TextureRegion
+
+When this method returns , contains the [TextureRegion](../../../TextureRegion/) of the tile  located; otherwise, .
+
+### Returns
+
+bool
+
+ if a tile was located at the specified index; otherwise, .                   This method returns  if the specified index is less than zero or is greater than or                  equal to the total number of tiles in this [Tileset](../).
+
+## TryGetTile(int, int, TextureRegion)
+
+Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../).
+
+```csharp
+public bool TryGetTile(int column, int row, [NotNullWhen(true)]out TextureRegion tile);
+```
+
+### Parameters
+
+`column`  int
+
+The column of the tile to locate in this [Tileset](../).
+
+`row`  int
+
+The row of the tile to locate in this [Tileset](../).
+
+`tile`  TextureRegion
+
+When this method returns , contains the [TextureRegion](../../../TextureRegion/) of the tile  located; otherwise, .
+
+### Returns
+
+bool
+
+ if a tile was located at the specified column and row; otherwise .  This method return  if the column or row in the location                  specified is less than zero or if either are greater than or equal to the total number of columns or rows                  in this [Tileset](../).
+
+

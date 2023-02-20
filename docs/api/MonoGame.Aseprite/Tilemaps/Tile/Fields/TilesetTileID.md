@@ -1,0 +1,20 @@
+---
+
+title: Tile.TilesetTileID Field
+sidebar_label: TilesetTileID
+---
+**Declaring Type:** [Tile](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+The ID (or index) of the source tile in the [Tileset](../../Tileset/) that represents the [TextureRegion](../../../TextureRegion/) to render for this [Tile](../).
+
+```csharp
+public int TilesetTileID;
+```
+
+## Field Value
+
+int
+
+

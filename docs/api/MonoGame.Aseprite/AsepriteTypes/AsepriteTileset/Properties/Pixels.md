@@ -1,0 +1,20 @@
+---
+
+title: AsepriteTileset.Pixels Property
+sidebar_label: Pixels
+---
+**Declaring Type:** [AsepriteTileset](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the pixel data for this [AsepriteTileset](../).  Pixel order is from  top\-to\-bottom, read left\-to\-right.
+
+```csharp
+public ReadOnlySpan<Color> Pixels { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<Color\>
+
+

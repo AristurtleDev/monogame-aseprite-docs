@@ -1,0 +1,20 @@
+---
+
+title: AsepriteTileset.Name Property
+sidebar_label: Name
+---
+**Declaring Type:** [AsepriteTileset](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the name assigned to this [AsepriteTileset](../).
+
+```csharp
+public string Name { get; }
+```
+
+## Property Value
+
+string
+
+

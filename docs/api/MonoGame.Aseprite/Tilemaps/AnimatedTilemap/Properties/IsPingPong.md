@@ -1,0 +1,20 @@
+---
+
+title: AnimatedTilemap.IsPingPong Property
+sidebar_label: IsPingPong
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a value that indicates whether the animation for this [AnimatedTilemap](../) should ping\-pong  once reaching the last frame of animation.
+
+```csharp
+public bool IsPingPong { get; }
+```
+
+## Property Value
+
+bool
+
+

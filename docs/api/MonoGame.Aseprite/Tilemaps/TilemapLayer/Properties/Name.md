@@ -1,0 +1,20 @@
+---
+
+title: TilemapLayer.Name Property
+sidebar_label: Name
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the name assigned to this  [TilemapLayer](../).
+
+```csharp
+public string Name { get; }
+```
+
+## Property Value
+
+string
+
+

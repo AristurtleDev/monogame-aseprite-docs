@@ -1,0 +1,20 @@
+---
+
+title: AsepriteTag.UserData Property
+sidebar_label: UserData
+---
+**Declaring Type:** [AsepriteTag](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AsepriteUserData](../../AsepriteUserData/) set for this [AsepriteTag](../).
+
+```csharp
+public AsepriteUserData UserData { get; }
+```
+
+## Property Value
+
+[AsepriteUserData](../../AsepriteUserData/)
+
+

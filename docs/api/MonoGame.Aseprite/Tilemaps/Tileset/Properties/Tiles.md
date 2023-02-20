@@ -1,0 +1,20 @@
+---
+
+title: Tileset.Tiles Property
+sidebar_label: Tiles
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [TextureRegion](../../../TextureRegion/) elements that represent the tiles in this [Tileset](../).
+
+```csharp
+public ReadOnlySpan<TextureRegion> Tiles { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[TextureRegion](../../../TextureRegion/)\>
+
+

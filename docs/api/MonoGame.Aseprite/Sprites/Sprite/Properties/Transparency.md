@@ -1,0 +1,20 @@
+---
+
+title: Sprite.Transparency Property
+sidebar_label: Transparency
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets the level of transparency, between 0.0f, and 1.0f, to apply when rendering this[Sprite](../).
+
+```csharp
+public float Transparency { get; set; }
+```
+
+## Property Value
+
+float
+
+

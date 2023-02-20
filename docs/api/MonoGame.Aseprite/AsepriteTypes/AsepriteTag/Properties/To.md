@@ -1,0 +1,20 @@
+---
+
+title: AsepriteTag.To Property
+sidebar_label: To
+---
+**Declaring Type:** [AsepriteTag](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the index of the last see cref\="AsepriteFrame"\/\> of animation defined by this [AsepriteTag](../).
+
+```csharp
+public int To { get; }
+```
+
+## Property Value
+
+int
+
+

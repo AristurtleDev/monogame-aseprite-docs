@@ -1,0 +1,20 @@
+---
+
+title: Tileset.TileCount Property
+sidebar_label: TileCount
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+G   ets the total number of tiles in this [Tileset](../).
+
+```csharp
+public int TileCount { get; }
+```
+
+## Property Value
+
+int
+
+

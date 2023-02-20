@@ -1,0 +1,20 @@
+---
+
+title: RawSprite.RawTexture Property
+sidebar_label: RawTexture
+---
+**Declaring Type:** [RawSprite](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the raw texture that represents the source texture for the sprite.
+
+```csharp
+public RawTexture RawTexture { get; }
+```
+
+## Property Value
+
+[RawTexture](../../RawTexture/)
+
+

@@ -1,0 +1,20 @@
+---
+
+title: RawTileset.TileWidth Property
+sidebar_label: TileWidth
+---
+**Declaring Type:** [RawTileset](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the width, in pixels, of each tile in the tileset.
+
+```csharp
+public int TileWidth { get; }
+```
+
+## Property Value
+
+int
+
+

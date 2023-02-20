@@ -1,0 +1,28 @@
+---
+
+title: RawTilemapFrame.Equals Method
+sidebar_label: Equals
+---
+**Declaring Type:** [RawTilemapFrame](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates if the given [RawTilemapFrame](../) is equal to this[RawTilemapFrame](../).
+
+```csharp
+public bool Equals(RawTilemapFrame other);
+```
+
+## Parameters
+
+`other`  [RawTilemapFrame](../)
+
+The other [RawTilemapFrame](../) to check for equality with this [RawTilemapFrame](../).
+
+## Returns
+
+bool
+
+ if the given [RawTilemapFrame](../) is equal to this [RawTilemapFrame](../); otherwise, .
+
+

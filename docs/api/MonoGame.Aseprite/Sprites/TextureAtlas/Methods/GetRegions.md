@@ -1,0 +1,69 @@
+---
+
+title: TextureAtlas.GetRegions Method
+sidebar_label: GetRegions
+---
+**Declaring Type:** [TextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                                   | Description                                                                                                                                                                                                                                               |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetRegions(int\[\])](#getregionsint)       | Gets a new List\<T\> of all [TextureRegion](../../../TextureRegion/) elements at the specified indexes in  this [TextureAtlas](../). Order of the elements in the collection returned is the same as the order  of the indexes specified. |
+| [GetRegions(string\[\])](#getregionsstring) | Gets a new List\<T\> of all [TextureRegion](../../../TextureRegion/) elements with the specified names in  this [TextureAtlas](../). Order of the elements in the collection returned is the same as the order  of names specified.       |
+
+## GetRegions(int\[\])
+
+Gets a new List\<T\> of all [TextureRegion](../../../TextureRegion/) elements at the specified indexes in  this [TextureAtlas](../). Order of the elements in the collection returned is the same as the order  of the indexes specified.
+
+```csharp
+public List<TextureRegion> GetRegions(params int[] indexes);
+```
+
+### Parameters
+
+`indexes`  int\[\]
+
+The indexes of the [TextureRegion](../../../TextureRegion/) elements to locate.
+
+### Returns
+
+List\<[TextureRegion](../../../TextureRegion/)\>
+
+A new List\<T\> containing the [TextureRegion](../../../TextureRegion/) elements located.
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if any of the specified indexes are less than zero or if any are greater than or equal to the total number of [TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
+
+## GetRegions(string\[\])
+
+Gets a new List\<T\> of all [TextureRegion](../../../TextureRegion/) elements with the specified names in  this [TextureAtlas](../). Order of the elements in the collection returned is the same as the order  of names specified.
+
+```csharp
+public List<TextureRegion> GetRegions(params string[] names);
+```
+
+### Parameters
+
+`names`  string\[\]
+
+The names of the [TextureRegion](../../../TextureRegion/) elements to locate.
+
+### Returns
+
+List\<[TextureRegion](../../../TextureRegion/)\>
+
+A new List\<T\> containing the [TextureRegion](../../../TextureRegion/) elements located.
+
+### Exceptions
+
+KeyNotFoundException
+
+Thrown if any of the specified names do not match a [TextureRegion](../../../TextureRegion/) element in this [TextureAtlas](../).
+
+

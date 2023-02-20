@@ -1,0 +1,20 @@
+---
+
+title: RawTilemapTile.TilesetTileID Property
+sidebar_label: TilesetTileID
+---
+**Declaring Type:** [RawTilemapTile](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the ID of the source tile in the tileset that represents the texture region used by the tilemap tile.
+
+```csharp
+public int TilesetTileID { get; }
+```
+
+## Property Value
+
+int
+
+

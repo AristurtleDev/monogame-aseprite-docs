@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.FrameCount Property
+sidebar_label: FrameCount
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) elements in this [AsepriteFile](../).
+
+```csharp
+public int FrameCount { get; }
+```
+
+## Property Value
+
+int
+
+

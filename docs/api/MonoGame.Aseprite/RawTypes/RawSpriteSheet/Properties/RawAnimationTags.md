@@ -1,0 +1,20 @@
+---
+
+title: RawSpriteSheet.RawAnimationTags Property
+sidebar_label: RawAnimationTags
+---
+**Declaring Type:** [RawSpriteSheet](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the raw animation tags that represent the animations tags for the spritesheet.
+
+```csharp
+public ReadOnlySpan<RawAnimationTag> RawAnimationTags { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[RawAnimationTag](../../RawAnimationTag/)\>
+
+

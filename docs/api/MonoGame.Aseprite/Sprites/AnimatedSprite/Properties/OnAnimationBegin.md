@@ -1,0 +1,24 @@
+---
+
+title: AnimatedSprite.OnAnimationBegin Property
+sidebar_label: OnAnimationBegin
+---
+**Declaring Type:** [AnimatedSprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets an Action method to invoke at the start of the animation.
+
+```csharp
+public Action<AnimatedSprite> OnAnimationBegin { get; set; }
+```
+
+## Property Value
+
+Action\<[AnimatedSprite](../)\>
+
+## Remarks
+
+This will trigger only once when the animation starts before the the first frame's [OnFrameBegin](OnFrameBegin) triggers.
+
+

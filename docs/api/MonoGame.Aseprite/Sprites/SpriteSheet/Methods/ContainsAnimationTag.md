@@ -1,0 +1,28 @@
+---
+
+title: SpriteSheet.ContainsAnimationTag Method
+sidebar_label: ContainsAnimationTag
+---
+**Declaring Type:** [SpriteSheet](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates whether this [SpriteSheet](../) contains an [AnimationTag](../../AnimationTag/)with the specified name.
+
+```csharp
+public bool ContainsAnimationTag(string name);
+```
+
+## Parameters
+
+`name`  string
+
+The name fo the [AnimationTag](../../AnimationTag/) element to locate.
+
+## Returns
+
+bool
+
+ if this [SpriteSheet](../) contains an [AnimationTag](../../AnimationTag/) with the                  specified name; otherwise, .
+
+

@@ -1,0 +1,28 @@
+---
+
+title: RawSpriteSheet.Equals Method
+sidebar_label: Equals
+---
+**Declaring Type:** [RawSpriteSheet](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates if the given [RawSpriteSheet](../) is equal to this[RawSpriteSheet](../).
+
+```csharp
+public bool Equals(RawSpriteSheet other);
+```
+
+## Parameters
+
+`other`  [RawSpriteSheet](../)
+
+The other [RawSpriteSheet](../) to check for equality with this [RawSpriteSheet](../).
+
+## Returns
+
+bool
+
+ if the given [RawSpriteSheet](../) is equal to this [RawSpriteSheet](../); otherwise, .
+
+

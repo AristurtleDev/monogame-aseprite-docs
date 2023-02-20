@@ -1,0 +1,30 @@
+---
+
+title: TextureRegion Constructors
+sidebar_label: TextureRegion Constructors
+---
+**Declaring Type:** [TextureRegion](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Initializes a new instance of the [TextureRegion](../) class.
+
+```csharp
+public TextureRegion(string name, Texture2D texture, Rectangle bounds);
+```
+
+## Parameters
+
+`name`  string
+
+The name to assign the [TextureRegion](../).
+
+`texture`  Texture2D
+
+The source texture image this region is from.
+
+`bounds`  Rectangle
+
+The rectangular bounds of this region within the source texture.
+
+

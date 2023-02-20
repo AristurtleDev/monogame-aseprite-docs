@@ -1,0 +1,26 @@
+---
+
+title: AnimatedTilemap.CurrentFrame Property
+sidebar_label: CurrentFrame
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the source [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) element for the current animation frame.
+
+```csharp
+public AnimatedTilemapFrame CurrentFrame { get; }
+```
+
+## Property Value
+
+[AnimatedTilemapFrame](../../AnimatedTilemapFrame/)
+
+## Exceptions
+
+InvalidOperationException
+
+Thrown if no [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) elements have been added to this [AnimatedTilemap](../) prior to accessing this property.
+
+

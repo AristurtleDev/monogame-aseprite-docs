@@ -1,0 +1,22 @@
+---
+
+title: AnimatedTilemap.AddFrame Method
+sidebar_label: AddFrame
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Adds the given [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) as the next frame of animation in this [AnimatedTilemap](../).
+
+```csharp
+public void AddFrame(AnimatedTilemapFrame frame);
+```
+
+## Parameters
+
+`frame`  [AnimatedTilemapFrame](../../AnimatedTilemapFrame/)
+
+The [AnimatedTilemapFrame](../../AnimatedTilemapFrame/) to add
+
+

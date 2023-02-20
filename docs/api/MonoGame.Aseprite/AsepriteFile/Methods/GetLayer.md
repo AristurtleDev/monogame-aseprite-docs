@@ -1,0 +1,69 @@
+---
+
+title: AsepriteFile.GetLayer Method
+sidebar_label: GetLayer
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                           | Description                                                                                                                                 |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [GetLayer(int)](#getlayerint)       | Gets the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element at the specified index in this [AsepriteFile](../).    |
+| [GetLayer(string)](#getlayerstring) | Gets the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element with the specified name from this [AsepriteFile](../). |
+
+## GetLayer(int)
+
+Gets the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element at the specified index in this [AsepriteFile](../).
+
+```csharp
+public AsepriteLayer GetLayer(int layerIndex);
+```
+
+### Parameters
+
+`layerIndex`  int
+
+The index of the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element to locate.
+
+### Returns
+
+[AsepriteLayer](../../AsepriteTypes/AsepriteLayer/)
+
+The [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element located.
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the index specified is less than zero or is greater than or equal to the total number of [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) elements in this [AsepriteFile](../).
+
+## GetLayer(string)
+
+Gets the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element with the specified name from this [AsepriteFile](../).
+
+```csharp
+public AsepriteLayer GetLayer(string layerName);
+```
+
+### Parameters
+
+`layerName`  string
+
+The name of the [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element to locate.
+
+### Returns
+
+[AsepriteLayer](../../AsepriteTypes/AsepriteLayer/)
+
+The [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element located.
+
+### Exceptions
+
+InvalidOperationException
+
+Thrown if this [AsepriteFile](../) does not contain an [AsepriteLayer](../../AsepriteTypes/AsepriteLayer/) element with the  specified name.
+
+

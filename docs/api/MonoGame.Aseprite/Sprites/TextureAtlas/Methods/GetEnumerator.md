@@ -1,0 +1,22 @@
+---
+
+title: TextureAtlas.GetEnumerator Method
+sidebar_label: Geterator
+---
+**Declaring Type:** [TextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns an enumerator that iterates each [TextureRegion](../../../TextureRegion/) element in this [TextureAtlas](../).
+
+```csharp
+public IEnumerator<TextureRegion> GetEnumerator();
+```
+
+## Returns
+
+IEnumerator\<[TextureRegion](../../../TextureRegion/)\>
+
+An enumerator that iterates each [TextureRegion](../../../TextureRegion/) elements in this [TextureAtlas](../).
+
+

@@ -1,0 +1,94 @@
+---
+
+title: Tileset.Item Indexer
+sidebar_label: Item Indexer
+---
+**Declaring Type:** [Tileset](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                        | Description                                                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Item\[Point\]](#itempoint)      | Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row location in this [Tileset](../). |
+| [Item\[int, int\]](#itemint-int) | Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../).          |
+| [Item\[int\]](#itemint)          | Gets the [TextureRegion](../../../TextureRegion/) of the tile at the specified index in this [Tileset](../).                    |
+
+## Item\[Point\]
+
+Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row location in this [Tileset](../).
+
+```csharp
+public TextureRegion this[Point location] { get; }
+```
+
+### Parameters
+
+`location`  Point
+
+The column and row location of the tile to locate in this [Tileset](../).
+
+### Indexer Value
+
+[TextureRegion](../../../TextureRegion/)
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if either the column or row in the location specified are less than zero or if either are greater  than or equal to the total number of columns or rows in this [Tileset](../).
+
+## Item\[int, int\]
+
+Gets the [TextureRegion](../../../TextureRegion/) for the tile at the specified column and row in this [Tileset](../).
+
+```csharp
+public TextureRegion this[int column, int row] { get; }
+```
+
+### Parameters
+
+`column`  int
+
+The column of the tile to locate in this [Tileset](../).
+
+`row`  int
+
+The row of the tile to locate in this [Tileset](../).
+
+### Indexer Value
+
+[TextureRegion](../../../TextureRegion/)
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if either the column or row specified are less than zero or if either are greater than or equal to  the total number of columns or rows in this [Tileset](../).
+
+## Item\[int\]
+
+Gets the [TextureRegion](../../../TextureRegion/) of the tile at the specified index in this [Tileset](../).
+
+```csharp
+public TextureRegion this[int index] { get; }
+```
+
+### Parameters
+
+`index`  int
+
+The index of the tile to locate.
+
+### Indexer Value
+
+[TextureRegion](../../../TextureRegion/)
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the specified index is less than zero or is greater than or equal to the total number of tiles in  this [Tileset](../).
+
+

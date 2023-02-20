@@ -1,0 +1,20 @@
+---
+
+title: TilemapLayer.IsVisible Property
+sidebar_label: IsVisible
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets a value that indicates whether this [TilemapLayer](../) is visible and should be  rendered.
+
+```csharp
+public bool IsVisible { get; set; }
+```
+
+## Property Value
+
+bool
+
+

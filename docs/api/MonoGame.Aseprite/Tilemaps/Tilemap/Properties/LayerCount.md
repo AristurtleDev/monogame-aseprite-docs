@@ -1,0 +1,20 @@
+---
+
+title: Tilemap.LayerCount Property
+sidebar_label: LayerCount
+---
+**Declaring Type:** [Tilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [TilemapLayer](../../TilemapLayer/) elements in this [Tilemap](../).
+
+```csharp
+public int LayerCount { get; }
+```
+
+## Property Value
+
+int
+
+

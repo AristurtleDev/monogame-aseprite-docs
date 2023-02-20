@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.Palette Property
+sidebar_label: Palette
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the color values that represent the palette of this [AsepriteFile](../).
+
+```csharp
+public ReadOnlySpan<Color> Palette { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<Color\>
+
+

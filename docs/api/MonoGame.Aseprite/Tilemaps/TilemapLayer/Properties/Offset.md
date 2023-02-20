@@ -1,0 +1,20 @@
+---
+
+title: TilemapLayer.Offset Property
+sidebar_label: Offset
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets the x\- and y\-coordinate position offset, relative to the position of the [Tilemap](../../Tilemap/), to render this [TilemapLayer](../) at 
+
+```csharp
+public Vector2 Offset { get; set; }
+```
+
+## Property Value
+
+Vector2
+
+

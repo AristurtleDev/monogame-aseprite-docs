@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.Tilesets Property
+sidebar_label: Tilesets
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of all [AsepriteTileset](../../AsepriteTypes/AsepriteTileset/) elements in this [AsepriteFile](../).
+
+```csharp
+public ReadOnlySpan<AsepriteTileset> Tilesets { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[AsepriteTileset](../../AsepriteTypes/AsepriteTileset/)\>
+
+

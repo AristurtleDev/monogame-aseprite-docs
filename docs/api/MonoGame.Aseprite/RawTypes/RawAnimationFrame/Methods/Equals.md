@@ -1,0 +1,28 @@
+---
+
+title: RawAnimationFrame.Equals Method
+sidebar_label: Equals
+---
+**Declaring Type:** [RawAnimationFrame](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates if the given [RawAnimationFrame](../) is equal to this[RawAnimationFrame](../).
+
+```csharp
+public bool Equals(RawAnimationFrame other);
+```
+
+## Parameters
+
+`other`  [RawAnimationFrame](../)
+
+The other [RawAnimationFrame](../) to check for equality with this [RawAnimationFrame](../).
+
+## Returns
+
+bool
+
+ if the given [RawAnimationFrame](../) is equal to this [RawAnimationFrame](../); otherwise, .
+
+

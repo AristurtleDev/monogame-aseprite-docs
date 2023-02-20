@@ -1,0 +1,28 @@
+---
+
+title: RawTilemapReader.Read Method
+sidebar_label: Read
+---
+**Declaring Type:** [RawTilemapReader](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Reads the [RawTilemap](../../../../RawTypes/RawTilemap/) from the file at the specified path.
+
+```csharp
+public static RawTilemap Read(string path);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the file that contains the [RawTilemap](../../../../RawTypes/RawTilemap/) to read.
+
+## Returns
+
+[RawTilemap](../../../../RawTypes/RawTilemap/)
+
+The [RawTilemap](../../../../RawTypes/RawTilemap/) that was read.
+
+

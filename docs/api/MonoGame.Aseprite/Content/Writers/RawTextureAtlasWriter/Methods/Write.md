@@ -1,0 +1,26 @@
+---
+
+title: RawTextureAtlasWriter.Write Method
+sidebar_label: Write
+---
+**Declaring Type:** [RawTextureAtlasWriter](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Writers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Writes the contents of the [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) given to the file at the path specified.
+
+```csharp
+public static void Write(string path, RawTextureAtlas rawTextureAtlas);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the file to write the contents of the [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) to.  If no file  exists at this path,  one will be created.  If a file already exists, it will be overwritten.
+
+`rawTextureAtlas`  [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/)
+
+The [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) to write.
+
+

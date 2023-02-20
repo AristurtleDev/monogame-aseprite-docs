@@ -1,0 +1,20 @@
+---
+
+title: TilemapLayer.Tiles Property
+sidebar_label: Tiles
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [Tile](../../Tile/) elements in this [TilemapLayer](../).
+
+```csharp
+public ReadOnlySpan<Tile> Tiles { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[Tile](../../Tile/)\>
+
+

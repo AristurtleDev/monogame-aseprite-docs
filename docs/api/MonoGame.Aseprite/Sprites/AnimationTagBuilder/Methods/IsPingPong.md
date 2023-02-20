@@ -1,0 +1,28 @@
+---
+
+title: AnimationTagBuilder.IsPingPong Method
+sidebar_label: IsPingPong
+---
+**Declaring Type:** [AnimationTagBuilder](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Sets whether the animation should ping\-pong once reaching the last frame of animation.
+
+```csharp
+public AnimationTagBuilder IsPingPong(bool isPingPong);
+```
+
+## Parameters
+
+`isPingPong`  bool
+
+A value that indicates whether the animation should ping\-pong.
+
+## Returns
+
+[AnimationTagBuilder](../)
+
+This instance of the [AnimationTagBuilder](../) class.
+
+

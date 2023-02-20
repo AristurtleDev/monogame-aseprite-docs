@@ -1,0 +1,20 @@
+---
+
+title: Sprite.IsVisible Property
+sidebar_label: IsVisible
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets a value that indicates if this [Sprite](../) is visible and can be rendered.
+
+```csharp
+public bool IsVisible { get; set; }
+```
+
+## Property Value
+
+bool
+
+

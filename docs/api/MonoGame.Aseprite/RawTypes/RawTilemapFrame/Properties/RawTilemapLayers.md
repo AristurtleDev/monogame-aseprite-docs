@@ -1,0 +1,20 @@
+---
+
+title: RawTilemapFrame.RawTilemapLayers Property
+sidebar_label: RawTilemapLayers
+---
+**Declaring Type:** [RawTilemapFrame](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [RawTilemapLayer](../../RawTilemapLayer/) that represent the tilemap layers for the  tilemap frame.
+
+```csharp
+public ReadOnlySpan<RawTilemapLayer> RawTilemapLayers { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[RawTilemapLayer](../../RawTilemapLayer/)\>
+
+

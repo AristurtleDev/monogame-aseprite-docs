@@ -1,0 +1,34 @@
+---
+
+title: AsepriteFile.GetFrame Method
+sidebar_label: GetFrame
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) at the specified index in this [AsepriteFile](../).
+
+```csharp
+public AsepriteFrame GetFrame(int frameIndex);
+```
+
+## Parameters
+
+`frameIndex`  int
+
+The index of the [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) to locate.
+
+## Returns
+
+[AsepriteFrame](../../AsepriteTypes/AsepriteFrame/)
+
+The [AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) located.
+
+## Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the index specified is less than zero or is greater than or equal to the total number of[AsepriteFrame](../../AsepriteTypes/AsepriteFrame/) elements in this [AsepriteFile](../).
+
+

@@ -1,0 +1,20 @@
+---
+
+title: RawNinePatchSlice.CenterBounds Property
+sidebar_label: CenterBounds
+---
+**Declaring Type:** [RawNinePatchSlice](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the rectangular bounds of the center of the nine\-patch slice.
+
+```csharp
+public Rectangle CenterBounds { get; }
+```
+
+## Property Value
+
+Rectangle
+
+

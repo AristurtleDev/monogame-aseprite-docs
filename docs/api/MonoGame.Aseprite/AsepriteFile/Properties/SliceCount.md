@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.SliceCount Property
+sidebar_label: SliceCount
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [AsepriteSlice](../../AsepriteTypes/AsepriteSlice/) elements in this [AsepriteFile](../).
+
+```csharp
+public int SliceCount { get; }
+```
+
+## Property Value
+
+int
+
+

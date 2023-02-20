@@ -1,0 +1,20 @@
+---
+
+title: AnimationTag.Frames Property
+sidebar_label: Frames
+---
+**Declaring Type:** [AnimationTag](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the [AnimationFrame](../../AnimationFrame/) elements that make up the animation.  The order of elements is from first frame to last frame in non\-reverse order.
+
+```csharp
+public ReadOnlySpan<AnimationFrame> Frames { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[AnimationFrame](../../AnimationFrame/)\>
+
+

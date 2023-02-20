@@ -1,0 +1,28 @@
+---
+
+title: RawTextureAtlasReader.Read Method
+sidebar_label: Read
+---
+**Declaring Type:** [RawTextureAtlasReader](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Readers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Reads the [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) from the file at the specified path.
+
+```csharp
+public static RawTextureAtlas Read(string path);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the file that contains the [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) to read.
+
+## Returns
+
+[RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/)
+
+The [RawTextureAtlas](../../../../RawTypes/RawTextureAtlas/) that was read.
+
+

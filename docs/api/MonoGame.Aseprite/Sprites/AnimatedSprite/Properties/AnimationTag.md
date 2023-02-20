@@ -1,0 +1,20 @@
+---
+
+title: AnimatedSprite.AnimationTag Property
+sidebar_label: AnimationTag
+---
+**Declaring Type:** [AnimatedSprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the source AnimationTag that defines the animation.
+
+```csharp
+public AnimationTag AnimationTag { get; }
+```
+
+## Property Value
+
+[AnimationTag](../../AnimationTag/)
+
+

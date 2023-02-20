@@ -1,0 +1,28 @@
+---
+
+title: TextureAtlas.ContainsRegion Method
+sidebar_label: ContainsRegion
+---
+**Declaring Type:** [TextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns a value that indicates whether this [TextureAtlas](../) contains a [TextureRegion](../../../TextureRegion/) element with the specified name.
+
+```csharp
+public bool ContainsRegion(string name);
+```
+
+## Parameters
+
+`name`  string
+
+The name of the [TextureRegion](../../../TextureRegion/) to locate.
+
+## Returns
+
+bool
+
+ if this [TextureAtlas](../) contains a [TextureRegion](../../../TextureRegion/) element                 with the specified name; otherwise, .
+
+

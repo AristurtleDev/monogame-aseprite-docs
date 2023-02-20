@@ -1,0 +1,20 @@
+---
+
+title: AsepriteSlice.UserData Property
+sidebar_label: UserData
+---
+**Declaring Type:** [AsepriteSlice](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the [AsepriteUserData](../../AsepriteUserData/) set for this [AsepriteSlice](../) in aseprite.
+
+```csharp
+public AsepriteUserData UserData { get; }
+```
+
+## Property Value
+
+[AsepriteUserData](../../AsepriteUserData/)
+
+

@@ -1,0 +1,28 @@
+---
+
+title: TextureAtlas.GetIndexOfRegion Method
+sidebar_label: GetIndexOfRegion
+---
+**Declaring Type:** [TextureAtlas](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Returns the index of the [TextureRegion](../../../TextureRegion/) element with the specified name in this [TextureAtlas](../).
+
+```csharp
+public int GetIndexOfRegion(string name);
+```
+
+## Parameters
+
+`name`  string
+
+The name of the [TextureRegion](../../../TextureRegion/) to locate.
+
+## Returns
+
+int
+
+ if this [TextureAtlas](../) contains a [TextureRegion](../../../TextureRegion/) element                 with the specified name; otherwise, .
+
+

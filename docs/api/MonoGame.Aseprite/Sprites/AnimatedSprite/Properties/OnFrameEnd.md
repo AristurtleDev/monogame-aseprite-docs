@@ -1,0 +1,20 @@
+---
+
+title: AnimatedSprite.OnFrameEnd Property
+sidebar_label: OnFrameEnd
+---
+**Declaring Type:** [AnimatedSprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets an Action method to invoke at the end of each frame of animation.
+
+```csharp
+public Action<AnimatedSprite> OnFrameEnd { get; set; }
+```
+
+## Property Value
+
+Action\<[AnimatedSprite](../)\>
+
+

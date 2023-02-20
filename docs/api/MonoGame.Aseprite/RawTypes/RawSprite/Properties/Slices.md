@@ -1,0 +1,20 @@
+---
+
+title: RawSprite.Slices Property
+sidebar_label: Slices
+---
+**Declaring Type:** [RawSprite](../)  
+**Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a read\-only span of the raw slice values the texture region that will be generated for the sprite.
+
+```csharp
+public ReadOnlySpan<RawSlice> Slices { get; }
+```
+
+## Property Value
+
+ReadOnlySpan\<[RawSlice](../../RawSlice/)\>
+
+

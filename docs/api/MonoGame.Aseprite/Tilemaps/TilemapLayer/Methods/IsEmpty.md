@@ -1,0 +1,100 @@
+---
+
+title: TilemapLayer.IsEmpty Method
+sidebar_label: IsEmpty
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+## Overloads
+
+| Signature                            | Description                                                                                                                                                             |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [IsEmpty(Point)](#isemptypoint)      | Returns a value that indicates whether the [Tile](../../Tile/) element at the specified column and row  location in  this [TilemapLayer](../) is empty. |
+| [IsEmpty(int)](#isemptyint)          | Returns a value that indicates whether the [Tile](../../Tile/) element at the specified index in this [TilemapLayer](../)  is empty.                    |
+| [IsEmpty(int, int)](#isemptyint-int) | Returns a value that indicates whether the [Tile](../../Tile/) element at the specified column and row in  this [TilemapLayer](../) is empty.           |
+
+## IsEmpty(Point)
+
+Returns a value that indicates whether the [Tile](../../Tile/) element at the specified column and row  location in  this [TilemapLayer](../) is empty.
+
+```csharp
+public bool IsEmpty(Point location);
+```
+
+### Parameters
+
+`location`  Point
+
+The column and row location of the [Tile](../../Tile/) element to check.
+
+### Returns
+
+bool
+
+ if the [Tile](../../Tile/) element at the specified column and row location in this [TilemapLayer](../) is empty; otherwise, .
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if either the column or row in the specified location is less than zero or if either is greater  than or equal to the total number of columns or rows in this [TilemapLayer](../).
+
+## IsEmpty(int)
+
+Returns a value that indicates whether the [Tile](../../Tile/) element at the specified index in this [TilemapLayer](../)  is empty.
+
+```csharp
+public bool IsEmpty(int index);
+```
+
+### Parameters
+
+`index`  int
+
+The index of the [Tile](../../Tile/) element to check.
+
+### Returns
+
+bool
+
+ if the [Tile](../../Tile/) element at the specified index is empty; otherwise, .
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if the index specified is less than zero or is greater than or equal to the total number of [Tile](../../Tile/) elements in this [TilemapLayer](../).
+
+## IsEmpty(int, int)
+
+Returns a value that indicates whether the [Tile](../../Tile/) element at the specified column and row in  this [TilemapLayer](../) is empty.
+
+```csharp
+public bool IsEmpty(int column, int row);
+```
+
+### Parameters
+
+`column`  int
+
+The column of the [Tile](../../Tile/) element to check.
+
+`row`  int
+
+The row of the [Tile](../../Tile/) element to check.
+
+### Returns
+
+bool
+
+ if the [Tile](../../Tile/) element at the specified column and row in this [TilemapLayer](../) is empty; otherwise, .
+
+### Exceptions
+
+ArgumentOutOfRangeException
+
+Thrown if either the column or row specified is less than zero or if either is greater than or equal to the total number of columns or rows in this [TilemapLayer](../).
+
+

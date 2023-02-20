@@ -1,0 +1,20 @@
+---
+
+title: Sprite.Origin Property
+sidebar_label: Origin
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets the x\- and y\-coordinate point of origin to apply when rendering this [Sprite](../).
+
+```csharp
+public Vector2 Origin { get; set; }
+```
+
+## Property Value
+
+Vector2
+
+

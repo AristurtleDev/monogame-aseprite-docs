@@ -1,0 +1,15 @@
+---
+
+title: Tilemap.Clear Method
+sidebar_label: Clear
+---
+**Declaring Type:** [Tilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Removes all [TilemapLayer](../../TilemapLayer/) elements from this [Tilemap](../).
+
+```csharp
+public void Clear();
+```
+

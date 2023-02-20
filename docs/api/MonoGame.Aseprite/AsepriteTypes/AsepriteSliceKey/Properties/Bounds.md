@@ -1,0 +1,20 @@
+---
+
+title: AsepriteSliceKey.Bounds Property
+sidebar_label: Bounds
+---
+**Declaring Type:** [AsepriteSliceKey](../)  
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the rectangular bounds of the [AsepriteSlice](../../AsepriteSlice/) during this [AsepriteSliceKey](../).
+
+```csharp
+public Rectangle Bounds { get; }
+```
+
+## Property Value
+
+Rectangle
+
+

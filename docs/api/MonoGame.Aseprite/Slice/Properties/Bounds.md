@@ -1,0 +1,20 @@
+---
+
+title: Slice.Bounds Property
+sidebar_label: Bounds
+---
+**Declaring Type:** [Slice](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the rectangular bounds of this [Slice](../) relative to the bounds of the[TextureRegion](../../TextureRegion/) it is in.
+
+```csharp
+public Rectangle Bounds { get; }
+```
+
+## Property Value
+
+Rectangle
+
+

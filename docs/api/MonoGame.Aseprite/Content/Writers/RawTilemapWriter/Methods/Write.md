@@ -1,0 +1,26 @@
+---
+
+title: RawTilemapWriter.Write Method
+sidebar_label: Write
+---
+**Declaring Type:** [RawTilemapWriter](../)  
+**Namespace:** [MonoGame.Aseprite.Content.Writers](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Writes the contents of the [RawTilemap](../../../../RawTypes/RawTilemap/) given to the file at the path specified.
+
+```csharp
+public static void Write(string path, RawTilemap rawTilemap);
+```
+
+## Parameters
+
+`path`  string
+
+The path and name of the file to write the contents of the [RawTilemap](../../../../RawTypes/RawTilemap/) to.  If no file exists  at this path, one will be created.  If a file already exists, it will be overwritten.
+
+`rawTilemap`  [RawTilemap](../../../../RawTypes/RawTilemap/)
+
+The [RawTilemap](../../../../RawTypes/RawTilemap/) to write.
+
+

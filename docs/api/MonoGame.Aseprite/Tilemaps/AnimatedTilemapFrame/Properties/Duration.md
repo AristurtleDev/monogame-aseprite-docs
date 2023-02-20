@@ -1,0 +1,20 @@
+---
+
+title: AnimatedTilemapFrame.Duration Property
+sidebar_label: Duration
+---
+**Declaring Type:** [AnimatedTilemapFrame](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the duration of this [AnimatedTilemapFrame](../).
+
+```csharp
+public TimeSpan Duration { get; }
+```
+
+## Property Value
+
+TimeSpan
+
+

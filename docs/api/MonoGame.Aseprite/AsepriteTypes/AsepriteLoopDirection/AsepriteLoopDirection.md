@@ -1,0 +1,30 @@
+---
+
+title: AsepriteLoopDirection Enum
+sidebar_label: AsepriteLoopDirection
+---
+**Namespace:** [MonoGame.Aseprite.AsepriteTypes](../)  
+**Assembly:** MonoGame.Aseprite
+
+Defines the direction for an animation defined by a [AsepriteTag](../AsepriteTag/).
+
+```csharp
+public enum AsepriteLoopDirection : byte
+{
+    Forward = 0,
+    Reverse = 1,
+    PingPong = 2
+}
+```
+
+**Inheritance:** object → ValueType → Enum → AsepriteLoopDirection
+
+## Fields
+
+| Name     | Description                                                                                                                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Forward  | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in a forward direction from the first frame of animation to the last.                                                                 |
+| PingPong | Defines that the animation for the [AsepriteTag](../AsepriteTag/) ping\-pongs by first going from the first frame of animation to the last then playing in reverse from the last frame of animation to the first. |
+| Reverse  | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in reversed from the last frame of  animation to the first.                                                                           |
+
+

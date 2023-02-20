@@ -1,0 +1,24 @@
+---
+
+title: AnimatedSprite.OnAnimationLoop Property
+sidebar_label: OnAnimationLoop
+---
+**Declaring Type:** [AnimatedSprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets an Action to invoke each time the animation loops.
+
+```csharp
+public Action<AnimatedSprite> OnAnimationLoop { get; set; }
+```
+
+## Property Value
+
+Action\<[AnimatedSprite](../)\>
+
+## Remarks
+
+This will trigger each time the animation loops after the last frame's [OnFrameEnd](OnFrameEnd) triggers.
+
+

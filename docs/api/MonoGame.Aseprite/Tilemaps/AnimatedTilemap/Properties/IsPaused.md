@@ -1,0 +1,20 @@
+---
+
+title: AnimatedTilemap.IsPaused Property
+sidebar_label: IsPaused
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets a value that indicates if this [AnimatedTilemap](../) is currently paused.
+
+```csharp
+public bool IsPaused { get; }
+```
+
+## Property Value
+
+bool
+
+

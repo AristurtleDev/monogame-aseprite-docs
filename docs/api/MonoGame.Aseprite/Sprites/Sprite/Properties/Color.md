@@ -1,0 +1,22 @@
+---
+
+title: Sprite.Color Property
+sidebar_label: Color
+---
+**Declaring Type:** [Sprite](../)  
+**Namespace:** [MonoGame.Aseprite.Sprites](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets or Sets the color mask to apply when rendering this [Sprite](../).
+
+```csharp
+public Color Color { get; set; }
+```
+
+## Property Value
+
+Color
+
+The color mask to apply when rendering this [Sprite](../).
+
+

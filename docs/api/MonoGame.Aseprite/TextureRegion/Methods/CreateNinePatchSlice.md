@@ -1,0 +1,50 @@
+---
+
+title: TextureRegion.CreateNinePatchSlice Method
+sidebar_label: CreateNinePatchSlice
+---
+**Declaring Type:** [TextureRegion](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Creates and adds a new [NinePatchSlice](../../NinePatchSlice/) element to this [TextureRegion](../).
+
+```csharp
+public NinePatchSlice CreateNinePatchSlice(string name, Rectangle bounds, Rectangle centerBounds, Vector2 origin, Color color);
+```
+
+## Parameters
+
+`name`  string
+
+The name to assign the [NinePatchSlice](../../NinePatchSlice/) that is created by this method.  The name must be unique across all [Slice](../../Slice/) elements in this [TextureRegion](../).
+
+`bounds`  Rectangle
+
+The bounds to assign the [NinePatchSlice](../../NinePatchSlice/) created by this method.  This should be relative to  the bounds of this [TextureRegion](../).
+
+`centerBounds`  Rectangle
+
+The center bounds to assign the [NinePatchSlice](../../NinePatchSlice/) created by this method.  This should be relative to the `bounds`.
+
+`origin`  Vector2
+
+The x\- and y\-coordinate origin point to assign the [NinePatchSlice](../../NinePatchSlice/) created by this method. This should be relative to the upper\-left corner of the bounds of this [TextureRegion](../).
+
+`color`  Color
+
+A Color value to assign the [NinePatchSlice](../../NinePatchSlice/) created by this method.
+
+## Returns
+
+[NinePatchSlice](../../NinePatchSlice/)
+
+The [NinePatchSlice](../../NinePatchSlice/) created by this method.
+
+## Exceptions
+
+InvalidOperationException
+
+Thrown if this [TextureRegion](../) already contains a [Slice](../../Slice/) with the specified name.
+
+

@@ -1,0 +1,20 @@
+---
+
+title: AsepriteFile.TagCount Property
+sidebar_label: TagCount
+---
+**Declaring Type:** [AsepriteFile](../)  
+**Namespace:** [MonoGame.Aseprite](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the total number of [AsepriteTag](../../AsepriteTypes/AsepriteTag/) elements in this [AsepriteFile](../).
+
+```csharp
+public int TagCount { get; }
+```
+
+## Property Value
+
+int
+
+

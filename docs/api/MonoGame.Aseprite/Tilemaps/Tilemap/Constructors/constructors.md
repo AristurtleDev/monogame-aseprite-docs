@@ -1,0 +1,22 @@
+---
+
+title: Tilemap Constructors
+sidebar_label: Tilemap Constructors
+---
+**Declaring Type:** [Tilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Initializes a new instance of the [Tilemap](../) class.
+
+```csharp
+public Tilemap(string name);
+```
+
+## Parameters
+
+`name`  string
+
+The name to assign [Tilemap](../).
+
+

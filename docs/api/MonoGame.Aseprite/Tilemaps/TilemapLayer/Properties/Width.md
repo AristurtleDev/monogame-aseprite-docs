@@ -1,0 +1,23 @@
+---
+
+title: TilemapLayer.Width Property
+sidebar_label: Width
+---
+**Declaring Type:** [TilemapLayer](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Gets the width, in pixels, of this [TilemapLayer](../).
+
+```
+Width = Tileset.TileWidth * Columns
+```
+```csharp
+public int Width { get; }
+```
+
+## Property Value
+
+int
+
+

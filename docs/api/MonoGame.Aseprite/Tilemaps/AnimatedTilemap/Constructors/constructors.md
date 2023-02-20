@@ -1,0 +1,34 @@
+---
+
+title: AnimatedTilemap Constructors
+sidebar_label: AnimatedTilemap Constructors
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Initializes a new instance of the [AnimatedTilemap](../) class.
+
+```csharp
+public AnimatedTilemap(string name, bool isLooping = true, bool isReversed = false, bool isPingPong = false);
+```
+
+## Parameters
+
+`name`  string
+
+The name to assign the [AnimatedTilemap](../).
+
+`isLooping`  bool
+
+Indicates whether the animation for the [AnimatedTilemap](../) should loop
+
+`isReversed`  bool
+
+Indicates whether the frames for the [AnimatedTilemap](../) should play in reverse order.
+
+`isPingPong`  bool
+
+Indicates whether the animation for this [AnimatedTilemap](../) should ping\-pong once reaching the  last frame of animation
+
+

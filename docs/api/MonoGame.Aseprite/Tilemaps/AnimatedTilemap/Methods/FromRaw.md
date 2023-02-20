@@ -1,0 +1,32 @@
+---
+
+title: AnimatedTilemap.FromRaw Method
+sidebar_label: FromRaw
+---
+**Declaring Type:** [AnimatedTilemap](../)  
+**Namespace:** [MonoGame.Aseprite.Tilemaps](../../)  
+**Assembly:** MonoGame.Aseprite
+
+Creates a new instance of the [AnimatedTilemap](../) class from the given [RawAnimatedTilemap](../../../RawTypes/RawAnimatedTilemap/).
+
+```csharp
+public static AnimatedTilemap FromRaw(GraphicsDevice device, RawAnimatedTilemap rawTilemap);
+```
+
+## Parameters
+
+`device`  GraphicsDevice
+
+The GraphicsDevice used to create graphical resources.
+
+`rawTilemap`  [RawAnimatedTilemap](../../../RawTypes/RawAnimatedTilemap/)
+
+The [RawAnimatedTilemap](../../../RawTypes/RawAnimatedTilemap/) to create the [AnimatedTilemap](../) from.
+
+## Returns
+
+[AnimatedTilemap](../)
+
+The [AnimatedTilemap](../) created by this method.
+
+
