@@ -7,7 +7,7 @@ sidebar_label: Installation
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The purpose of this document is to provide the instructions for installing the `MonoGame.Aseprite` library for your Monogame game project.
+The purpose of this document is to provide the instructions for installing the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) library for your Monogame game project.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ The purpose of this document is to provide the instructions for installing the `
 
 ## Downloading
 
-`Monogame.Aseprite` is distributed via a NuGet package. You can download it by adding the NuGet package to your project from within your IDE (e.g. the NuGet Package Manager in Visual Studio). Just search for the `MonoGame.Aseprite` package.
+[MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) is distributed via a NuGet package. You can download it by adding the NuGet package to your project from within your IDE (e.g. the NuGet Package Manager in Visual Studio). Just search for the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) package.
 
 You can also add it using the one of the following methods:
 
@@ -44,12 +44,7 @@ Install-Package MonoGame.Aseprite -Version 4.0.0
 </TabItem>
 </Tabs>
 
-After adding the `Monogame.Aseprite` NuGet package to your project, you will now have two dll references that are included and will be output as part of each build
-
-| DLL/Assembly                   | Summary                                                                                                                                                       |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `MonoGame.Aseprite.dll`        | Assembly that contains the runtime classes.                                                                                                                   |
-| `MonoGame.Aseprite.Common.dll` | Assembly that contains classes and helpers used to importing, processing, reading, and writing content. This is used by the `MonoGame.Aseprite.dll` assembly. |
+After adding the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) NuGet package to your project, the `MonoGame.Aseprite.dll` will automatically be added as a reference to your project and is included as an output on build.
 
 ## Next Steps
 

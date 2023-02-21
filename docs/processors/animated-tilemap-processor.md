@@ -4,19 +4,19 @@ title: AnimatedTilemap Processor
 sidebar_label: AnimatedTilemap Processor
 ---
 
-The purpose of this document is to provide an overview of the `AnimatedTilemapProcessor` provided with the `MonoGame.Aseprite` library.
+The purpose of this document is to provide an overview of the [AnimatedTilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor) provided with the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) library.
 
 ## Overview
 
-An `AnimatedTilemap` represents a `Tilemap` with `AnimatedTilemapFrame` elements. Each `AnimatedTilemapFrame` defines the `TilemapLayer` elements, each with it's own `Tile` collection, and the duration of the frame.
+An [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md) represents a [Tilemap](../api/MonoGame.Aseprite/Tilemaps/Tilemap/Tilemap.md) with [AnimatedTilemapFrame](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemapFrame/AnimatedTilemapFrame.md) elements. Each [AnimatedTilemapFrame](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemapFrame/AnimatedTilemapFrame.md) defines the [TilemapLayer](../api/MonoGame.Aseprite/Tilemaps/TilemapLayer/TilemapLayer.md) elements, each with it's own [Tile](../api/MonoGame.Aseprite/Tilemaps/Tile/Tile.md) collection, and the duration of the frame.
 
-The `AnimatedTilemapProcessor` is used to process an `AnimatedTilemap` from your Aseprite file. To do this, first the `TilesetProcessor` is used to generate a `Tileset` for the tilesets used by each tilemap layer. Next, each frame in the Aseprite file is processed by first processing each tilemap layer as a `TilemapLayer` instance, then processing the tilemap cels in frame and setting tile data to the `TilemapLayer` it is on. The `TilemapLayer` elements generated for that frame are then used to create a new `AnimatedTilemapFrame` instance and the duration of that frame processed is assigned to the `AnimatedTilemapFrame` created.
+The [AnimatedTilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor) is used to process an [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md)  from your Aseprite file. To do this, first the [TilesetProcessor](../api/MonoGame.Aseprite/Content/Processors/TilesetProcessor/TilesetProcessor.md) is used to generate a [Tileset](../api/MonoGame.Aseprite/Tilemaps/Tileset/Tileset.md) for the tilesets used by each tilemap layer. Next, each frame in the Aseprite file is processed by first processing each tilemap layer as a [TilemapLayer](../api/MonoGame.Aseprite/Tilemaps/TilemapLayer/TilemapLayer.md) instance, then processing the tilemap cels in frame and setting tile data to the [TilemapLayer](../api/MonoGame.Aseprite/Tilemaps/TilemapLayer/TilemapLayer.md) it is on. The [TilemapLayer](../api/MonoGame.Aseprite/Tilemaps/TilemapLayer/TilemapLayer.md) elements generated for that frame are then used to create a new [AnimatedTilemapFrame](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemapFrame/AnimatedTilemapFrame.md) instance and the duration of that frame processed is assigned to the [AnimatedTilemapFrame](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemapFrame/AnimatedTilemapFrame.md) created.
 
-Once call frames have been processed as `AnimatedTilemapFrame` elements, they are used to create the `AnimatedTilemap` instance.
+Once call frames have been processed as [AnimatedTilemapFrame](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemapFrame/AnimatedTilemapFrame.md) elements, they are used to create the [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md)  instance.
 
 ## Usage
 
-The following example demonstrates how to use the `AnimatedTilemapProcessor` to create an `AnimatedTilemap` from your Aseprite file:
+The following example demonstrates how to use the [AnimatedTilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor) to create an [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md)  from your Aseprite file:
 
 **Add Using Statements**
 
@@ -26,7 +26,7 @@ using MonoGame.Aseprite.Tilemaps;
 using Monogame.Aseprite.Processors;
 ```
 
-**Create `AnimatedTilemap` Using the `AnimatedTilemapProcessor`**
+**Create [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md)  Using the [AnimatedTilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor)**
 
 ```cs
 public override void LoadContent()
@@ -43,14 +43,8 @@ public override void LoadContent()
 }
 ```
 
-Additionally the `AnimatedTilemapProcessor.Process` method has an optional parameter that can be given to control how the processor creates the `AnimatedTilemap`. The table below provides a summary of the optional parameter:
+Additionally the [AnimatedTilemapProcessor.Process](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor/Methods/Process.md) method has an optional parameter that can be given to control how the processor creates the [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md) . The table below provides a summary of the optional parameter:
 
 | Optional Parameter  | Default Value | Summary                                                                           |
 | ------------------- | ------------- | --------------------------------------------------------------------------------- |
 | `onlyVisibleLayers` | `true`        | Indicates whether only tilemap cels on visible tilemap layers should be included. |
-
-:::info
-
-For more information on the `AnimatedTilemap` class, including how to update it each frame and draw it with the `SpriteBatch`, see the [`AnimatedTilemap` Guide]
-
-:::

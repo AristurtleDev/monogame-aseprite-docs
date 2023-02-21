@@ -62,10 +62,35 @@ const config = {
             position: 'left',
             label: 'API'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            href: 'https://ko-fi.com/aristurtledev',
+            className: "header-icon-link header-icon-kofi",
+            position: 'right',
+          },
+          {
+            href: 'https://discord.gg/8jFvHhuMJU',
+            className: "header-icon-link header-icon-discord",
+            position: 'right',
+          },
+          {
+            href: 'https://mastodon.gamedev.place/@aristurtle',
+            className: "header-icon-link header-icon-mastodon",
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/aristurtledev',
+            className: "header-icon-link header-icon-twitter",
+            position: 'right',
+          },
           {
             href: 'https://github.com/AristurtleDev/monogame-aseprite',
-            label: 'GitHub',
+            className: "header-icon-link header-icon-github",
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/sponsors/AristurtleDev/',
+            className: "header-icon-link header-icon-gh-sponsors",
             position: 'right',
           },
         ],

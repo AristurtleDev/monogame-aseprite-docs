@@ -1,18 +1,11 @@
 ---
-id: introduction-maintenance
+id: introduction
 title: MonoGame.Aseprite
 sidebar_label: Introduction
 slug: /
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from '@theme/ThemedImage';
-
-:::caution
-
-Thank you for checking out the site.  The documentation is currently a work in progress and not ready just yet.  When it is, I'll make an announcement on both [Twitter](https://www.twitter.com/aristurtledev) and [Mastodon](https://mastodon.gamedev.place/@aristurtle) so be sure to follow me on one of those.
-
-:::
-
 
 ![MonoGame.Aseprite Banner](/img/banner.png)
 MonoGame.Aseprite is an free and open source library for the [MonoGame Framework](https://www.monogame.net) that assists in importing [Aseprite](https://www.aseprite.org)  \*.ase/\*.aseprite files into your game project.  No need to export a spritesheet from Aseprite and have to deal with a PNG + JSON file.  With MonoGame.Aseprite, you use the Aseprite file directly.

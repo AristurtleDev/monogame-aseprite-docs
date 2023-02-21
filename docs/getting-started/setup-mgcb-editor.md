@@ -7,17 +7,17 @@ sidebar_label: (Optional) Setup MGCB Editor
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The purpose of this document is to provide the instructions for setting up the MGCB Editor for use with the `MonoGame.Aseprite` library to import your Aseprite files for your MonoGame project.
+The purpose of this document is to provide the instructions for setting up the MGCB Editor for use with the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) library to import your Aseprite files for your MonoGame project.
 
 :::caution
 
-This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the `AsepriteFile`
+This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the [AsepriteFile](../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md)
 
 :::
 
 ## Add Reference in MGCB Editor
 
-In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the `MonoGame.Aseprite.Content.Pipeline.dll` assembly. This assembly was downloaded as part of the `MonoGame.Aseprite` NuGet package, but it does not get added automatically for you. To add it, complete the following steps:
+In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the `MonoGame.Aseprite.Content.Pipeline.dll` assembly. This assembly was downloaded as part of the [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md) NuGet package, but it does not get added automatically for you. To add it, complete the following steps:
 
 1. Open your `Content.mgcb` file in the MGCB Editor.
 
@@ -51,21 +51,21 @@ By default, NuGet will download packages to the global packages directory. The f
 <TabItem value="windows" label="Windows">
 
 ```
-%userprofile%\.nuget\packages\monogame-aseprite\4.0.0\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+%userprofile%\.nuget\packages\monogame-aseprite\4.0.0\content\MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
 <TabItem value="mac" label="Mac">
 
 ```
-~/.nuget/packages/monogame-aseprite/4.0.0/content/pipeline/MonoGame.Aseprite.Content.Pipeline.dll
+~/.nuget/packages/monogame-aseprite/4.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
 <TabItem value="linux" label="Linux">
 
 ```
-~/.nuget/packages/monogame-aseprite/4.0.0/content/pipeline/MonoGame.Aseprite.Content.Pipeline.dll
+~/.nuget/packages/monogame-aseprite/4.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
@@ -92,7 +92,7 @@ Since it is stored as a relative path, this reference can break if
 * You use multiple workstations for development
 * You have multiple team members working on the project from a shared git repo.
 
-These is a limitation with the MGCB Editor, not with `MonoGame.Aseprite`, because it stores it as a relative path.  Due to this, I strongly recommend setting up a **nuget.config** file for your project.  By doing this, you can specify that the NuGet packages should be downloaded to a local directory within the project itself. Then the relative path will not break since it's local to the project.
+These is a limitation with the MGCB Editor, not with [MonoGame.Aseprite](../api/MonoGame.Aseprite/MonoGame.Aseprite.md), because it stores it as a relative path.  Due to this, I strongly recommend setting up a **nuget.config** file for your project.  By doing this, you can specify that the NuGet packages should be downloaded to a local directory within the project itself. Then the relative path will not break since it's local to the project.
 
 For more information on creating a **nuget.config** file to do this, see the [nuget.config File Reference on Microsoft Learn](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file).
 

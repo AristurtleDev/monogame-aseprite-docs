@@ -19,7 +19,6 @@ function HomepageHeader() {
         />
         <h1 className="hero__title">Mono<span className={clsx(styles.gameOrange)}>Game</span>.Aseprite</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p>⚠️ Documentation is currently a work in progress</p>
         <div className={styles.buttons}>
           <Link
             className={clsx(
@@ -29,6 +28,15 @@ function HomepageHeader() {
             to={useBaseUrl("docs/")}
           >
             Get Started&nbsp;&nbsp;→
+          </Link>
+          <Link
+            className={clsx(
+              "button button--primary button--lg",
+            )}
+            style={{ display: 'flex', alignItems: 'center', gap: '1em', backgroundColor: "#29abe0"}}
+            to="https://ko-fi.com/aristurtledev"
+          >
+            <i className={styles.kofiIcon}></i>Support Me on Ko-Fi
           </Link>
         </div>
       </div>
