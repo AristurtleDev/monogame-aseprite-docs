@@ -102,13 +102,17 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
+                label: 'Guides',
                 to: '/docs/',
               },
+              {
+                label: 'API',
+                to: '/docs/api/MonoGame.Aseprite'
+              }
             ],
           },
           {
-            title: 'Community',
+            title: 'Contact',
             items: [
               {
                 label: 'Mastodon',
@@ -131,6 +135,14 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/aristurtledev/monogame-aseprite',
               },
+              {
+                label: 'GitHub Sponsors',
+                href: 'https://github.com/sponsors/AristurtleDev/'
+              },
+              {
+                label: 'Ko-fi',
+                href: 'https://ko-fi.com/aristurtledev'
+              }
             ],
           },
         ],
