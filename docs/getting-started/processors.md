@@ -59,12 +59,6 @@ protected override void LoadContent()
 }
 ```
 
-:::info
-
-For more detailed information on the [Sprite](../api/MonoGame.Aseprite/Sprites/Sprite/Sprite.md) class, including how to render it using the `SpriteBatch`, see the [Sprite guide](../guides/sprite.md) document.
-
-:::
-
 ## The [TextureAtlasProcessor](../api/MonoGame.Aseprite/Content/Processors/TextureAtlasProcessor/TextureAtlasProcessor.md)
 
 The [TextureAtlasProcessor](../api/MonoGame.Aseprite/Content/Processors/TextureAtlasProcessor/TextureAtlasProcessor.md) will processes the [AsepriteFile](../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) to create a new [TextureAtlas](../api/MonoGame.Aseprite/Sprites/TextureAtlas/TextureAtlas.md). instance.
@@ -117,18 +111,6 @@ protected override void LoadContent()
 }
 ```
 
-:::info
-
-For more detailed information on the [TextureAtlas](../api/MonoGame.Aseprite/Sprites/TextureAtlas/TextureAtlas.md). class, see the [TextureAtlas guide](../guides/texture-atlas.md) document.
-
-:::
-
-:::info
-
-For more detailed information on the [TextureRegion](../api/MonoGame.Aseprite/TextureRegion/TextureRegion.md) class, see the [TextureRegion guide](../guides/texture-region.md) document.
-
-:::
-
 ## The [SpriteSheetProcessor](../api/MonoGame.Aseprite/Content/Processors/SpriteSheetProcessor/SpriteSheetProcessor.md)
 
 The [SpriteSheetProcessor](../api/MonoGame.Aseprite/Content/Processors/SpriteSheetProcessor/SpriteSheetProcessor.md) will processes the [AsepriteFile](../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) to create a new [SpriteSheet](../api/MonoGame.Aseprite/Sprites/SpriteSheet/SpriteSheet.md) instance.
@@ -180,12 +162,6 @@ protected override void LoadContent()
                                                                               innerPadding: 0;
 }
 ```
-
-:::info
-
-For more detailed information on the [SpriteSheet](../api/MonoGame.Aseprite/Sprites/SpriteSheet/SpriteSheet.md) class, see the [SpriteSheet guide](../guides/sprite-sheet.md) document.
-
-:::
 
 ## The [TilesetProcessor](../api/MonoGame.Aseprite/Content/Processors/TilesetProcessor/TilesetProcessor.md)
 
