@@ -8,7 +8,7 @@ The purpose of this document is to provide an overview of how to load your Asepr
 
 # Overview
 
-The [AsepriteFile](../../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) class is the starting point for everything that can be done using this library. When the contents of your Aseprite file are imported, they are presented through the properties of the [AsepriteFile](../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) instance that is created. This includes each layer, frame, cel, tag, and slice. If you are using Aseprite 1.3-beta, the tilesets and tilemaps are also imported.
+The [AsepriteFile](../../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) class is the starting point for everything that can be done using this library. When the contents of your Aseprite file are imported, they are presented through the properties of the [AsepriteFile](../../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) instance that is created. This includes each layer, frame, cel, tag, and slice. If you are using Aseprite 1.3-beta, the tilesets and tilemaps are also imported.
 
 The data presented in the [AsepriteFile](../../api/MonoGame.Aseprite/AsepriteFile/AsepriteFile.md) class is similar to how it is presented in the Aseprite application. For instance, each [AsepriteFrame](../../api/MonoGame.Aseprite/AsepriteTypes/AsepriteFrame/AsepriteFrame.md)  element represents the frames in Aseprite and they contain a collection of [AsepriteCel](../../api/MonoGame.Aseprite/AsepriteTypes/AsepriteCel/AsepriteCel.md)  elements that correspond to the cels. Each [AsepriteCel](../../api/MonoGame.Aseprite/AsepriteTypes/AsepriteCel/AsepriteCel.md)  contains the individual pixel data for the cel it represents. This means you can get the individual cel pixel data per layer, per frame, if you wanted to go that granular. However, that is an advanced topic which is out of scope for this document. If you're interested in getting into the weeds with this, I recommend checking out that advanced guides section.
 
@@ -39,7 +39,7 @@ protected override void LoadContent()
 ```
 
 ### Using the MGCB Editor
-If you are using the MGCB Editor, first ensure that you have completed the prerequisite steps in the [Setup MGCB Editor](./setup-mgcb-editor) document.
+If you are using the MGCB Editor, first ensure that you have completed the prerequisite steps in the [Setup MGCB Editor](../setup-mgcb-editor) document.
 
 Next, open your **Content.mgcb** file in the MGCB Editor and and add your Aseprite file as a content item.  Ensure that the **Aseprite File Importer** and **Aseprite File Processor** are selected as the Importer and Processor types for the file.
 

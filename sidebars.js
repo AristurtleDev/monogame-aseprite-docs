@@ -37,6 +37,18 @@ const sidebars = {
         "processors/animated-tilemap-processor",
       ],
     },
+    {
+      type: "category",
+      label: "Examples",
+      items: [
+        "examples/animated-tilemap",
+        "examples/sprite",
+        "examples/spritesheet",
+        "examples/textureatlas",
+        "examples/tilemap",
+        "examples/tileset"
+      ]
+    }
   ],
   apiSidebar: [
     docs_api
