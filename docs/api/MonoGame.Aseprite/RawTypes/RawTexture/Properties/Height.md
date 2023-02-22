@@ -1,6 +1,6 @@
 ---
-title: RawTexture.Pixels Property
-sidebar_label: Pixels
+title: RawTexture.Height Property
+sidebar_label: Height
 
 ---
 
@@ -8,15 +8,15 @@ sidebar_label: Pixels
 **Namespace:** [MonoGame.Aseprite.RawTypes](../../)  
 **Assembly:** MonoGame.Aseprite
 
-Gets a read\-only span of the color values that represent the pixel data for the texture.
+Gets the height, in pixels of the texture.
 
 ```csharp
-public ReadOnlySpan<Color> Pixels { get; }
+public int Height { get; }
 ```
 
 ## Property Value
 
-ReadOnlySpan\<Color\>
+int
 
 ___
 

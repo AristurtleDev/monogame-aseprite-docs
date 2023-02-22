@@ -21,6 +21,7 @@ public sealed class RawTexture : IEquatable<RawTexture>
 
 | Name                           | Description                                                                               |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
+| [Height](Properties/Height.md) | Gets the height, in pixels of the texture.                                                |
 | [Name](Properties/Name.md)     | Get the name assigned to the texture.                                                     |
 | [Pixels](Properties/Pixels.md) | Gets a read\-only span of the color values that represent the pixel data for the texture. |
 | [Width](Properties/Width.md)   | Gets the width, in pixels of the texture.                                                 |
