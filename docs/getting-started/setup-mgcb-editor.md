@@ -51,21 +51,21 @@ By default, NuGet will download packages to the global packages directory. The f
 <TabItem value="windows" label="Windows">
 
 ```
-%userprofile%\.nuget\packages\monogame-aseprite\4.0.2\content\MonoGame.Aseprite.Content.Pipeline.dll
+%userprofile%\.nuget\packages\monogame-aseprite\4.0.3\content\MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
 <TabItem value="mac" label="Mac">
 
 ```
-~/.nuget/packages/monogame-aseprite/4.0.2/content/MonoGame.Aseprite.Content.Pipeline.dll
+~/.nuget/packages/monogame-aseprite/4.0.3/content/MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
 <TabItem value="linux" label="Linux">
 
 ```
-~/.nuget/packages/monogame-aseprite/4.0.2/content/MonoGame.Aseprite.Content.Pipeline.dll
+~/.nuget/packages/monogame-aseprite/4.0.3/content/MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 </TabItem>
@@ -84,7 +84,7 @@ The reference we just added to the MGCB Editor is stored as a relative path in t
 ```
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\4.0.2\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+/reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\4.0.3\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
 ```
 
 Since it is stored as a relative path, this reference can break if
