@@ -152,8 +152,8 @@ protected override void LoadContent()
     //  Load the Aseprite file as an AsepriteFile instance
     AsepriteFile aseFile = AsepriteFile.Load("file.aseprite");
 
-    //  Use the TextureAtlasProcessor to create a TextureAtlas
-    SpriteSheet atlas = SpriteSheetProcessor.Process(GraphicsDevice, aseFile, onlyVisibleLayers: true,
+    //  Use the SpriteSheetProcessor to create a SpriteSheet
+    SpriteSheet spriteSheet = SpriteSheetProcessor.Process(GraphicsDevice, aseFile, onlyVisibleLayers: true,
                                                                               includeBackgroundLayers: false,
                                                                               includeTilemapLayers: true,
                                                                               mergeDuplicates: true,

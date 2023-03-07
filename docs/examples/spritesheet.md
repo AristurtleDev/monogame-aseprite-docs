@@ -48,6 +48,11 @@ public class Game1 : Game
         _walkCycle = _spriteSheet.CreateAnimatedSprite("walk");
         _runCycle = _spriteSheet.CreateAnimatedSprite("run");
         _attackCycle = _spriteSheet.CreateAnimatedSprite("attack");
+
+        //  Starting with version 5.0.0, AnimatedSprite instances must be told to play
+        _walkCycle.Play();
+        _runCycle.Play();
+        _attackCycle.Play();
     }
 
     protected override void Update(GameTime gameTime)
