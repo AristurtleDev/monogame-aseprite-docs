@@ -21,9 +21,9 @@ public sealed class RawAnimationTag : IEquatable<RawAnimationTag>
 
 | Name                                                   | Description                                                                                                                                             |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [IsLooping](Properties/IsLooping.md)                   | Gets a value that indicates whether the animation defined by the animation tag should loop.                                                             |
 | [IsPingPong](Properties/IsPingPong.md)                 | Gets a value that indicates whether the animation defined by the animation tag should ping\-pong once  reaching the last frame of animation.            |
 | [IsReversed](Properties/IsReversed.md)                 | ets a value that indicates whether the animation defined by the animation tag should play in reverse.                                                   |
+| [LoopCount](Properties/LoopCount.md)                   | Gets a value that indicates the total number of loops\/cycles of this animation that should play.                                                       |
 | [Name](Properties/Name.md)                             | Gets the name assigned to the animation tag.                                                                                                            |
 | [RawAnimationFrames](Properties/RawAnimationFrames.md) | Gets a read\-only span of the [RawAnimationFrame](../RawAnimationFrame/) elements that represent the frames of animation for the animation tag. |
 

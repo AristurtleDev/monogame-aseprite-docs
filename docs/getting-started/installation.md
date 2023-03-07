@@ -23,14 +23,14 @@ You can also add it using the one of the following methods:
  <TabItem value="net-cli" label="NET CLI">
 
 ```
-dotnet add package MonoGame.Aseprite --version 4.0.3
+dotnet add package MonoGame.Aseprite --version 5.0.0
 ```
 
 </TabItem>
 <TabItem value="package-manager" label="Package Manger">
 
 ```
-Install-Package MonoGame.Aseprite -Version 4.0.3
+Install-Package MonoGame.Aseprite -Version 5.0.0
 ```
 
 </TabItem>
@@ -38,7 +38,7 @@ Install-Package MonoGame.Aseprite -Version 4.0.3
 <TabItem value="package-reference" label="Package Reference">
 
 ```
-<PackageReference Include="MonoGame.Aseprite" Version="4.0.3" />
+<PackageReference Include="MonoGame.Aseprite" Version="5.0.0" />
 ```
 
 </TabItem>

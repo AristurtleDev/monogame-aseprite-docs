@@ -26,6 +26,7 @@ public sealed class AsepriteTileset
 | [TileCount](Properties/TileCount.md)   | Gets the total number of tiles in this AsepriteTileset.                                                                         |
 | [TileHeight](Properties/TileHeight.md) | Gets the height, in pixels, of each tile in this AsepriteTileset.                                                               |
 | [TileWidth](Properties/TileWidth.md)   | Gets the width, in pixels, of each tile in this AsepriteTileset.                                                                |
+| [UserData](Properties/UserData.md)     | Gets the [AsepriteUserData](../AsepriteUserData/) set for this [AsepriteSlice](../AsepriteSlice/) in aseprite.  |
 | [Width](Properties/Width.md)           | Gets the width, in pixels, of the source image for this AsepriteTileset.                                                        |
 
 ## Indexers

@@ -1,6 +1,6 @@
 ---
-title: AnimatedSprite.AnimationTag Property
-sidebar_label: AnimationTag
+title: AnimatedSprite.IsPingPong Property
+sidebar_label: IsPingPong
 
 ---
 
@@ -8,15 +8,15 @@ sidebar_label: AnimationTag
 **Namespace:** [MonoGame.Aseprite.Sprites](../../)  
 **Assembly:** MonoGame.Aseprite
 
-Gets the source AnimationTag that defines the animation.
+Gets or Sets a value that indicates if this [AnimatedSprite](../) should ping\-pong once reaching the last frame of animation.
 
 ```csharp
-public AnimationTag AnimationTag { get; }
+public bool IsPingPong { get; set; }
 ```
 
 ## Property Value
 
-[AnimationTag](../../AnimationTag/)
+bool
 
 ___
 

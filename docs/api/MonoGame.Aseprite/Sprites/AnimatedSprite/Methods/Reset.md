@@ -8,17 +8,17 @@ sidebar_label: Reset
 **Namespace:** [MonoGame.Aseprite.Sprites](../../)  
 **Assembly:** MonoGame.Aseprite
 
-Resets this [AnimatedSprite](../) back to its first frame of animation.
+Resets this [AnimatedSprite](../) back to its initial state as defined by the [AnimationTag](../../AnimationTag/) used to create it.  You will need to call [Play(int?)](Play.md)after resetting to start the playback of the animation.s
 
 ```csharp
-public void Reset(bool paused = false);
+public void Reset();
 ```
 
-## Parameters
+## Remarks
 
-`paused`  bool
+This is useful if you've adjusted the [IsReversed](../Properties/IsReversed.md) or [IsPingPong](../Properties/IsPingPong.md) properties, or specified a override to the loop count when initially playing the animation.
 
-A value that indicates whether this [AnimatedSprite](../) should be paused after it is reset.
+This also resets the [Speed](../Properties/Speed.md) to `1.0d`.
 
 ___
 

@@ -9,17 +9,17 @@ export default function InstallCommands() {
     <Tabs>
       <TabItem value="net-cli" label="NET CLI">
         <CodeBlock>
-          {`dotnet add package MonoGame.Aseprite --version 4.0.3`}
+          {`dotnet add package MonoGame.Aseprite --version 5.0.0`}
         </CodeBlock>
       </TabItem>
       <TabItem value="package-manager" label="Package Manager">
         <CodeBlock>
-          {`Install-Package MonoGame.Aseprite -Version 4.0.3`}
+          {`Install-Package MonoGame.Aseprite -Version 5.0.0`}
         </CodeBlock>
       </TabItem>
       <TabItem value="package-reference" label="Package Reference">
         <CodeBlock>
-          {`<PackageReference Include="MonoGame.Aseprite" Version="4.0.3" />`}
+          {`<PackageReference Include="MonoGame.Aseprite" Version="5.0.0" />`}
         </CodeBlock>
       </TabItem>
     </Tabs>

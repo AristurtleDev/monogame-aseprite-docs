@@ -23,6 +23,7 @@ public sealed class AsepriteTag
 | [Direction](Properties/Direction.md) | Gets the [AsepriteLoopDirection](../AsepriteLoopDirection/) of the animation defined by this AsepriteTag. |
 | [From](Properties/From.md)           | Gets the index of the first [AsepriteFrame](../AsepriteFrame/) of animation defined by this AsepriteTag.  |
 | [Name](Properties/Name.md)           | Gets the name assigned to this AsepriteTag.                                                                       |
+| [Repeat](Properties/Repeat.md)       | Gets the repeat count of the animation defined by this AsepriteTag                                                |
 | [To](Properties/To.md)               | Gets the index of the last see cref\="AsepriteFrame"\/\> of animation defined by this AsepriteTag.                |
 | [UserData](Properties/UserData.md)   | Gets the [AsepriteUserData](../AsepriteUserData/) set for this AsepriteTag.                               |
 

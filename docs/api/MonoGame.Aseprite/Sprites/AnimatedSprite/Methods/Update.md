@@ -13,7 +13,7 @@ sidebar_label: Update
 | Signature                           | Description                                 |
 | ----------------------------------- | ------------------------------------------- |
 | [Update(GameTime)](#updategametime) | Updates this [AnimatedSprite](../). |
-| [Update(float)](#updatefloat)       | Updates this [AnimatedSprite](../). |
+| [Update(double)](#updatedouble)     | Updates this [AnimatedSprite](../). |
 
 ## Update(GameTime)
 
@@ -33,19 +33,19 @@ A snapshot of the game timing values for the current update cycle.
 
 This should only be called once per update cycle.
 
-## Update(float)
+## Update(double)
 
 Updates this [AnimatedSprite](../).
 
 ```csharp
-public void Update(float deltaTimeInMilliseconds);
+public void Update(double deltaTimeInSeconds);
 ```
 
 ### Parameters
 
-`deltaTimeInMilliseconds`  float
+`deltaTimeInSeconds`  double
 
-The amount of time, in milliseconds, that have elapsed since the last update cycle in the game.
+The amount of time, in seconds, that have elapsed since the last update cycle in the game.
 
 ### Remarks
 

@@ -14,7 +14,8 @@ public enum AsepriteLoopDirection : byte
 {
     Forward = 0,
     Reverse = 1,
-    PingPong = 2
+    PingPong = 2,
+    PingPongReverse = 3
 }
 ```
 
@@ -22,11 +23,12 @@ public enum AsepriteLoopDirection : byte
 
 ## Fields
 
-| Name     | Description                                                                                                                                                                                                               |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Forward  | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in a forward direction from the first frame of animation to the last.                                                                 |
-| PingPong | Defines that the animation for the [AsepriteTag](../AsepriteTag/) ping\-pongs by first going from the first frame of animation to the last then playing in reverse from the last frame of animation to the first. |
-| Reverse  | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in reversed from the last frame of  animation to the first.                                                                           |
+| Name            | Description                                                                                                                                                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Forward         | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in a forward direction from the first frame of animation to the last.                                                                          |
+| PingPong        | Defines that the animation for the [AsepriteTag](../AsepriteTag/) ping\-pongs by first going from the first frame of animation to the last then playing in reverse from the last frame of animation to the first.          |
+| PingPongReverse | Defines that the animation for the [AsepriteTag](../AsepriteTag/) ping\-pongs by first going in reverse from the  last frame of animation to the first then playing forward from the first frame of animation to the last. |
+| Reverse         | Defines that the animation for the [AsepriteTag](../AsepriteTag/) is played in reversed from the last frame of  animation to the first.                                                                                    |
 
 ___
 

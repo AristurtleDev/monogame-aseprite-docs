@@ -8,10 +8,10 @@ sidebar_label: IsLooping
 **Namespace:** [MonoGame.Aseprite.Sprites](../../)  
 **Assembly:** MonoGame.Aseprite
 
-Gets or Sets a value that indicates whether the animation should loop.
+Gets a value that indicates whether the animation should loop.
 
 ```csharp
-public bool IsLooping { get; set; }
+public bool IsLooping { get; }
 ```
 
 ## Property Value

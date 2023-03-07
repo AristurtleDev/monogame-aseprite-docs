@@ -21,9 +21,10 @@ public sealed class AnimationTag
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [FrameCount](Properties/FrameCount.md) | Gets the total number of ,[AnimationFrame](../AnimationFrame/) elements.                                                                                                                |
 | [Frames](Properties/Frames.md)         | Gets a read\-only span of the [AnimationFrame](../AnimationFrame/) elements that make up the animation.  The order of elements is from first frame to last frame in non\-reverse order. |
-| [IsLooping](Properties/IsLooping.md)   | Gets or Sets a value that indicates whether the animation should loop.                                                                                                                          |
+| [IsLooping](Properties/IsLooping.md)   | Gets a value that indicates whether the animation should loop.                                                                                                                                  |
 | [IsPingPong](Properties/IsPingPong.md) | Gets or Sets a value that indicates whether the animation should ping\-pong once reaching the last frame of animation.                                                                          |
 | [IsReversed](Properties/IsReversed.md) | Gets or Sets a value that indicates whether the animation should play in reverse.                                                                                                               |
+| [LoopCount](Properties/LoopCount.md)   | Gets or Sets a value that indicates the total number of loops\/cycles of this animation that should play.                                                                                       |
 | [Name](Properties/Name.md)             | Gets the name of the animation                                                                                                                                                                  |
 
 ## Indexers

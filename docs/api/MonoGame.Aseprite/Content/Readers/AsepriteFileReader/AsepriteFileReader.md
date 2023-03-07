@@ -17,9 +17,10 @@ public static class AsepriteFileReader
 
 ## Methods
 
-| Name                                    | Description                                                                 |
-| --------------------------------------- | --------------------------------------------------------------------------- |
-| [ReadFile(string)](Methods/ReadFile.md) | Reads the [AsepriteFile](../../../AsepriteFile/) at the given path. |
+| Name                                                | Description                                                                                                                                                                            |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ReadFile(string)](Methods/ReadFile.md)             | Reads the [AsepriteFile](../../../AsepriteFile/) at the given path.                                                                                                            |
+| [ReadStream(string, Stream)](Methods/ReadStream.md) | Reads the [AsepriteFile](../../../AsepriteFile/) using the provided Stream.Use this method with OpenStream(string) to load raw .aseprite files on Android  or other platforms. |
 
 ___
 
