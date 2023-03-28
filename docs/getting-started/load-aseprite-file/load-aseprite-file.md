@@ -24,8 +24,6 @@ To load the Aseprite file at runtime, you can use the [AsepriteFile.Load](../../
 
 ```cs
 using Monogame.Aseprite;
-using MonoGame.Aseprite.Tilemaps;
-using Monogame.Aseprite.Processors;
 ```
 
 **Load the Aseprite File Using `AsepriteFile.Load`**
