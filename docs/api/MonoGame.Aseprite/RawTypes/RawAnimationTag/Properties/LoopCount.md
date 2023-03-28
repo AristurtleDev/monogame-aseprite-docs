@@ -22,7 +22,7 @@ int
 
 `0` \= infinite looping
 
-If  is equal to , each direction of the ping\-pong will count as a loop.  
+If the animation is ping\-pong, each direction of the ping\-pong will count as a loop.
 
 ___
 

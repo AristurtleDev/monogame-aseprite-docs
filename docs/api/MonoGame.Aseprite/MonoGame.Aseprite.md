@@ -4,7 +4,7 @@ sidebar_label: MonoGame.Aseprite Namespace
 sidebar_position: 0
 ---
 
-**Namespace:** [MonoGame.Aseprite](./)  
+**Namespace:** [MonoGame](../)  
 
 ## Namespaces
 

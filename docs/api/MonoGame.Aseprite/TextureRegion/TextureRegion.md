@@ -44,6 +44,8 @@ public class TextureRegion
 | [GetSlice\<T\>(string)](Methods/GetSlice.md#getslicetstring)                                                                                                                | Returns the [Slice](../Slice/) element with the specified name from this TextureRegion as the type specified. |
 | [RemoveAllSlices()](Methods/RemoveAllSlices.md)                                                                                                                             | Removes all [Slice](../Slice/) elements from this TextureRegion.                                              |
 | [RemoveSlice(string)](Methods/RemoveSlice.md)                                                                                                                               | Removes the [Slice](../Slice/) element with the specified name from this TextureRegion.                       |
+| [TryGetSlice(string, Slice)](Methods/TryGetSlice.md#trygetslicestring-slice)                                                                                                | Returns the [Slice](../Slice/) element with the specified name from this TextureRegion.                       |
+| [TryGetSlice\<T\>(string, T)](Methods/TryGetSlice.md#trygetslicetstring-t)                                                                                                  |                                                                                                                       |
 
 ___
 
