@@ -21,7 +21,7 @@ The following example demonstrates how to use the [TextureAtlasProcessor](../api
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Sprites;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [TextureAtlas](../api/MonoGame.Aseprite/Sprites/TextureAtlas/TextureAtlas.md). Using the [TextureAtlasProcessor](../api/MonoGame.Aseprite/Content/Processors/TextureAtlasProcessor/TextureAtlasProcessor.md)**

@@ -21,7 +21,7 @@ The following example demonstrates how to use the [TilemapProcessor](../api/Mono
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Tilemaps;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [Tilemap](../api/MonoGame.Aseprite/Tilemaps/Tilemap/Tilemap.md) Using the [TilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/TilemapProcessor/TilemapProcessor.md)**

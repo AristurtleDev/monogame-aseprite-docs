@@ -21,7 +21,7 @@ The following example demonstrates how to use the [SpriteSheetProcessor](../api/
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Sprites;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [SpriteSheet](../api/MonoGame.Aseprite/Sprites/SpriteSheet/SpriteSheet.md) Using the [SpriteSheetProcessor](../api/MonoGame.Aseprite/Content/Processors/SpriteSheetProcessor/SpriteSheetProcessor.md)**

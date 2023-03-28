@@ -19,7 +19,7 @@ The following example demonstrates how to use the [SpriteProcessor](../api/MonoG
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Sprites;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [Sprite](../api/MonoGame.Aseprite/Sprites/Sprite/Sprite.md) Using the [SpriteProcessor](../api/MonoGame.Aseprite/Content/Processors/SpriteProcessor/SpriteProcessor.md)**

@@ -23,7 +23,7 @@ The following example demonstrates how to use the [AnimatedTilemapProcessor](../
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Tilemaps;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [AnimatedTilemap](../api/MonoGame.Aseprite/Tilemaps/AnimatedTilemap/AnimatedTilemap.md)  Using the [AnimatedTilemapProcessor](../api/MonoGame.Aseprite/Content/Processors/AnimatedTilemapProcessor)**

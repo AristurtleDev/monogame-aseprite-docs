@@ -21,7 +21,7 @@ The following example demonstrates how to use the [TilesetProcessor](../api/Mono
 ```cs
 using Monogame.Aseprite;
 using MonoGame.Aseprite.Tilemaps;
-using Monogame.Aseprite.Processors;
+using Monogame.Aseprite.Content.Processors;
 ```
 
 **Create [Tileset](../api/MonoGame.Aseprite/Tilemaps/Tileset/Tileset.md) Using the [TilesetProcessor](../api/MonoGame.Aseprite/Content/Processors/TilesetProcessor/TilesetProcessor.md)**
