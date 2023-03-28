@@ -24,7 +24,7 @@ When  is provided, loop count will default to the value defined in the [Animatio
 
 `0` \= infinite looping
 
-If [IsPingPong](../../AnimationTag/properties/IsPingPong.md) is equal to , each direction of the ping\-pong will count as a loop.  
+If [IsPingPong](../../AnimationTag/Properties/IsPingPong.md) is equal to , each direction of the ping\-pong will count as a loop.  
 
 ## Returns
 

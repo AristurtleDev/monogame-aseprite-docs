@@ -444,7 +444,7 @@ The [TilemapLayer](../../Tilemaps/TilemapLayer/) to draw.
 
 `position`  Vector2
 
-The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/properties/Offset.md).
+The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/Properties/Offset.md).
 
 `color`  Color
 
@@ -470,7 +470,7 @@ The [TilemapLayer](../../Tilemaps/TilemapLayer/) to draw.
 
 `position`  Vector2
 
-The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/properties/Offset.md).
+The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/Properties/Offset.md).
 
 `color`  Color
 
@@ -504,7 +504,7 @@ The [TilemapLayer](../../Tilemaps/TilemapLayer/) to draw.
 
 `position`  Vector2
 
-The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/properties/Offset.md).
+The x\- and y\-coordinate location to draw the [TilemapLayer](../../Tilemaps/TilemapLayer/) at.  Drawing the [TilemapLayer](../../Tilemaps/TilemapLayer/) using this method ignores the [Offset](../../Tilemaps/TilemapLayer/Properties/Offset.md).
 
 `color`  Color
 
