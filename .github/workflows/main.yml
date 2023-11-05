@@ -25,9 +25,8 @@ jobs:
               run: dotnet docfx ./source/docfx.json
             - name: Upload To Server
               run: |
-                mkdir ~/.ssh
-                echo ${{ secrets.SSH_PRIVATE_KEY }} >> ~/.ssh/key
-                rsync -avh -e  "ssh -i ~/.ssh/key" --progress /artifacts/_site/* ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:${{ secrets.REMOTE_TARGET }}
+                echo "${{ secrets.SSH_PRIVATE_KEY }}" >> .key
+                rsync -avh -e  "ssh -i .key" --progress /artifacts/_site/* ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:${{ secrets.REMOTE_TARGET }}
               
               
 
