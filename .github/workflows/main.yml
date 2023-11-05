@@ -22,7 +22,7 @@ jobs:
             - name: Restore dotnet tools
               run: dotnet tool restore
             - name: Run Build
-              run: dotnet docfx ./build/docfx.json
+              run: dotnet docfx ./source/docfx.json
             - name: Upload To Server
               run: |
                 echo ${{ secrets.SSH_PRIVATE_KEY }} >> ~/.ssh/key
