@@ -1,7 +1,7 @@
 ---
 uid: Processors.AnimatedTilemapProcessor
 title: AnimatedTilemap Processor
-description: Overview of the AnimatedTilemapProcessor
+_description: Overview of the AnimatedTilemapProcessor
 ---
 
 # AnimatedTilemap Processor

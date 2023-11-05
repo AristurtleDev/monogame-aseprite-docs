@@ -1,7 +1,7 @@
 ---
 uid: GettingStarted.LoadAsepriteFile
 title: Load the Aseprite File
-description: Overview of how to load your Aseprite file using MonoGame.Aseprite.
+_description: Overview of how to load your Aseprite file using MonoGame.Aseprite.
 ---
 
 # Load The Aseprite File

@@ -1,7 +1,7 @@
 ---
 uid: Processors.TilesetProcessor
 title: Tileset Processor
-description: Overview of the TilesetProcessor
+_description: Overview of the TilesetProcessor
 ---
 
 # TilesetProcessor

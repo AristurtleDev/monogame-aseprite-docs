@@ -1,7 +1,7 @@
 ---
 uid: Processors.TextureAtlasProcessor
 title: TextureAtlas Processor
-description: Overview of the TextureAtlasProcessor
+_description: Overview of the TextureAtlasProcessor
 ---
 
 # TextureAtlasProcessor

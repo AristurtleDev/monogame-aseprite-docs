@@ -44,7 +44,7 @@
         ]
       }
     ],
-    "output": "_site",
+    "output": "../artifacts/_site",
     "globalMetadata": {
       "_appFaviconPath": "images/favicon.ico",
       "_appTitle": "MonoGame Aseprite",
@@ -54,7 +54,6 @@
       "_description": "Import Aseprite files directly into MonoGame",
       "_author": "Christopher Whitley",
       "_ogImage": "images/banner.png",
-      "_version": "5.1.1",
       "_disableContribution": true,
       "_enableSearch": true
     },

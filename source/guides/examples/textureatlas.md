@@ -1,7 +1,7 @@
 ---
 uid: Examples.TextureAtlasExample
 title: TextureAtlas Example
-description: An example of creating a TextureAtlas using the TextureAtlasProcessor.
+_description: An example of creating a TextureAtlas using the TextureAtlasProcessor.
 ---
 
 # TextureAtlas Example

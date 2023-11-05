@@ -1,7 +1,7 @@
 ---
 uid: MonoGame.Aseprite.Introduction
 title: MonoGame.Aseprite
-description: MonoGame.Aseprite documentation introduction.
+_description: MonoGame.Aseprite documentation introduction.
 ---
 
 # MonoGame.Aseprite

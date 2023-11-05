@@ -1,7 +1,7 @@
 ---
 uid: GettingStarted.Installation
 title: Installation
-description: Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.
+_description: Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.
 ---
 
 # Installation
@@ -21,18 +21,18 @@ You can also add it using the one of the following methods:
 # [.NET CLI](#tab/net-cli)
 
 ```sh
-dotnet add package MonoGame.Aseprite --version {{_version}}
+dotnet add package MonoGame.Aseprite --version {{VERSION}}
 ```
 
 # [Package Manager](#tab/package-manager)
 
 ```ps1
-Install-Package MonoGame.Aseprite -Version {{_version}}
+Install-Package MonoGame.Aseprite -Version {{VERSION}}
 ```
 # [Package Reference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="MonoGame.Aseprite" Version="{{_version}}" />
+<PackageReference Include="MonoGame.Aseprite" Version="{{VERSION}}" />
 ```
 
 --- 

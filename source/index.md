@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: MonoGame.Aseprite
-description: Import Aseprite files directly into MonoGame.
+_description: Import Aseprite files directly into MonoGame.
 ---
 
 <div class="container h-100 d-flex flex-column align-items-center justify-content-center">

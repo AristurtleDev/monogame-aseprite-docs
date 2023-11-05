@@ -1,7 +1,7 @@
 ---
 uid: Processors.SpriteProcessor
 title: SpriteProcessor
-description: Overview of the SpriteProcessor
+_description: Overview of the SpriteProcessor
 ---
 
 # SpriteProcessor
