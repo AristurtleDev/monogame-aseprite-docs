@@ -1,0 +1,78 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/monogame-aseprite/source/MonoGame.Aseprite/MonoGame.Aseprite.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+      "outputFormat": "mref",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened",
+      "memberLayout": "separatePages",
+      "enumSortOrder": "alphabetic",
+      "allowCompilationErrors": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "guides/**.md",
+          "guides/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "globalMetadata": {
+      "_appFaviconPath": "images/favicon.ico",
+      "_appTitle": "MonoGame Aseprite",
+      "_appName": "MonoGame Aseprite",
+      "_appLogoPath": "images/logo.svg",
+      "_appFooter": "© 2023 Christopher Whitley",
+      "_description": "Import Aseprite files directly into MonoGame",
+      "_author": "Christopher Whitley",
+      "_ogImage": "images/banner.png",
+      "_version": "5.1.1",
+      "_disableContribution": true,
+      "_enableSearch": true
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern",
+      "templates/monogame-aseprite"
+    ],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "disableGitFeatures": false,
+    "markdownEngineProperties": {
+      "alerts": {
+        "CAUTION": "alert alert-warning",
+        "TIP": "alert alert-success"
+      }
+    }
+  }
+}
