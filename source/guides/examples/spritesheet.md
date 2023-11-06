@@ -1,6 +1,6 @@
 ---
 uid: Examples.SpriteSheetExample
-title: SpriteSheet Example
+_title: SpriteSheet Example
 _description: An example of creating a SpriteSheet using the SpriteSheetProcessor.
 ---
 

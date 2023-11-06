@@ -1,6 +1,6 @@
 ---
 uid: Examples.SpriteExample
-title: Sprite Example
+_title: Sprite Example
 _description: An example of creating a Sprite using the SpriteProcessor.
 ---
 

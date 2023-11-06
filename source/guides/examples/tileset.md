@@ -1,6 +1,6 @@
 ---
 uid: Examples.TilesetExample
-title: Tileset Example
+_title: Tileset Example
 _description: An example of creating a Tileset using the TilesetProcessor.
 ---
 

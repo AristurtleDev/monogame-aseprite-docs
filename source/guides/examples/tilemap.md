@@ -1,6 +1,6 @@
 ---
 uid: Examples.TilemapExample
-title: Tilemap Example
+_title: Tilemap Example
 _description: An example of creating a Tilemap using the TilemapProcessor.
 ---
 

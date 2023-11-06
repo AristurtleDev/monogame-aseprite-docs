@@ -1,6 +1,6 @@
 ---
 uid: Processors.Overview
-title: Processors Overview
+_title: Processors Overview
 _description: Overview of the processors provided with MonoGame.Aseprite.
 ---
 

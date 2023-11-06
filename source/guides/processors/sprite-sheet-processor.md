@@ -1,6 +1,6 @@
 ---
 uid: Processors.SpriteSheetProcessor
-title: SpriteSheetProcessor
+_title: SpriteSheetProcessor
 _description: Overview of the SpriteSheetProcessor
 ---
 

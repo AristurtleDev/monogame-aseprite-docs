@@ -1,6 +1,6 @@
 ---
 uid: Examples.AnimatedTilemapExample
-title: AnimatedTilemap Example
+_title: AnimatedTilemap Example
 _description: An example of creating an AnimatedTilemap using the AnimatedTilemapProcessor.
 ---
 

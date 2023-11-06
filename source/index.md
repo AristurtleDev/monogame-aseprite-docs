@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: MonoGame.Aseprite
+_title: MonoGame.Aseprite
 _description: Import Aseprite files directly into MonoGame.
 ---
 

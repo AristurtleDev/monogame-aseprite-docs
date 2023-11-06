@@ -1,6 +1,6 @@
 ---
 uid: Processors.TextureAtlasProcessor
-title: TextureAtlas Processor
+_title: TextureAtlas Processor
 _description: Overview of the TextureAtlasProcessor
 ---
 

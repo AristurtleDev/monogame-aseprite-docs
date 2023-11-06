@@ -1,6 +1,6 @@
 ---
 uid: Processors.SpriteProcessor
-title: SpriteProcessor
+_title: SpriteProcessor
 _description: Overview of the SpriteProcessor
 ---
 

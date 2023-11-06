@@ -1,6 +1,6 @@
 ---
 uid: Showcase
-title: Showcase
+_title: Showcase
 _description: A collection of games and tools created using MonoGame.Aseprite
 layout: landing
 ---

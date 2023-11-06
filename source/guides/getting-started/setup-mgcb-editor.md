@@ -1,6 +1,6 @@
 ---
 uid: GettingStarted.SetupMGCBEditor
-title: Setup MGCB Editor
+_title: Setup MGCB Editor
 _description: Step-by-step instructions to setup the MGCB Editor to use MonoGame.Aseprite.
 ---
 

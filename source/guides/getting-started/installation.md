@@ -1,6 +1,6 @@
 ---
 uid: GettingStarted.Installation
-title: Installation
+_title: Installation
 _description: Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.
 ---
 
