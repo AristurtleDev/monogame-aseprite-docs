@@ -19,7 +19,8 @@ a.external[href]::after {
 *** Ensure all showcase card images are the same size
 ******************************************************************************/
 .card-img-top {
-    object-fit: cover;
+    object-fit: contain;
+    object-position: top;
     width: 100%;
     height: 250px;
 }
