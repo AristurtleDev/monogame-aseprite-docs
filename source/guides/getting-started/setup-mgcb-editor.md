@@ -73,6 +73,8 @@ You should now see that `MonoGame.Aseprite.Content.Pipeline.dll` in the **Refere
 > These is a limitation with the MGCB Editor, not with [MonoGame.Aseprite](<xref:MonoGame.Aseprite>), because it stores it as a relative path.  Due to this, I strongly recommend setting up a **nuget.config** file for your project.  By doing this, you can specify that the NuGet packages should be downloaded to a local directory within the project itself. Then the relative path will not break since it's local to the project.
 > 
 > For more information on creating a **nuget.config** file to do this, see the [nuget.config File Reference on Microsoft Learn](https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file).
+>
+> For an example of how to do this with MonoGame.Aseprite, you can check out the example **nuget.config** file found in the example repository at [https://github.com/AristurtleDev/monogame-aseprite-examples/tree/main/source/ContentPipelineExample](https://github.com/AristurtleDev/monogame-aseprite-examples/tree/main/source/ContentPipelineExample)
 
 ## Next Steps
 
