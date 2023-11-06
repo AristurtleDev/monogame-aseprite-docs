@@ -2,7 +2,7 @@ export default {
     iconLinks: [
         {
             icon: 'github',
-            href: 'https://github.com/AristurtleDev/MonoGame.Aseprite',
+            href: 'https://github.com/aristurtledev/monogame-aseprite/',
             title: 'View source code on Github'
         },
         {
