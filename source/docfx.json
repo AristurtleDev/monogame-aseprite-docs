@@ -53,7 +53,7 @@
       "_appFooter": "© 2023 Christopher Whitley",
       "_description": "Import Aseprite files directly into MonoGame",
       "_author": "Christopher Whitley",
-      "_ogImage": "banner.png",
+      "_ogImage": "logo.png",
       "_disableContribution": true,
       "_enableSearch": true
     },
