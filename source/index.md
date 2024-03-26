@@ -16,6 +16,6 @@ _description: Import Aseprite files directly into MonoGame.
         <a href="/guides/getting-started/installation.html" class="btn btn-success text-center">Getting Started <i class="bi bi-arrow-right"></i> </a>
         <a href="https://github.com/sponsors/AristurtleDev/" class="btn btn-primary">Sponsor On GitHub <i class="bi bi-heart-fill"></i> </a>
     </div>
-    <div class "row" style="align-items: center; display: flex; game: 1rem; justify-content: center; flex-direction: row">
+    <div class="row" style="align-items: center; display: flex; game: 1rem; justify-content: center; flex-direction: row">
     <div>
 </div>
