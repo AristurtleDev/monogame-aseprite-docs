@@ -6,14 +6,14 @@ _description: Step-by-step instructions to setup the MGCB Editor to use MonoGame
 
 # Setup MGCB Editor
 
-The purpose of this document is to provide the instructions for setting up the MGCB Editor for use with the [MonoGame.Aseprite](<xref:MonoGame.Aseprite>) library to import your Aseprite files for your MonoGame project.
+The purpose of this document is to provide the instructions for setting up the MGCB Editor for use with the **MonoGame.Aseprite** library to import your Aseprite files for your MonoGame project.
 
 > [!CAUTION]
-> This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the [AsepriteFile](<xref:MonoGame.Aseprite.AsepriteFile>)
+> This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the `AsepriteFile`.
 
 ## Add Reference in MGCB Editor
 
-In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the `MonoGame.Aseprite.Content.Pipeline.dll` assembly. This assembly was downloaded as part of the [MonoGame.Aseprite](<xref:MonoGame.Aseprite>) NuGet package, but it does not get added automatically for you. To add it, complete the following steps:
+In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the `MonoGame.Aseprite.Content.Pipeline.dll` assembly. This assembly was downloaded as part of the **MonoGame.Aseprite** NuGet package, but it does not get added automatically for you. To add it, complete the following steps:
 
 1. Open your `Content.mgcb` file in the MGCB Editor.
 
@@ -39,16 +39,16 @@ In order to use the MGCB Editor to import/process your Aseprite file, you'll hav
 >
 > # [Windows](#tab/windows)
 > ```sh
-> %userprofile%\.nuget\packages\monogame-aseprite\5.1.2\content\MonoGame.Aseprite.Content.Pipeline.dll
+> %userprofile%\.nuget\packages\monogame-aseprite\6.0.0\content\MonoGame.Aseprite.Content.Pipeline.dll
 > ```
 > 
 > # [MacOS](#tab/mac)
 > ```sh
-> ~/.nuget/packages/monogame-aseprite/5.1.2/content/MonoGame.Aseprite.Content.Pipeline.dll
+> ~/.nuget/packages/monogame-aseprite/6.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
 > ```
 > # [Linux](#tab/linux)
 > ```sh
-> ~/.nuget/packages/monogame-aseprite/5.1.2/content/MonoGame.Aseprite.Content.Pipeline.dll
+> ~/.nuget/packages/monogame-aseprite/6.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
 > ```
 > ---
 
@@ -62,7 +62,7 @@ You should now see that `MonoGame.Aseprite.Content.Pipeline.dll` in the **Refere
 > ```
 > #-------------------------------- References --------------------------------#
 > 
-> /reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\5.1.2\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+> /reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\6.0.0\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
 > ```
 > 
 > Since it is stored as a relative path, this reference can break if

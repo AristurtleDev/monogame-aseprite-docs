@@ -8,24 +8,10 @@
     uid: GettingStarted.SetupMGCBEditor
   - name: Load the Aseprite File
     uid: GettingStarted.LoadAsepriteFile
-- name: Processors
-  items:
-  - name: Processors Overview
-    uid: Processors.Overview
-  - name: SpriteProcessor
-    uid: Processors.SpriteProcessor
-  - name: TextureAtlasProcessor
-    uid: Processors.TextureAtlasProcessor
-  - name: SpriteSheetProcessor
-    uid: Processors.SpriteSheetProcessor
-  - name: TilesetProcessor
-    uid: Processors.TilesetProcessor
-  - name: TilemapProcessor
-    uid: Processors.TilemapProcessor
-  - name: AnimatedTilemapProcessor
-    uid: Processors.AnimatedTilemapProcessor
 - name: Examples
   items:
+  - name: Examples Overview
+    uid: Examples.Overview
   - name: AnimatedTilemap Example
     uid: Examples.AnimatedTilemapExample
   - name: Sprite Example

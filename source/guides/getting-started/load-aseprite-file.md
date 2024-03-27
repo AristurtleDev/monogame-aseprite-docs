@@ -10,30 +10,42 @@ The purpose of this document is to provide an overview of how to load your Asepr
 
 ## Overview
 
-The [AsepriteFile](<xref:MonoGame.Aseprite.AsepriteFile>) class is the starting point for everything that can be done using this library. When the contents of your Aseprite file are imported, they are presented through the properties of the [AsepriteFile](<xref:MonoGame.Aseprite.AsepriteFile>) instance that is created. This includes each layer, frame, cel, tag, and slice. If you are using Aseprite 1.3-beta, the tilesets and tilemaps are also imported.
-
-The data presented in the [AsepriteFile](<xref:MonoGame.Aseprite.AsepriteFile>) class is similar to how it is presented in the Aseprite application. For instance, each [AsepriteFrame](<xref:MonoGame.Aseprite.AsepriteTypes.AsepriteFrame>) element represents the frames in Aseprite and they contain a collection of [AsepriteCel](<xref:MonoGame.Aseprite.AsepriteTypes.AsepriteCel>) elements that correspond to the cels. Each [AsepriteCel](<xref:MonoGame.Aseprite.AsepriteTypes.AsepriteCel>)  contains the individual pixel data for the cel it represents. This means you can get the individual cel pixel data per layer, per frame, if you wanted to go that granular. However, that is an advanced topic which is out of scope for this document. If you're interested in getting into the weeds with this, I recommend checking out that advanced guides section.
+The **AsepriteFile** class is the starting point for everything that can be done with this library.  When the contents of your Aseprite file are imported, they are presented to you through the properties of the **AsepriteFile** instance created.  This includes each layer, frame, cel, tag, slice, tileset, and tilemap.
 
 ## Loading the Aseprite File
 
 There are two ways of loading your Aseprite file to be used in your game project; from the AsepriteFile at runtime or from the XNB preprocessed with the MGCB Editor. Choose the tab below based on which workflow you are using to see an example of doing this.
 
 # [From Aseprite File](#tab/from-aseprite-file)
-To load the Aseprite file at runtime, you can use the [AsepriteFile.Load(System.String)](<xref:MonoGame.Aseprite.AsepriteFile.Load(System.String)>) method. The following demonstrates how to do this.
+MonoGame provides the `TitleContainer.OpenStream` method that opens a stream for a file path that is relative the output of the game executable/assembly. It is platform aware, so it the best option to use instead of using the file path directly.  With the Aseprite file in your project, if you are using **Visual Studio** you can right-click the file, goto **Properties** and change the **Copy to Output Directory** property to **Copy if newer**.
 
+![Copy To Output Directory](~/images/articles/load-aseprite-file/copy-if-newer.png)
+
+Otherwise; if you are using something like **Visual Studio Code** you update your `.csproj` file to include the same setting.
+
+```xml
+<ItemGroup>
+    <None Update="townmap.aseprite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+</ItemGroup>
+```
+
+Then, to load the Aseprite file at runtime using `TitleContainer` you can perform the following
 **Add Using Statements**
 
 ```cs
-using Monogame.Aseprite;
-```
+//  MonoGame.Aseprite now uses AsepriteDotNet as the base loader for the Aseprite file
+using AsepriteDotNet.Aseprite;
+using AsepriteDotNet.IO;
 
-**Load the Aseprite File Using [AsepriteFile.Load(System.String)](<xref:MonoGame.Aseprite.AsepriteFile.Load(System.String)>)**
-
-```cs
 protected override void LoadContent()
 {
-    //  Load the Aseprite file
-    AsepriteFile aseFile = AsepriteFile.Load("path-to-aseprite-file");
+    AsepriteFile aseFile;
+    using(Stream stream = TitleContainer.OpenStram("file.aseprite"))
+    {
+        aseFile = AsepriteFileLoader.FromStream(fileName: "file", stream: stream, preMultiplyAlpha: true);
+    }
 }
 ```
 
@@ -49,23 +61,24 @@ Then, in your game project, load the Aseprite file using the content manager. Th
 
 **Add Using Statement**
 ```cs
-using MonoGame.Aseprite;
-```
+//  MonoGame.Aseprite now uses AsepriteDotNet as the base loader for the Aseprite file
+using AsepriteDotNet.Aseprite;
 
-**Load [AsepriteFile](<xref:MonoGame.Aseprite.AsepriteFile>) Using the `ContentManager`**
-```cs
 protected override void LoadContent()
 {
     //  Load the Aseprite file using the ContentManager
-    AsepriteFile aseFile = Content.Load<AsepriteFile>("content-name");
+    AsepriteFile aseFile = Content.Load<AsepriteFile>("file");
 }
 ```
 
 ---
 
 
+
+At this point, you have the Aseprite file loaded and ready to use transform into a more meaningful content type like a Sprite, TextureAtlas, Spritesheet, Tileset, Tilemap, or AnimatedTilemap.
+
 > [!TIP]
 > Loading the Aseprite file from disk is like loading any asset in your game, whether it is done using the MGCB Editor or not.  It should be done where you load your game assets. For instance, within the `LoadContent` method of your `Game` class like shown in the example above.
 
 ## Next Steps
-Now that you can load the Aseprite file in your game project, next head to the [Processors Overview](<xref:Processors.Overview>) to learn about how to process the contents of the file.
+Now that you have the `AsepriteFile` object created, transform the data inside to one of the utility classes provided by **MonoGame.Aseprite**.  To learn more, see the [Examples Overview](../examples/overview.md) page for more information.

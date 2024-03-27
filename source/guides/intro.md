@@ -7,34 +7,20 @@ _description: MonoGame.Aseprite documentation introduction.
 # MonoGame.Aseprite
 
 ![MonoGame.Aseprite Banner](~/images/banner.png)
-MonoGame.Aseprite is an free and open source library for the [MonoGame Framework](https://www.monogame.net) that assists in importing [Aseprite](https://www.aseprite.org)  \*.ase/\*.aseprite files into your game project.  No need to export a spritesheet from Aseprite and have to deal with a PNG + JSON file.  With MonoGame.Aseprite, you use the Aseprite file directly.
+**MonoGame.Aseprite** is a free and open source library for the [MonoGame Framework](https://www.monogame.net) that assist in importing [Aseprite](https://www.aseprite.org) files into your game project.  No need to export a spritesheet from Aseprite and ahve to deal with PNG + JSON import.  With **MonoGame.Aseprite**, you can use the Aseprite file directly.
 
-MonoGame.Aseprite supports importing the file contents **both with and without the MGCB Editor (also known as the Content Pipeline Tool).**  Along with importing the file content, several **processors** have been designed to transform file content into a more meaningful state to use within MonoGame.
+**MonoGame.Aseprite** is a translation layer on top of my other library [AsepriteDotNet](https://github.com/aristurtledev/asepritedotnet).  **AsepriteDotNet** performs all of the file parsing and loading, then **MonoGame.Aseprite** provides utility classes to transform that data into commonly used types in a game such as **Sprite**, **TextureAtlas**, **SpriteSheet**, **Tileset**, and **Tilemap**.  
 
-MonoGame.Aseprite also provides several *out-of-the-box* classes that can be used to take advantage of the data once processed.
+> [!CAUTION]
+> If you plan to work only with the `AsepriteFile` and not use the utility types from the `MonoGame.Aseprite` library provided, it might be more beneficial for you to use the [AsepriteDotNet](https://github.com/aristurtledev/asepritedotnet) base library instead.  
 
 ## Missing or Incorrect Documentation?
 If you find that any information in the documentation is incorrect, confusing, or documentation for something is completely missing, please open an issue on the GitHub repository for these documents.  Alternatively you can join the MonoGame.Aseprite Discord and let me know.  Links for both are in the footer of the site.
 
 
 ## What Next?
-* If you're just getting starting, begin with the installation document in the Getting Started section.  
+* If you're just getting starting, begin with the [Installation](./getting-started/installation.md) document in the Getting Started section.  
 * Join the [Discord](https://discord.gg/8jFvHhuMJU) to ask questions or keep up to date. Or to just say hello and share projects your working on.
 * Found an issue with the library?  Submit an [issue on GitHub](https://github.com/aristurtledev/monogame-aseprite/issues).
 * Follow me on socials? 
     * [Twitter @aristurtledev](https://www.twitter.com/aristurtledev)
-    * [Mastodon mastodon.gamedev.place/@aristurtle](https://mastodon.gamedev.place/@aristurlte)
-
-
-## Buy me a coffee?
-If MonoGame.Aseprite is useful for you and you would like to support me, you can drop a tip/donation to me through Ko-fi.  This is not necessary but is always appreciated.  If you do, I can add you to the list below of sponsors with a link to your social or project if you'd like.
-
-<a href="https://ko-fi.com/aristurtledev">
-<ThemedImage
-  alt="Support me on Ko-fi"
-  sources={{
-    light: useBaseUrl('/img/kofi-bg-black.webp'),
-    dark: useBaseUrl('/img/kofi-bg-white.webp'),
-  }}
-/>
-</a>

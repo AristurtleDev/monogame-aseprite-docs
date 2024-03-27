@@ -1,21 +1,24 @@
+// Copyright (c) Christopher Whitley. All rights reserved.
+// Licensed under the MIT license.
+// See LICENSE file in the project root for full license information.
+
+using AsepriteDotNet.Aseprite;
+using AsepriteDotNet.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Aseprite;
-using MonoGame.Aseprite.Content.Processors;
-using MonoGame.Aseprite.Sprites;
 
-namespace SpriteSheetProcessorExample;
+namespace SpritesheetExample;
 
 public class Game1 : Game
 {
-    private SpriteSheet _spriteSheet;
+    private GraphicsDeviceManager _graphics;
+    private SpriteBatch _spriteBatch;
 
+    private SpriteSheet _spriteSheet;
     private AnimatedSprite _attackCycle;
     private AnimatedSprite _runCycle;
     private AnimatedSprite _walkCycle;
-
-    private GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
 
     public Game1()
     {
@@ -28,34 +31,68 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        //  Load the Aseprite file
-        AsepriteFile aseFile = AsepriteFile.Load("character.aseprite");
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Load the file. In this example, we're not using the MGCB/Content Pipeline and have the Aseprite file set as
+        /// a file in our project that is copied the output directory.  Because of this, we can use the
+        /// TitleContainer.OpenStream to get a stream to the file and use that to load it.
+        /// 
+        /// You can optionally enable/disable premultiply alpha for the color values when the file is loaded.  If not
+        /// specified, it will default to true.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        AsepriteFile aseFile;
+        using (Stream stream = TitleContainer.OpenStream("character_robot.aseprite"))
+        {
+            aseFile = AsepriteFileLoader.FromStream("character_robot", stream, preMultiplyAlpha: true);
+        }
 
-        //  Use the SpriteSheetProcessor to process the SpriteSheet from the Aseprite file.
-        _spriteSheet = SpriteSheetProcessor.Process(GraphicsDevice, aseFile);
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Create a sprite sheet from any frame in the aseprite file
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _spriteSheet = aseFile.CreateSpriteSheet(GraphicsDevice);
 
-        //  Create the AnimatedSprite using the SpriteSheet.
-        //  The name of the Tags you added in Aseprite are the names of the 
-        //  AnimationTags in the SpriteSheet.
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Create the animated sprites from the sprite sheet.
+        /// Each animated sprite correlates to a tag from Aseprite.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         _walkCycle = _spriteSheet.CreateAnimatedSprite("walk");
         _runCycle = _spriteSheet.CreateAnimatedSprite("run");
         _attackCycle = _spriteSheet.CreateAnimatedSprite("attack");
 
-        //  Starting with version 5.0.0, AnimatedSprite instances must be told to play
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Tell the animated sprite to play.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         _walkCycle.Play();
         _runCycle.Play();
-        _attackCycle.Play();
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// You can even set a specific loop count when telling it to play.  Setting this will override the "Repeat"
+        /// value that was set in Aseprite.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _attackCycle.Play(loopCount: 3);
     }
 
     protected override void Update(GameTime gameTime)
     {
-        base.Update(gameTime);
-
-        //  The animated sprite needs to be updated in order for it to actually animated
-        _attackCycle.Update(gameTime);
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Animations need to be updated every frame
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         _walkCycle.Update(gameTime);
         _runCycle.Update(gameTime);
+        _attackCycle.Update(gameTime);
     }
+
 
     protected override void Draw(GameTime gameTime)
     {
@@ -63,13 +100,16 @@ public class Game1 : Game
 
         _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
-        //  Draw the AnimatedSprite
-        _attackCycle.Draw(_spriteBatch, position: new Vector2(10, 10));
-        _walkCycle.Draw(_spriteBatch, position: new Vector2(_attackCycle.Width, 10));
-        _runCycle.Draw(_spriteBatch, position: new Vector2(_attackCycle.Width * 2, 10));
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// SpriteBatch extension methods are provided to draw the animated sprites
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _spriteBatch.Draw(_attackCycle, new Vector2(10, 10));
+        _spriteBatch.Draw(_walkCycle, new Vector2(_attackCycle.Width, 10));
+        _spriteBatch.Draw(_runCycle, new Vector2(_attackCycle.Width * 2, 10));
+
 
         _spriteBatch.End();
-
-        base.Draw(gameTime);
     }
 }
