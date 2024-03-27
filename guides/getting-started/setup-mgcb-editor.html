@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Setup MGCB Editor | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Setup MGCB Editor | MonoGame Aseprite ">
+      <meta name="description" content="Step-by-step instructions to setup the MGCB Editor to use MonoGame.Aseprite.">
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/getting-started/setup-mgcb-editor.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="Setup MGCB Editor | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="Step-by-step instructions to setup the MGCB Editor to use MonoGame.Aseprite.">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GettingStarted.SetupMGCBEditor">
+<h1 id="setup-mgcb-editor">Setup MGCB Editor</h1>
+
+<p>The purpose of this document is to provide the instructions for setting up the MGCB Editor for use with the <strong>MonoGame.Aseprite</strong> library to import your Aseprite files for your MonoGame project.</p>
+<div class="alert alert-warning">
+<h5>Caution</h5>
+<p>This step is optional and only required if you want to use the MGCB Editor to import your Aseprite file. Using the MGCB Editor to import only performs minimal pre-processing of the file to create the <code>AsepriteFile</code>.</p>
+</div>
+<h2 id="add-reference-in-mgcb-editor">Add Reference in MGCB Editor</h2>
+<p>In order to use the MGCB Editor to import/process your Aseprite file, you'll have to give it a reference to the <code>MonoGame.Aseprite.Content.Pipeline.dll</code> assembly. This assembly was downloaded as part of the <strong>MonoGame.Aseprite</strong> NuGet package, but it does not get added automatically for you. To add it, complete the following steps:</p>
+<ol>
+<li>Open your <code>Content.mgcb</code> file in the MGCB Editor.</li>
+</ol>
+<div class="alert alert-success">
+<h5>Tip</h5>
+<p>When using Visual Studio, double clicking the <code>Content.mgcb</code> file in your project should open it for you using the MGCB Editor. Sometimes though, it will instead open the file as a text file. If this is happening to you, you can right-click the file, and choose <code>Open With</code> to change the default application to open it with.</p>
+<p>Alternatively, you can open it by using the following <code>dotnet</code> command in a command-line or terminal window from within the project directory</p>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_dotnet" role="tab" aria-controls="tabpanel_1_dotnet" data-tab="dotnet" tabindex="0" aria-selected="true">dotnet Command</a>
+</li>
+</ul>
+<section id="tabpanel_1_dotnet" role="tabpanel" data-tab="dotnet">
+
+<pre><code>dotnet mgcb-editor ./Content/Content.mgcb
+</code></pre>
+</section>
+</div>
+</div>
+<ol start="2">
+<li>Click the <strong>Content</strong> node located in the <strong>Project</strong> panel on the left</li>
+<li>In the <strong>Properties</strong> panel below it, scroll down to the <strong>References</strong> field. Click this field to open the <strong>Reference Editor</strong> dialog window.</li>
+<li>Click the <strong>Add</strong> button in the <strong>Reference Editor</strong> dialog window.</li>
+<li>Find and add the <code>MonoGame.Aseprite.Content.Pipeline.dll</code> file that was downloaded from the NuGet Package</li>
+</ol>
+<div class="alert alert-success">
+<h5>Tip</h5>
+<p>By default, NuGet will download packages to the global packages directory. The following shows where the location of the <code>MonoGame.Aseprite.Content.Pipeline.dll</code> will with default NuGet configs depending on your operating system:</p>
+<div class="tabGroup" id="tabgroup_2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_2_windows" role="tab" aria-controls="tabpanel_2_windows" data-tab="windows" tabindex="0" aria-selected="true">Windows</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_2_mac" role="tab" aria-controls="tabpanel_2_mac" data-tab="mac" tabindex="-1">MacOS</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_2_linux" role="tab" aria-controls="tabpanel_2_linux" data-tab="linux" tabindex="-1">Linux</a>
+</li>
+</ul>
+<section id="tabpanel_2_windows" role="tabpanel" data-tab="windows">
+
+<pre><code class="lang-sh">%userprofile%\.nuget\packages\monogame-aseprite\6.0.0\content\MonoGame.Aseprite.Content.Pipeline.dll
+</code></pre>
+</section>
+<section id="tabpanel_2_mac" role="tabpanel" data-tab="mac" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-sh">~/.nuget/packages/monogame-aseprite/6.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
+</code></pre>
+</section>
+<section id="tabpanel_2_linux" role="tabpanel" data-tab="linux" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-sh">~/.nuget/packages/monogame-aseprite/6.0.0/content/MonoGame.Aseprite.Content.Pipeline.dll
+</code></pre>
+</section>
+</div>
+</div>
+<ol start="6">
+<li>Click <strong>Ok</strong> to close the <strong>Reference Editor</strong> dialog window.</li>
+</ol>
+<p>You should now see that <code>MonoGame.Aseprite.Content.Pipeline.dll</code> in the <strong>References</strong> field of the property window.  When adding an Aseprite (.ase | .aseprite) file as a content item in the MGCB Editor, it should automatically select the <strong>Aseprite File Importer</strong> and <strong>Aseprite File Processor</strong> for you as the importer and processor.</p>
+<div class="alert alert-warning">
+<h5>Caution</h5>
+<p>The reference we just added to the MGCB Editor is stored as a relative path in the Content.mgcb file.  You can see this for yourself by opening the Content.mgcb file in a text editor and locating the references section. It wil look something like this</p>
+<pre><code>#-------------------------------- References --------------------------------#
+
+/reference:..\..\..\..\..\..\.nuget\packages\monogame.aseprite\6.0.0\content\pipeline\MonoGame.Aseprite.Content.Pipeline.dll
+</code></pre>
+<p>Since it is stored as a relative path, this reference can break if</p>
+<ul>
+<li>You move the project directory somewhere else on your computer</li>
+<li>You use multiple workstations for development</li>
+<li>You have multiple team members working on the project from a shared git repo.</li>
+</ul>
+<p>These is a limitation with the MGCB Editor, not with <a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a>, because it stores it as a relative path.  Due to this, I strongly recommend setting up a <strong>nuget.config</strong> file for your project.  By doing this, you can specify that the NuGet packages should be downloaded to a local directory within the project itself. Then the relative path will not break since it's local to the project.</p>
+<p>For more information on creating a <strong>nuget.config</strong> file to do this, see the <a href="https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file">nuget.config File Reference on Microsoft Learn</a>.</p>
+<p>For an example of how to do this with MonoGame.Aseprite, you can check out the example <strong>nuget.config</strong> file found in the example repository at <a href="https://github.com/AristurtleDev/monogame-aseprite-examples/tree/main/source/ContentPipelineExample">https://github.com/AristurtleDev/monogame-aseprite-examples/tree/main/source/ContentPipelineExample</a></p>
+</div>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a class="xref" href="load-aseprite-file.html">Load an Aseprite File</a>
+<ul>
+<li>Goes over how to import your Aseprite file so you can get started using it in the game.</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

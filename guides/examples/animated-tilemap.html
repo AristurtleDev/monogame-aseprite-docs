@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AnimatedTilemap Example | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AnimatedTilemap Example | MonoGame Aseprite ">
+      <meta name="description" content="An example of creating an AnimatedTilemap using the AnimatedTilemapProcessor.">
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/examples/animated-tilemap.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="AnimatedTilemap Example | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="An example of creating an AnimatedTilemap using the AnimatedTilemapProcessor.">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Examples.AnimatedTilemapExample">
+<h1 id="animatedtilemap-example">AnimatedTilemap Example</h1>
+
+<p>The example below demonstrates creating a new <a class="xref" href="../../api/MonoGame.Aseprite.AnimatedTilemap.html">AnimatedTilemap</a> from an <code>AsepriteFile</code> and rendering it with the <code>SpriteBatch</code></p>
+<pre><code class="lang-csharp" highlight-lines="5-6,9,17-18,32-59,66-71,82-87">// Copyright (c) Christopher Whitley. All rights reserved.
+// Licensed under the MIT license.
+// See LICENSE file in the project root for full license information.
+
+using AsepriteDotNet.Aseprite;
+using AsepriteDotNet.IO;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Aseprite;
+
+namespace AnimatedTilemapExample;
+
+public class Game1 : Game
+{
+    private GraphicsDeviceManager _graphics;
+    private SpriteBatch _spriteBatch;
+    private AnimatedTilemap _animatedTilemap;
+    private Vector2 _scale;
+
+    public Game1()
+    {
+        _graphics = new GraphicsDeviceManager(this);
+        Content.RootDirectory = &quot;Content&quot;;
+        IsMouseVisible = true;
+    }
+
+
+    protected override void LoadContent()
+    {
+        _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Load the file. In this example, we're not using the MGCB/Content Pipeline and have the Aseprite file set as
+        /// a file in our project that is copied the output directory.  Because of this, we can use the
+        /// TitleContainer.OpenStream to get a stream to the file and use that to load it.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        AsepriteFile aseFile;
+        using (Stream stream = TitleContainer.OpenStream(&quot;townmap.aseprite&quot;))
+        {
+            aseFile = AsepriteFileLoader.FromStream(&quot;townmap&quot;, stream);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Create an animated tilemap from the file based on all frames.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _animatedTilemap = aseFile.CreateAnimatedTilemap(GraphicsDevice);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Size the tilemap is created 1:1 with the size it is in Aseprite, we're going to create a scale factor here
+        /// in this example to be the size of the game window.  
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _scale.X = _graphics.PreferredBackBufferWidth / (float)_animatedTilemap.GetFrame(0).GetLayer(0).Width;
+        _scale.Y = _graphics.PreferredBackBufferHeight / (float)_animatedTilemap.GetFrame(0).GetLayer(0).Height;
+
+    }
+
+    protected override void Update(GameTime gameTime)
+    {
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// The animated tilemap must be updated each frame to update the animations.
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _animatedTilemap.Update(gameTime);
+
+    }
+
+    protected override void Draw(GameTime gameTime)
+    {
+        GraphicsDevice.Clear(Color.CornflowerBlue);
+
+
+        _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        /// Spritebatch extension are provided to draw the tilemap
+        /// 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        _spriteBatch.Draw(_animatedTilemap, Vector2.Zero, Color.White, _scale, 0.0f);
+
+        _spriteBatch.End();
+    }
+}
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

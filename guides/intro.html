@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MonoGame.Aseprite | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MonoGame.Aseprite | MonoGame Aseprite ">
+      <meta name="description" content="MonoGame.Aseprite documentation introduction.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/intro.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="MonoGame.Aseprite | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="MonoGame.Aseprite documentation introduction.">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MonoGame.Aseprite.Introduction">
+<h1 id="monogameaseprite">MonoGame.Aseprite</h1>
+
+<p><img src="../images/banner.png" alt="MonoGame.Aseprite Banner">
+<strong>MonoGame.Aseprite</strong> is a free and open source library for the <a href="https://www.monogame.net">MonoGame Framework</a> that assist in importing <a href="https://www.aseprite.org">Aseprite</a> files into your game project.  No need to export a spritesheet from Aseprite and ahve to deal with PNG + JSON import.  With <strong>MonoGame.Aseprite</strong>, you can use the Aseprite file directly.</p>
+<p><strong>MonoGame.Aseprite</strong> is a translation layer on top of my other library <a href="https://github.com/aristurtledev/asepritedotnet">AsepriteDotNet</a>.  <strong>AsepriteDotNet</strong> performs all of the file parsing and loading, then <strong>MonoGame.Aseprite</strong> provides utility classes to transform that data into commonly used types in a game such as <strong>Sprite</strong>, <strong>TextureAtlas</strong>, <strong>SpriteSheet</strong>, <strong>Tileset</strong>, and <strong>Tilemap</strong>.</p>
+<div class="alert alert-warning">
+<h5>Caution</h5>
+<p>If you plan to work only with the <code>AsepriteFile</code> and not use the utility types from the <code>MonoGame.Aseprite</code> library provided, it might be more beneficial for you to use the <a href="https://github.com/aristurtledev/asepritedotnet">AsepriteDotNet</a> base library instead.</p>
+</div>
+<h2 id="missing-or-incorrect-documentation">Missing or Incorrect Documentation?</h2>
+<p>If you find that any information in the documentation is incorrect, confusing, or documentation for something is completely missing, please open an issue on the GitHub repository for these documents.  Alternatively you can join the MonoGame.Aseprite Discord and let me know.  Links for both are in the footer of the site.</p>
+<h2 id="what-next">What Next?</h2>
+<ul>
+<li>If you're just getting starting, begin with the <a href="getting-started/installation.html">Installation</a> document in the Getting Started section.</li>
+<li>Join the <a href="https://discord.gg/8jFvHhuMJU">Discord</a> to ask questions or keep up to date. Or to just say hello and share projects your working on.</li>
+<li>Found an issue with the library?  Submit an <a href="https://github.com/aristurtledev/monogame-aseprite/issues">issue on GitHub</a>.</li>
+<li>Follow me on socials?
+<ul>
+<li><a href="https://www.twitter.com/aristurtledev">Twitter @aristurtledev</a></li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Load the Aseprite File | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Load the Aseprite File | MonoGame Aseprite ">
+      <meta name="description" content="Overview of how to load your Aseprite file using MonoGame.Aseprite.">
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/getting-started/load-aseprite-file.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="Load the Aseprite File | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="Overview of how to load your Aseprite file using MonoGame.Aseprite.">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GettingStarted.LoadAsepriteFile">
+<h1 id="load-the-aseprite-file">Load The Aseprite File</h1>
+
+<p>The purpose of this document is to provide an overview of how to load your Aseprite file so it can be used in your game at runtime.</p>
+<h2 id="overview">Overview</h2>
+<p>The <strong>AsepriteFile</strong> class is the starting point for everything that can be done with this library.  When the contents of your Aseprite file are imported, they are presented to you through the properties of the <strong>AsepriteFile</strong> instance created.  This includes each layer, frame, cel, tag, slice, tileset, and tilemap.</p>
+<h2 id="loading-the-aseprite-file">Loading the Aseprite File</h2>
+<p>There are two ways of loading your Aseprite file to be used in your game project; from the AsepriteFile at runtime or from the XNB preprocessed with the MGCB Editor. Choose the tab below based on which workflow you are using to see an example of doing this.</p>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_from-aseprite-file" role="tab" aria-controls="tabpanel_1_from-aseprite-file" data-tab="from-aseprite-file" tabindex="0" aria-selected="true">From Aseprite File</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_from-xnb" role="tab" aria-controls="tabpanel_1_from-xnb" data-tab="from-xnb" tabindex="-1">From XNB</a>
+</li>
+</ul>
+<section id="tabpanel_1_from-aseprite-file" role="tabpanel" data-tab="from-aseprite-file">
+
+<p>MonoGame provides the <code>TitleContainer.OpenStream</code> method that opens a stream for a file path that is relative the output of the game executable/assembly. It is platform aware, so it the best option to use instead of using the file path directly.  With the Aseprite file in your project, if you are using <strong>Visual Studio</strong> you can right-click the file, goto <strong>Properties</strong> and change the <strong>Copy to Output Directory</strong> property to <strong>Copy if newer</strong>.</p>
+<p><img src="../../images/articles/load-aseprite-file/copy-if-newer.png" alt="Copy To Output Directory"></p>
+<p>Otherwise; if you are using something like <strong>Visual Studio Code</strong> you update your <code>.csproj</code> file to include the same setting.</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+    &lt;None Update=&quot;townmap.aseprite&quot;&gt;
+        &lt;CopyToOutputDirectory&gt;PreserveNewest&lt;/CopyToOutputDirectory&gt;
+    &lt;/None&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>Then, to load the Aseprite file at runtime using <code>TitleContainer</code> you can perform the following
+<strong>Add Using Statements</strong></p>
+<pre><code class="lang-cs">//  MonoGame.Aseprite now uses AsepriteDotNet as the base loader for the Aseprite file
+using AsepriteDotNet.Aseprite;
+using AsepriteDotNet.IO;
+
+protected override void LoadContent()
+{
+    AsepriteFile aseFile;
+    using(Stream stream = TitleContainer.OpenStram(&quot;file.aseprite&quot;))
+    {
+        aseFile = AsepriteFileLoader.FromStream(fileName: &quot;file&quot;, stream: stream, preMultiplyAlpha: true);
+    }
+}
+</code></pre>
+</section>
+<section id="tabpanel_1_from-xnb" role="tabpanel" data-tab="from-xnb" aria-hidden="true" hidden="hidden">
+
+<p>If you are using the MGCB Editor, first ensure that you have completed the prerequisite steps in the <a class="xref" href="setup-mgcb-editor.html">Setup MGCB Editor</a> document.</p>
+<p>Next, open your <strong>Content.mgcb</strong> file in the MGCB Editor and and add your Aseprite file as a content item.  Ensure that the <strong>Aseprite File Importer</strong> and <strong>Aseprite File Processor</strong> are selected as the Importer and Processor types for the file.</p>
+<p><img src="../../images/articles/load-aseprite-file/importer-processor.png" alt="A screenshot of the MGCB Editor showing the Aseprite File Importer and Aseprite File Processor selected as the importer and processor"></p>
+<p>Then, in your game project, load the Aseprite file using the content manager. The following demonstrates how to do this:</p>
+<p><strong>Add Using Statement</strong></p>
+<pre><code class="lang-cs">//  MonoGame.Aseprite now uses AsepriteDotNet as the base loader for the Aseprite file
+using AsepriteDotNet.Aseprite;
+
+protected override void LoadContent()
+{
+    //  Load the Aseprite file using the ContentManager
+    AsepriteFile aseFile = Content.Load&lt;AsepriteFile&gt;(&quot;file&quot;);
+}
+</code></pre>
+</section>
+</div>
+
+<p>At this point, you have the Aseprite file loaded and ready to use transform into a more meaningful content type like a Sprite, TextureAtlas, Spritesheet, Tileset, Tilemap, or AnimatedTilemap.</p>
+<div class="alert alert-success">
+<h5>Tip</h5>
+<p>Loading the Aseprite file from disk is like loading any asset in your game, whether it is done using the MGCB Editor or not.  It should be done where you load your game assets. For instance, within the <code>LoadContent</code> method of your <code>Game</code> class like shown in the example above.</p>
+</div>
+<h2 id="next-steps">Next Steps</h2>
+<p>Now that you have the <code>AsepriteFile</code> object created, transform the data inside to one of the utility classes provided by <strong>MonoGame.Aseprite</strong>.  To learn more, see the <a href="../examples/overview.html">Examples Overview</a> page for more information.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

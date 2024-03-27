@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextureAtlas
+ | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextureAtlas
+ | MonoGame Aseprite ">
+      <meta name="description" content="Import Aseprite files directly into MonoGame">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="Class TextureAtlas
+ | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="Import Aseprite files directly into MonoGame">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MonoGame.Aseprite.TextureAtlas">
+
+
+
+  <h1 id="MonoGame_Aseprite_TextureAtlas" data-uid="MonoGame.Aseprite.TextureAtlas" class="text-break">
+    Class TextureAtlas
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MonoGame.html">MonoGame</a>.<a class="xref" href="MonoGame.Aseprite.html">Aseprite</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MonoGame.Aseprite.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines a <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a> with a source image and zero or more <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> elements.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextureAtlas : IEnumerable&lt;TextureRegion&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TextureAtlas</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.-ctor.html#MonoGame_Aseprite_TextureAtlas__ctor_System_String_Microsoft_Xna_Framework_Graphics_Texture2D_">TextureAtlas(string, Texture2D)</a></dt>
+    <dd><p>Initializes a new instance of the <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a> class.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.Item.html#MonoGame_Aseprite_TextureAtlas_Item_System_Int32_">this[int]</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element at the specified index in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.Item.html#MonoGame_Aseprite_TextureAtlas_Item_System_String_">this[string]</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.Name.html#MonoGame_Aseprite_TextureAtlas_Name">Name</a></dt>
+    <dd><p>Gets the name assigned to this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.RegionCount.html#MonoGame_Aseprite_TextureAtlas_RegionCount">RegionCount</a></dt>
+    <dd><p>Gets the total number of <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> elements in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.Texture.html#MonoGame_Aseprite_TextureAtlas_Texture">Texture</a></dt>
+    <dd><p>Gets the source image of this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.Clear.html#MonoGame_Aseprite_TextureAtlas_Clear">Clear()</a></dt>
+    <dd><p>Removes all <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> elements from this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.ContainsRegion.html#MonoGame_Aseprite_TextureAtlas_ContainsRegion_System_String_">ContainsRegion(string)</a></dt>
+    <dd><p>Returns a value that indicates whether this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a> contains a
+<a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateRegion.html#MonoGame_Aseprite_TextureAtlas_CreateRegion_System_String_Microsoft_Xna_Framework_Point_Microsoft_Xna_Framework_Point_">CreateRegion(string, Point, Point)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> and adds it to this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateRegion.html#MonoGame_Aseprite_TextureAtlas_CreateRegion_System_String_Microsoft_Xna_Framework_Rectangle_">CreateRegion(string, Rectangle)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> and adds it to this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateRegion.html#MonoGame_Aseprite_TextureAtlas_CreateRegion_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">CreateRegion(string, int, int, int, int)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> and adds it to this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateSprite.html#MonoGame_Aseprite_TextureAtlas_CreateSprite_System_Int32_">CreateSprite(int)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.Sprite.html">Sprite</a> from the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> at the specified index in this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateSprite.html#MonoGame_Aseprite_TextureAtlas_CreateSprite_System_String_">CreateSprite(string)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.Sprite.html">Sprite</a> from the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> with the specified name in this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateSprite.html#MonoGame_Aseprite_TextureAtlas_CreateSprite_System_String_System_Int32_">CreateSprite(string, int)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.Sprite.html">Sprite</a> from the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> at the specified index in this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.CreateSprite.html#MonoGame_Aseprite_TextureAtlas_CreateSprite_System_String_System_String_">CreateSprite(string, string)</a></dt>
+    <dd><p>Creates a new <a class="xref" href="MonoGame.Aseprite.Sprite.html">Sprite</a> from the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a>  with the specified name in this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetEnumerator.html#MonoGame_Aseprite_TextureAtlas_GetEnumerator">GetEnumerator()</a></dt>
+    <dd><p>Returns an enumerator that iterates through the collection.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetIndexOfRegion.html#MonoGame_Aseprite_TextureAtlas_GetIndexOfRegion_System_String_">GetIndexOfRegion(string)</a></dt>
+    <dd><p>Returns the index of the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name in this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetRegion.html#MonoGame_Aseprite_TextureAtlas_GetRegion_System_Int32_">GetRegion(int)</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element at the specified index in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetRegion.html#MonoGame_Aseprite_TextureAtlas_GetRegion_System_String_">GetRegion(string)</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetRegions.html#MonoGame_Aseprite_TextureAtlas_GetRegions_System_Int32___">GetRegions(params int[])</a></dt>
+    <dd><p>Gets a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> of all <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> elements at the specified indexes in
+this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>. Order of the elements in the collection returned is the same as the order
+of the indexes specified.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.GetRegions.html#MonoGame_Aseprite_TextureAtlas_GetRegions_System_String___">GetRegions(params string[])</a></dt>
+    <dd><p>Gets a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> of all <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> elements with the specified names in
+this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>. Order of the elements in the collection returned is the same as the order
+of names specified.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.RemoveRegion.html#MonoGame_Aseprite_TextureAtlas_RemoveRegion_System_Int32_">RemoveRegion(int)</a></dt>
+    <dd><p>Removes the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element at the specified index from this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.RemoveRegion.html#MonoGame_Aseprite_TextureAtlas_RemoveRegion_System_String_">RemoveRegion(string)</a></dt>
+    <dd><p>Removes the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name from this
+<a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.TryGetRegion.html#MonoGame_Aseprite_TextureAtlas_TryGetRegion_System_Int32_MonoGame_Aseprite_TextureRegion__">TryGetRegion(int, out TextureRegion?)</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element at the specified index in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.TextureAtlas.TryGetRegion.html#MonoGame_Aseprite_TextureAtlas_TryGetRegion_System_String_MonoGame_Aseprite_TextureRegion__">TryGetRegion(string, out TextureRegion?)</a></dt>
+    <dd><p>Gets the <a class="xref" href="MonoGame.Aseprite.TextureRegion.html">TextureRegion</a> element with the specified name in this <a class="xref" href="MonoGame.Aseprite.TextureAtlas.html">TextureAtlas</a>.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

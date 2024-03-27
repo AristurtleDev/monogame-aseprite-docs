@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AnimatedSprite
+ | MonoGame Aseprite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AnimatedSprite
+ | MonoGame Aseprite ">
+      <meta name="description" content="Import Aseprite files directly into MonoGame">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+      <meta name="og:title" content="Class AnimatedSprite
+ | MonoGame Aseprite ">
+      <meta name="og:type" content="website">
+      <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
+      <meta name="og:description" content="Import Aseprite files directly into MonoGame">      
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.aristurtle.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="MonoGame Aseprite">
+            MonoGame Aseprite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MonoGame.Aseprite.AnimatedSprite">
+
+
+
+  <h1 id="MonoGame_Aseprite_AnimatedSprite" data-uid="MonoGame.Aseprite.AnimatedSprite" class="text-break">
+    Class AnimatedSprite
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MonoGame.html">MonoGame</a>.<a class="xref" href="MonoGame.Aseprite.html">Aseprite</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MonoGame.Aseprite.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines an animated sprite with methods to control the playing of the sprite animation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AnimatedSprite : Sprite</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MonoGame.Aseprite.Sprite.html">Sprite</a></div>
+      <div><span class="xref">AnimatedSprite</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Name.html#MonoGame_Aseprite_Sprite_Name">Sprite.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.TextureRegion.html#MonoGame_Aseprite_Sprite_TextureRegion">Sprite.TextureRegion</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Width.html#MonoGame_Aseprite_Sprite_Width">Sprite.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Height.html#MonoGame_Aseprite_Sprite_Height">Sprite.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Color.html#MonoGame_Aseprite_Sprite_Color">Sprite.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Transparency.html#MonoGame_Aseprite_Sprite_Transparency">Sprite.Transparency</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Rotation.html#MonoGame_Aseprite_Sprite_Rotation">Sprite.Rotation</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Origin.html#MonoGame_Aseprite_Sprite_Origin">Sprite.Origin</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.OriginX.html#MonoGame_Aseprite_Sprite_OriginX">Sprite.OriginX</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.OriginY.html#MonoGame_Aseprite_Sprite_OriginY">Sprite.OriginY</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Scale.html#MonoGame_Aseprite_Sprite_Scale">Sprite.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.ScaleX.html#MonoGame_Aseprite_Sprite_ScaleX">Sprite.ScaleX</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.ScaleY.html#MonoGame_Aseprite_Sprite_ScaleY">Sprite.ScaleY</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.SpriteEffects.html#MonoGame_Aseprite_Sprite_SpriteEffects">Sprite.SpriteEffects</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.FlipHorizontally.html#MonoGame_Aseprite_Sprite_FlipHorizontally">Sprite.FlipHorizontally</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.FlipVertically.html#MonoGame_Aseprite_Sprite_FlipVertically">Sprite.FlipVertically</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.LayerDepth.html#MonoGame_Aseprite_Sprite_LayerDepth">Sprite.LayerDepth</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.IsVisible.html#MonoGame_Aseprite_Sprite_IsVisible">Sprite.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoGame.Aseprite.Sprite.Draw.html#MonoGame_Aseprite_Sprite_Draw_Microsoft_Xna_Framework_Graphics_SpriteBatch_Microsoft_Xna_Framework_Vector2_">Sprite.Draw(SpriteBatch, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.CurrentFrame.html#MonoGame_Aseprite_AnimatedSprite_CurrentFrame">CurrentFrame</a></dt>
+    <dd><p>Gets the source <a class="xref" href="MonoGame.Aseprite.AnimationFrame.html">AnimationFrame</a> of the current frame of animation for this<br>
+<a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.CurrentFrameTimeRemaining.html#MonoGame_Aseprite_AnimatedSprite_CurrentFrameTimeRemaining">CurrentFrameTimeRemaining</a></dt>
+    <dd><p>Gets the amount of time remaining for the <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.CurrentFrame.html#MonoGame_Aseprite_AnimatedSprite_CurrentFrame">CurrentFrame</a> before moving to the next frame.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.FrameCount.html#MonoGame_Aseprite_AnimatedSprite_FrameCount">FrameCount</a></dt>
+    <dd><p>Gets the total number of frames in this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.IsAnimating.html#MonoGame_Aseprite_AnimatedSprite_IsAnimating">IsAnimating</a></dt>
+    <dd><p>Gets a value that indicates if this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> has completed its animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.IsPaused.html#MonoGame_Aseprite_AnimatedSprite_IsPaused">IsPaused</a></dt>
+    <dd><p>Gets a value that indicates if this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> is currently paused.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.IsPingPong.html#MonoGame_Aseprite_AnimatedSprite_IsPingPong">IsPingPong</a></dt>
+    <dd><p>Gets or Sets a value that indicates if this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> should ping-pong once reaching the
+last frame of animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.IsReversed.html#MonoGame_Aseprite_AnimatedSprite_IsReversed">IsReversed</a></dt>
+    <dd><p>Gets or Sets a value that indicates if this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> plays it's frames in reverse order.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.LoopCount.html#MonoGame_Aseprite_AnimatedSprite_LoopCount">LoopCount</a></dt>
+    <dd><p>Gets a value that indicates the total number of loops/cycles of the animation that should play for
+this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.OnAnimationBegin.html#MonoGame_Aseprite_AnimatedSprite_OnAnimationBegin">OnAnimationBegin</a></dt>
+    <dd><p>Gets or Sets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> method to invoke at the start of the animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.OnAnimationEnd.html#MonoGame_Aseprite_AnimatedSprite_OnAnimationEnd">OnAnimationEnd</a></dt>
+    <dd><p>Gets or Sets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> method to invoke when the animation ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.OnAnimationLoop.html#MonoGame_Aseprite_AnimatedSprite_OnAnimationLoop">OnAnimationLoop</a></dt>
+    <dd><p>Gets or Sets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> to invoke each time the animation loops.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.OnFrameBegin.html#MonoGame_Aseprite_AnimatedSprite_OnFrameBegin">OnFrameBegin</a></dt>
+    <dd><p>Gets or Sets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> method to invoke at the start of each frame of animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.OnFrameEnd.html#MonoGame_Aseprite_AnimatedSprite_OnFrameEnd">OnFrameEnd</a></dt>
+    <dd><p>Gets or Sets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> method to invoke at the end of each frame of animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Speed.html#MonoGame_Aseprite_AnimatedSprite_Speed">Speed</a></dt>
+    <dd><p>Sets the rate at which the animation is played.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Pause.html#MonoGame_Aseprite_AnimatedSprite_Pause_System_Boolean_">Pause(bool)</a></dt>
+    <dd><p>Paused this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> and prevents it from being updated until it is unpaused.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Play.html#MonoGame_Aseprite_AnimatedSprite_Play_System_Nullable_System_Int32__System_Nullable_System_Int32__">Play(int?, int?)</a></dt>
+    <dd><p>Starts the animation for this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Reset.html#MonoGame_Aseprite_AnimatedSprite_Reset">Reset()</a></dt>
+    <dd><p>Resets this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> back to its initial state as defined by the
+<a class="xref" href="MonoGame.Aseprite.AnimationTag.html">AnimationTag</a> used to create it.  You will need to call <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Play.html#MonoGame_Aseprite_AnimatedSprite_Play_System_Nullable_System_Int32__System_Nullable_System_Int32__">Play(int?, int?)</a>
+after resetting to start the playback of the animation.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.SetFrame.html#MonoGame_Aseprite_AnimatedSprite_SetFrame_System_Int32_">SetFrame(int)</a></dt>
+    <dd><p>Sets the current frame of animation for this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Stop.html#MonoGame_Aseprite_AnimatedSprite_Stop">Stop()</a></dt>
+    <dd><p>Stops this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a> on the current frame.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Unpause.html#MonoGame_Aseprite_AnimatedSprite_Unpause_System_Boolean_">Unpause(bool)</a></dt>
+    <dd><p>Unpaused this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Update.html#MonoGame_Aseprite_AnimatedSprite_Update_Microsoft_Xna_Framework_GameTime_">Update(GameTime)</a></dt>
+    <dd><p>Updates this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Update.html#MonoGame_Aseprite_AnimatedSprite_Update_System_Double_">Update(double)</a></dt>
+    <dd><p>Updates this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MonoGame.Aseprite.AnimatedSprite.Update.html#MonoGame_Aseprite_AnimatedSprite_Update_System_TimeSpan__">Update(in TimeSpan)</a></dt>
+    <dd><p>Updates this <a class="xref" href="MonoGame.Aseprite.AnimatedSprite.html">AnimatedSprite</a>.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2023 Christopher Whitley
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
