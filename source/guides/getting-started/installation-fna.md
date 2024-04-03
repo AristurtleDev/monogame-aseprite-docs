@@ -20,8 +20,8 @@ To use [Monogame.Aseprite](<xref:MonoGame.Aseprite>) with FNA, you will need to 
 You can clone them both with the following commands
 
 ```sh
-https://github.com/AristurtleDev/monogame-aseprite.git
-https://github.com/AristurtleDev/AsepriteDotNet.git
+git clone https://github.com/AristurtleDev/monogame-aseprite.git
+git clone https://github.com/AristurtleDev/AsepriteDotNet.git
 ```
 
 ## Reference In Your Game Project
