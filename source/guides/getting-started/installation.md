@@ -1,12 +1,15 @@
 ---
 uid: GettingStarted.Installation
-_title: Installation
+_title: Installation (MonoGame)
 _description: Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.
 ---
 
 # Installation
 
 The purpose of this document is to provide the instructions for installing the [MonoGame.Aseprite](<xref:MonoGame.Aseprite>) library for your MonoGame game project.
+
+> [!NOTE]
+> If you are using [FNA](https://github.com/FNA-XNA/FNA), please follow the [FNA Setup](./installation-fna.md) guide instead.
 
 ## Prerequisites
 

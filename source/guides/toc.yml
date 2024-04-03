@@ -2,8 +2,10 @@
   uid: MonoGame.Aseprite.Introduction
 - name: Getting Started
   items:
-  - name: Installation
+  - name: Installation (MonoGame)
     uid: GettingStarted.Installation
+  - name: Installation (FNA)
+    uid: GettingStarted.InstallationFna
   - name: (Optional) Setup MGCB Editor
     uid: GettingStarted.SetupMGCBEditor
   - name: Load the Aseprite File
