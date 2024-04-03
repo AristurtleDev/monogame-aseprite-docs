@@ -42,7 +42,7 @@ using AsepriteDotNet.IO;
 protected override void LoadContent()
 {
     AsepriteFile aseFile;
-    using(Stream stream = TitleContainer.OpenStram("file.aseprite"))
+    using(Stream stream = TitleContainer.OpenStream("file.aseprite"))
     {
         aseFile = AsepriteFileLoader.FromStream(fileName: "file", stream: stream, preMultiplyAlpha: true);
     }
