@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Installation (MonoGame) | MonoGame Aseprite </title>
+      <title>FNA Installation | MonoGame Aseprite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Installation (MonoGame) | MonoGame Aseprite ">
-      <meta name="description" content="Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.">
+      <meta name="title" content="FNA Installation | MonoGame Aseprite ">
+      <meta name="description" content="Step-by-step instructions for setting up MonoGame.Aseprite for your FNA project.">
       <link rel="icon" href="../../images/favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -15,7 +15,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/getting-started/installation.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/AristurtleDev/monogame-aseprite-docs/blob/main/source/guides/getting-started/installation-fna.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -28,10 +28,10 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
-      <meta name="og:title" content="Installation (MonoGame) | MonoGame Aseprite ">
+      <meta name="og:title" content="FNA Installation | MonoGame Aseprite ">
       <meta name="og:type" content="website">
       <meta name="og:image" content="https://monogameaseprite.net/images/logo.png">
-      <meta name="og:description" content="Step-by-step instructions for setting up MonoGame.Aseprite for your MonoGame project.">      
+      <meta name="og:description" content="Step-by-step instructions for setting up MonoGame.Aseprite for your FNA project.">      
 
     <!-- Matomo -->
     <script>
@@ -104,58 +104,33 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="GettingStarted.Installation">
+        <article data-uid="GettingStarted.InstallationFna">
 <h1 id="installation">Installation</h1>
 
-<p>The purpose of this document is to provide the instructions for installing the <a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a> library for your MonoGame game project.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If you are using <a href="https://github.com/FNA-XNA/FNA">FNA</a>, please follow the <a href="installation-fna.html">FNA Setup</a> guide instead.</p>
-</div>
+<p>The purpose of this document is to provide the instructions for installing the <a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a> library for your FNA game project.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="https://docs.monogame.net/articles/getting_started/0_getting_started.html">A MonoGame v3.8.1 project</a></li>
+<li><a href="https://github.com/FNA-XNA/FNA/wiki/1:-Setting-Up-FNA">FNA Development Environment Setup</a></li>
 </ul>
 <h2 id="downloading">Downloading</h2>
-<p><a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a> is distributed via a NuGet package. You can download it by adding the NuGet package to your project from within your IDE (e.g. the NuGet Package Manager in Visual Studio). Just search for the <a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a> package.</p>
-<p>You can also add it using the one of the following methods:</p>
-<div class="tabGroup" id="tabgroup_1">
-<ul role="tablist">
-<li role="presentation">
-<a href="#tabpanel_1_net-cli" role="tab" aria-controls="tabpanel_1_net-cli" data-tab="net-cli" tabindex="0" aria-selected="true">.NET CLI</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_1_package-manager" role="tab" aria-controls="tabpanel_1_package-manager" data-tab="package-manager" tabindex="-1">Package Manager</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_1_package-reference" role="tab" aria-controls="tabpanel_1_package-reference" data-tab="package-reference" tabindex="-1">Package Reference</a>
-</li>
-</ul>
-<section id="tabpanel_1_net-cli" role="tabpanel" data-tab="net-cli">
-
-<pre><code class="lang-sh">dotnet add package MonoGame.Aseprite --version 6.0.2
+<p>To use <a class="xref" href="../../api/MonoGame.Aseprite.html">Monogame.Aseprite</a> with FNA, you will need to clone the source and it's dependency on <strong>AsepriteDotNet</strong> to reference in your game project. These should both be added as siblings in the directory where you have the FNA cloned too.</p>
+<p><img src="../../images/articles/installation-fna/folder-setup.png" alt="MonoGame.Aseprite and AsepriteDotNet should be siblings of the FNA directory"></p>
+<p>You can clone them both with the following commands</p>
+<pre><code class="lang-sh">https://github.com/AristurtleDev/monogame-aseprite.git
+https://github.com/AristurtleDev/AsepriteDotNet.git
 </code></pre>
-</section>
-<section id="tabpanel_1_package-manager" role="tabpanel" data-tab="package-manager" aria-hidden="true" hidden="hidden">
+<h2 id="reference-in-your-game-project">Reference In Your Game Project</h2>
+<p>Once you have cloned both repositories as shown, you just need to add a reference to <code>monogame-aseprite\source\MonoGame.Aseprite\MonoGame.Aseprite.FNA.csproj</code> in your game csproj file.  For example</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+    &lt;!-- You should already have the FNA project reference --&gt;
+    &lt;ProjectReference Include=&quot;..\..\FNA\FNA.Core.csproj&quot; /&gt;
 
-<pre><code class="lang-ps1">Install-Package MonoGame.Aseprite -Version 6.0.2
+    &lt;!-- Add the MonoGame.Aseprite.FNA.csproj reference as well --&gt;
+    &lt;ProjectReference Include=&quot;..\..\monogame-aseprite\source\MonoGame.Aseprite\MonoGame.Aseprite.FNA.csproj&quot; /&gt;
+&lt;/ItemGroup&gt;
 </code></pre>
-</section>
-<section id="tabpanel_1_package-reference" role="tabpanel" data-tab="package-reference" aria-hidden="true" hidden="hidden">
-
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;MonoGame.Aseprite&quot; Version=&quot;6.0.2&quot; /&gt;
-</code></pre>
-</section>
-</div>
-
-<p>After adding the <a class="xref" href="../../api/MonoGame.Aseprite.html">MonoGame.Aseprite</a> NuGet package to your project, the <code>MonoGame.Aseprite.dll</code> will automatically be added as a reference to your project and is included as an output on build.</p>
 <h2 id="next-steps">Next Steps</h2>
 <ul>
-<li>(Optional) <a class="xref" href="setup-mgcb-editor.html">MGCB Editor Setup</a>
-<ul>
-<li>This step is optional. Go here first if you plan to use the MGCB Editor to import your Aseprite file.</li>
-</ul>
-</li>
 <li><a class="xref" href="load-aseprite-file.html">Load an Aseprite File</a>
 <ul>
 <li>Goes over how to import your Aseprite file so you can get started using it in the game.</li>

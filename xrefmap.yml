@@ -25,6 +25,9 @@ references:
 - uid: GettingStarted.Installation
   name: Installation
   href: guides/getting-started/installation.html
+- uid: GettingStarted.InstallationFna
+  name: Installation
+  href: guides/getting-started/installation-fna.html
 - uid: GettingStarted.LoadAsepriteFile
   name: Load The Aseprite File
   href: guides/getting-started/load-aseprite-file.html
