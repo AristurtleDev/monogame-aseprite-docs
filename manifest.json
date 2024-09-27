@@ -235,6 +235,116 @@
       "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
       "output": {
         ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Stop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Reset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.CreateFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.AddFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.GetFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.TryGetFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.RemoveFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Clear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Draw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.GetEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Name.html"
         }
       },
@@ -416,116 +526,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Unpause.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Stop.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Reset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.CreateFrame.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.AddFrame.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.GetFrame.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.TryGetFrame.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.RemoveFrame.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Clear.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.Draw.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.GetEnumerator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.AnimatedTilemap.html"
         }
       },
       "version": ""
@@ -985,136 +985,6 @@
       "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.IsVisible.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Draw.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Name.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.TextureRegion.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Width.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Height.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Color.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Transparency.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Rotation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.Origin.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Sprite.OriginX.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/MonoGame.Aseprite.Sprite.OriginY.html"
         }
       },
@@ -1186,6 +1056,136 @@
       "output": {
         ".html": {
           "relative_path": "api/MonoGame.Aseprite.Sprite.LayerDepth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.IsVisible.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Draw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Origin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.OriginX.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.TextureRegion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Width.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Height.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Color.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Transparency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Sprite.Rotation.html"
         }
       },
       "version": ""
@@ -1625,6 +1625,26 @@
       "source_relative_path": "api/MonoGame.Aseprite.Tile.yml",
       "output": {
         ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tile.Empty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tile.TilesetTileID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tile.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/MonoGame.Aseprite.Tile.FlipHorizontally.html"
         }
       },
@@ -1676,46 +1696,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MonoGame.Aseprite.Tile.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tile.Empty.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tile.TilesetTileID.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tilemap.Name.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tilemap.LayerCount.html"
         }
       },
       "version": ""
@@ -1805,16 +1785,6 @@
       "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tilemap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/MonoGame.Aseprite.Tilemap.Draw.html"
         }
       },
@@ -1826,6 +1796,36 @@
       "output": {
         ".html": {
           "relative_path": "api/MonoGame.Aseprite.Tilemap.GetEnumerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tilemap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tilemap.Name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tilemap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tilemap.LayerCount.html"
         }
       },
       "version": ""
@@ -2055,56 +2055,6 @@
       "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tileset.Item.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tileset.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tileset.GetTile.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tileset.TryGetTile.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Tileset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/MonoGame.Aseprite.Tileset.Name.html"
         }
       },
@@ -2182,10 +2132,50 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MonoGame.Aseprite.Utils.AsepriteDotNetExtensions.yml",
+      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MonoGame.Aseprite.Utils.AsepriteDotNetExtensions.ToTexture2D.html"
+          "relative_path": "api/MonoGame.Aseprite.Tileset.Item.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tileset.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tileset.GetTile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tileset.TryGetTile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Tileset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Tileset.html"
         }
       },
       "version": ""
@@ -2236,6 +2226,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MonoGame.Aseprite.Utils.AsepriteDotNetExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoGame.Aseprite.Utils.AsepriteDotNetExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoGame.Aseprite.Utils.AsepriteDotNetExtensions.ToTexture2D.html"
         }
       },
       "version": ""
