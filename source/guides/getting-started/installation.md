@@ -24,18 +24,18 @@ You can also add it using the one of the following methods:
 # [.NET CLI](#tab/net-cli)
 
 ```sh
-dotnet add package MonoGame.Aseprite --version 6.0.7
+dotnet add package MonoGame.Aseprite --version 6.1.0
 ```
 
 # [Package Manager](#tab/package-manager)
 
 ```ps1
-Install-Package MonoGame.Aseprite -Version 6.0.7
+Install-Package MonoGame.Aseprite -Version 6.1.0
 ```
 # [Package Reference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="MonoGame.Aseprite" Version="6.0.7" />
+<PackageReference Include="MonoGame.Aseprite" Version="6.1.0" />
 ```
 
 --- 
