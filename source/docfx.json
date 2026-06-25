@@ -55,7 +55,8 @@
       "_author": "Christopher Whitley",
       "_ogImage": "logo.png",
       "_disableContribution": true,
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_basePath": "/monogame-aseprite-docs"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
